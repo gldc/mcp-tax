@@ -1,0 +1,1300 @@
+[
+  {
+    "id": "airtable",
+    "name": "Airtable",
+    "category": "Productivity",
+    "status": "included",
+    "access": "Every plan, including Free, at no additional MCP cost.",
+    "cost": "Explicitly no additional Airtable charge for MCP usage; normal API and product limits remain.",
+    "summary": "Airtable explicitly includes its hosted MCP server on every plan, including Free, without an additional MCP charge. Read and write operations follow the connected user's permissions and ordinary API and base limits.",
+    "conditions": [
+      "Official hosted endpoint: https://mcp.airtable.com/mcp.",
+      "Vendor explicitly states every plan, including Free, has MCP at no additional cost.",
+      "Normal API limits include five requests/second/base and 50 requests/second/token; records created by an agent count toward normal base limits.",
+      "Existing permissions determine access: commenters/read-only users can read; eligible editors, creators and owners can modify accessible content.",
+      "Admins can block access. OAuth and scoped personal access tokens are supported.",
+      "MCP-created automations arrive paused for a person to review and activate."
+    ],
+    "sources": [
+      {
+        "title": "Airtable MCP product and cost FAQ",
+        "url": "https://www.airtable.com/platform/mcp",
+        "evidence": "Identifies the hosted endpoint and explicitly says MCP is available on every plan, including Free, at no additional cost. Gives normal API throughput limits and says created records count toward base limits."
+      },
+      {
+        "title": "Using the Airtable MCP server",
+        "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+        "evidence": "Updated November 9, 2026. Lists all-plan availability, existing permission enforcement, and no additional Airtable charges for MCP usage while normal API limits remain."
+      },
+      {
+        "title": "Airtable MCP getting started",
+        "url": "https://airtable.com/developers/agents/mcp/getting-started",
+        "evidence": "Documents OAuth connection and personal access tokens with scoped permissions."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "notice": "Included is not unlimited. Monthly API allowances and the full product-limit schedule were not audited in this research."
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "category": "Productivity",
+    "status": "included",
+    "access": "Official Claude and ChatGPT integrations include Asana Personal accounts.",
+    "cost": "Asana's official AWS Marketplace MCP offering is explicitly free. A universal fee statement covering every direct V2 connection method was not verified.",
+    "summary": "Asana documents its official MCP server and makes its Claude and ChatGPT integrations available on Personal as well as paid plans. Its own AWS Marketplace MCP listing is free; that pricing evidence is scoped to the listed offering.",
+    "conditions": [
+      "Official server: https://mcp.asana.com/v2/mcp, using OAuth and Streamable HTTP.",
+      "Official Claude and ChatGPT app availability includes Personal, Starter, Advanced, Enterprise and Enterprise+.",
+      "Workspace app controls and the authenticated user's existing permissions apply.",
+      "Claude team accounts can require organization-wide app approval through App Management. Starter lacks that capability, which can limit team or organization use.",
+      "The MCP Server product sold by Asana on AWS Marketplace is explicitly free of charge, with no subscription end date.",
+      "No MCP-specific numerical quota or direct V2 universal no-charge policy was established from freshly opened vendor-domain documentation."
+    ],
+    "sources": [
+      {
+        "title": "Using Asana's MCP server",
+        "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+        "evidence": "Identifies the official V2 endpoint, Asana account authentication, supported transport and workspace app-control requirements."
+      },
+      {
+        "title": "Asana app in Claude",
+        "url": "https://help.asana.com/s/article/asana-app-in-claude",
+        "evidence": "Explicitly includes Personal and paid plans. Warns that Claude team access can require organization-level app approval and that Starter lacks App Management."
+      },
+      {
+        "title": "Asana app in ChatGPT",
+        "url": "https://help.asana.com/s/article/asana-for-chatgpt",
+        "evidence": "Explicitly lists Personal, Starter, Advanced, Enterprise and Enterprise+ availability."
+      },
+      {
+        "title": "Asana MCP Server sold by Asana on AWS Marketplace",
+        "url": "https://aws.amazon.com/marketplace/pp/prodview-6f7zmapqyfwho",
+        "evidence": "Identifies Asana as the seller and explicitly states the MCP Server product is free of charge; free subscriptions have no end date."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "notice": "No-charge evidence is qualified to Asana's official free Marketplace offering; free-account availability is separately established by its official app documentation. A universal direct-server fee policy remains unverified. Indexed Developer Terms mention free MCP, but their live URLs redirect, so that claim is excluded."
+  },
+  {
+    "id": "atlassian",
+    "name": "Atlassian Rovo",
+    "category": "Productivity",
+    "status": "metered",
+    "access": "Free connection; enriched context uses Rovo credits",
+    "cost": "Enriched calls use shared credits",
+    "summary": "Connecting is free. Enriched Teamwork Graph calls through Rovo MCP consume pooled Rovo credits; extra usage billing is announced for December 3, 2026.",
+    "conditions": [
+      "Charges depend on the tool and enriched context returned; do not assume every MCP call is billable.",
+      "Included credit allowances depend on the underlying paid Atlassian app/plan.",
+      "Ordinary setup and connection are free.",
+      "As of the checked date, December 3 extra-usage billing is a future change, not a current overage charge."
+    ],
+    "sources": [
+      {
+        "title": "Rovo licensing FAQ",
+        "url": "https://www.atlassian.com/licensing/rovo",
+        "evidence": "Installing and connecting are free. Enriched Teamwork Graph calls, including MCP calls, consume Rovo credits."
+      },
+      {
+        "title": "Rovo credit policy",
+        "url": "https://support.atlassian.com/rovo/docs/rovo-usage-limits/",
+        "evidence": "Credits are pooled at organization level. Extra usage billing takes effect December 3, 2026."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "notice": "Announced change: extra-usage billing starts December 3, 2026."
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "category": "Infrastructure",
+    "status": "included",
+    "access": "AWS account for AWS resource operations",
+    "cost": "No additional MCP charge",
+    "summary": "AWS explicitly charges nothing extra for its managed MCP server. You pay for the AWS resources your agents use.",
+    "conditions": [
+      "Ordinary AWS resource and data-transfer charges remain.",
+      "Resource operations require appropriate IAM permissions.",
+      "This entry covers the AWS MCP Server, not separately priced products for hosting your own MCP servers."
+    ],
+    "sources": [
+      {
+        "title": "General availability and pricing",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+        "evidence": "AWS states that the managed MCP server is available at no additional charge; customers pay for AWS resources used by agents."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "noTax": true
+  },
+  {
+    "id": "box",
+    "name": "Box",
+    "category": "Business tools",
+    "status": "limited",
+    "access": "All Box plans; tool entitlements depend on plan",
+    "cost": "Free API calls for published apps with personal OAuth; API charges apply to other workflows",
+    "summary": "Box conditionally includes MCP API access for standard signed-in users of published integrations. Custom, service-account and scaled workflows incur API usage; product charges remain separate.",
+    "conditions": [
+      "Free API calls require both an app published in Box Integrations Center and login with the user's own Box account through OAuth.",
+      "Custom or unpublished apps, additional integration credentials, service accounts and scaled/shared workflows incur API usage charges.",
+      "In charged cases, each tool invocation, session initialization and list-tools request consumes one API call.",
+      "AI tools add AI Units; DocGen and Sign have their own product allowances and usage charges.",
+      "Current pricing guidance says all plans; an older GA announcement said Business and above.",
+      "The legacy self-hosted community project is deprecated."
+    ],
+    "sources": [
+      {
+        "title": "Managing Box MCP Servers",
+        "url": "https://support.box.com/hc/en-us/articles/43847256139923-Managing-Box-MCP-Servers",
+        "evidence": "The current pricing section makes the server available on all plans. API calls are free only for published integrations using the user's own OAuth login; other use cases are charged. It documents API-call metering plus AI, DocGen and Sign product usage."
+      },
+      {
+        "title": "Box MCP server developer guide",
+        "url": "https://developer.box.com/guides/box-mcp",
+        "evidence": "Box provides a hosted OAuth MCP endpoint. The guide deprecates the legacy self-hosted open-source community project."
+      },
+      {
+        "title": "Remote Box MCP Server GA announcement",
+        "url": "https://support.box.com/hc/en-us/articles/43615620258195-Announcing-the-new-remote-Box-MCP-Server-GA-release",
+        "evidence": "The older release announcement says Business plans and above, conflicting with the current dedicated pricing guide's all-plan availability."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted MCP; deprecated legacy self-hosted community project",
+    "noTax": false
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "category": "Design",
+    "status": "limited",
+    "access": "Core MCP tools work on every Canva plan; selected tools require Pro or above.",
+    "cost": "Paid features require an eligible Canva plan; AI generation uses the account's existing AI allowance. Pro is USD144/year for one person on the checked US pricing page.",
+    "summary": "Canva provides core design MCP capabilities to Free accounts, while resizing, autofill, brand kits and brand templates require Pro or above. Some generation consumes the same AI allowance used directly in Canva.",
+    "conditions": [
+      "Current developer quickstart documents remote server https://api.canva.com/connect/v1/mcp; Canva Dev MCP for SDK development is a separate product surface.",
+      "Generation, editing, search, exports, comments and asset uploads are available on all plans.",
+      "Resizing, autofill, brand kits and templates require Pro or above. Free users have a limited resize trial.",
+      "Free has standard-quality exports; paid plans provide additional export capabilities. Premium elements can cause license_required errors.",
+      "Tool-specific request limits apply, plus a default cap of 300 requests/minute/user across clients.",
+      "Design generation through the AI Connector draws on the account's existing Canva AI allowance, shared with direct Canva generation.",
+      "Checked US pricing explicitly shows Pro USD144/year for one person and Business USD250/year/person; Enterprise is contact sales."
+    ],
+    "sources": [
+      {
+        "title": "Canva MCP quickstart",
+        "url": "https://www.canva.dev/docs/apps/quickstart/?app-surface=Canva+for+AI+assistants",
+        "evidence": "Documents the remote MCP endpoint https://api.canva.com/connect/v1/mcp and distinguishes the optional Canva Dev MCP server."
+      },
+      {
+        "title": "Canva MCP access and permissions",
+        "url": "https://www.canva.dev/docs/apps/mcp/access/",
+        "evidence": "Lists core capabilities for all plans and resizing, autofill, brand kits and templates for Pro and above."
+      },
+      {
+        "title": "Canva MCP tools and rate limits",
+        "url": "https://www.canva.dev/docs/apps/mcp/tools/",
+        "evidence": "Documents the Free resize trial, export differences, individual tool limits and default 300 requests/minute/user cap."
+      },
+      {
+        "title": "Canva AI Connector explanation",
+        "url": "https://www.canva.com/resources/connect-canva-to-ai-agent/",
+        "evidence": "Says connector design generation draws on existing Canva AI credits, the same pool as generation directly in Canva, rather than a separate budget."
+      },
+      {
+        "title": "Canva pricing",
+        "url": "https://www.canva.com/pricing/",
+        "evidence": "Checked US page explicitly displays Pro USD144/year for one person, Business USD250/year/person, and Enterprise contact-sales pricing."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "notice": "No separate MCP fee was verified. Older endpoint listings may differ from the current developer quickstart. Exact AI allowance consumption varies by action and plan."
+  },
+  {
+    "id": "clickup",
+    "name": "ClickUp",
+    "category": "Productivity",
+    "status": "limited",
+    "access": "All plans; Free Forever has 100 workspace-shared calls per rolling 24 hours.",
+    "cost": "Higher plans raise MCP quota. New Max removes the daily cap; legacy Everything AI does the same. Current Max is USD100/user/month billed yearly at the displayed discount.",
+    "summary": "ClickUp includes limited MCP access on Free and paid plans. Daily workspace quotas increase with the plan, and its ongoing pricing migration means new Max and legacy Everything AI customers follow different packaging.",
+    "conditions": [
+      "Official hosted server: https://mcp.clickup.com/mcp; OAuth authentication.",
+      "New plans: Free 100/day; Core 300; Business 1,000; Business Plus 2,500; Enterprise 25,000; Max no daily cap.",
+      "Existing plans: Free 100/day; Unlimited 300; Business 1,000; Business Plus 2,500; Enterprise 5,000; Everything AI add-on no daily cap.",
+      "Daily quota is shared by every MCP client in the workspace. Per-minute API limits still apply when there is no daily cap.",
+      "Brain AI add-on does not improve MCP limits. New plans include AI rather than offering the legacy add-ons.",
+      "Live new-plan pricing shows Core USD9/user/month billed yearly (regular 12), Business USD17 (regular 25), Max USD100 (regular 120); Enterprise custom.",
+      "Existing Everything AI purchasers retain their existing arrangement; migrated-workspace pricing depends on the vendor's renewal notice."
+    ],
+    "sources": [
+      {
+        "title": "ClickUp MCP setup",
+        "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+        "evidence": "Documents the official https://mcp.clickup.com/mcp server."
+      },
+      {
+        "title": "ClickUp AI feature availability and limits",
+        "url": "https://help.clickup.com/hc/en-us/articles/20686299081879-ClickUp-AI-feature-availability-and-limits",
+        "evidence": "Separates new and existing plans, specifies their daily workspace quotas, and lists no daily cap for new Max or legacy Everything AI. Per-minute API limits remain; Brain AI does not increase MCP quota."
+      },
+      {
+        "title": "What is ClickUp MCP?",
+        "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+        "evidence": "Explicitly says official MCP is available on all plans and documents rolling 24-hour limits for workspaces without Everything AI."
+      },
+      {
+        "title": "ClickUp current pricing",
+        "url": "https://clickup.com/pricing",
+        "evidence": "Live page displays new Core, Business and Max at USD9, 17 and 100/user/month billed yearly, with regular prices 12, 25 and 120. Its comparison lists Free/Core/Business/Enterprise/Max MCP quotas of 100/300/1,000/25,000/no daily cap."
+      },
+      {
+        "title": "ClickUp pricing transition",
+        "url": "https://help.clickup.com/hc/en-us/articles/10129535087383-Intro-to-pricing",
+        "evidence": "Explains the migration to plans including AI and says existing Everything AI purchasers retain their plan and Everything AI."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "notice": "Search-indexed pricing still shows legacy Everything AI at a different price. That amount is omitted; current live prices and new-versus-existing limits must not be mixed. No claim that MCP itself consumes AI credits was established."
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "category": "Infrastructure",
+    "status": "unclear",
+    "access": "General API MCP minimum plan not explicitly stated",
+    "cost": "No explicit general MCP access price found in the checked official documentation.",
+    "summary": "Cloudflare documents its managed MCP access but does not explicitly establish a blanket fee policy for the general API server in the checked sources.",
+    "conditions": [
+      "The general API MCP server supports OAuth and API tokens with selected permissions.",
+      "A separate official DEX MCP announcement explicitly permits Cloudflare One Free, PayGo, and Enterprise customers; this does not establish all general API MCP terms.",
+      "Cloudflare's own managed MCP service is distinct from hosting a custom MCP server or purchasing MCP Server Portals.",
+      "Open-source code availability is not evidence that vendor-hosted MCP access has no separate fee."
+    ],
+    "sources": [
+      {
+        "title": "Cloudflare's own MCP servers",
+        "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+        "evidence": "Cloudflare documents managed remote MCP servers, including the main Cloudflare API endpoint, OAuth permission selection, and API-token access. The checked page does not state a general MCP price or minimum plan."
+      },
+      {
+        "title": "Cloudflare MCP official repository",
+        "url": "https://github.com/cloudflare/mcp",
+        "evidence": "The official repository documents https://mcp.cloudflare.com/mcp and OAuth or API-token setup. It publishes source code but does not establish a hosted-access pricing policy."
+      },
+      {
+        "title": "Troubleshooting network connectivity and performance with Cloudflare AI",
+        "url": "https://blog.cloudflare.com/ai-troubleshoot-warp-and-network-connectivity-issues",
+        "evidence": "The DEX MCP announcement explicitly says Cloudflare One customers on Free, PayGo, or Enterprise plans can use that particular server. Client-side AI subscription requirements are described separately."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Cloudflare-managed remote general API server and additional product-specific MCP servers.",
+    "notice": "General API MCP no-extra-fee classification remains unverified; DEX has explicit Free-plan access evidence."
+  },
+  {
+    "id": "coda",
+    "name": "Coda / Superhuman Docs",
+    "category": "Productivity",
+    "status": "limited",
+    "access": "Free taste: 30 requests/week, maximum 60/month. Full continued access requires a paid Doc Maker role.",
+    "cost": "MCP is included for paid Doc Makers; free users and Editors have limited access. Current dollar pricing was not freshly verified.",
+    "summary": "Coda's successor, Superhuman Docs, provides a small MCP allowance to free users and Editors, with full access for paid Doc Makers. The new Docs server supports Editor actions beyond reading; legacy Coda connections have different restrictions and are being superseded.",
+    "conditions": [
+      "Current official endpoint: https://docs.superhuman.com/apis/mcp.",
+      "Paid Superhuman Docs Doc Makers receive full MCP tools and endpoints. Free Doc Makers receive 30 requests/week, maximum 60/month.",
+      "Editors receive the same limited allowance and can perform editor actions, including modifying page content and tables, through the new Docs MCP.",
+      "Legacy Coda MCP at https://coda.io/apis/mcp remains temporarily supported; new features go only to Docs MCP and the legacy server will eventually be deprecated.",
+      "Legacy Coda documentation limits Editors to read tools. Do not apply that old restriction to the current Docs server.",
+      "Legacy documentation explicitly says paid Doc Maker MCP access is included; limits remain for performance protection.",
+      "Coda became Superhuman Docs on July 8, 2026. Existing Coda customers retain their plan/pricing unless they opt into the Superhuman bundle; new subscribers receive the suite."
+    ],
+    "sources": [
+      {
+        "title": "Connect to Superhuman Docs MCP",
+        "url": "https://help.superhuman.com/hc/en-us/articles/46210076980365-Connect-to-the-Superhuman-Docs-MCP",
+        "evidence": "Documents the current endpoint, paid Doc Maker full access, free and Editor allowance of 30/week and 60/month, Editor write actions, and eventual legacy Coda deprecation with new features reserved for Docs MCP."
+      },
+      {
+        "title": "Legacy Coda MCP pricing FAQ",
+        "url": "https://help.coda.io/hc/en-us/articles/44722756780173-Using-the-Coda-MCP",
+        "evidence": "Explicitly includes MCP for paid Doc Makers, requires upgrading after the free allowance is exhausted, and restricts legacy Editors to read tools."
+      },
+      {
+        "title": "Superhuman Docs billing and pricing basics",
+        "url": "https://help.superhuman.com/hc/en-us/articles/46210161369741-Superhuman-Docs-billing-and-pricing-basics",
+        "evidence": "Confirms the July 8, 2026 rebrand, Maker billing, existing Coda pricing retention, and suite packaging for new subscribers."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "notice": "Official pricing search results show dollar figures, but a fresh opened page yielded no price content; those figures are excluded. Legacy Coda beta/read-only conditions must not be conflated with the current Docs service."
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog",
+    "category": "Observability",
+    "status": "unclear",
+    "access": "Official server; pricing eligibility not established",
+    "cost": "Separate MCP pricing unconfirmed",
+    "summary": "Datadog documents fair-use limits and permission requirements. Those documents do not establish a general MCP surcharge or a no-charge promise.",
+    "conditions": [
+      "Fair-use limits currently include 100,000 monthly tool calls and a burst limit of 50 requests per 10 seconds.",
+      "Underlying Datadog product permissions and subscriptions still apply.",
+      "A free cost-visibility product mentioning MCP does not establish all-server pricing."
+    ],
+    "sources": [
+      {
+        "title": "MCP server documentation",
+        "url": "https://docs.datadoghq.com/mcp_server/",
+        "evidence": "The official server documents 100,000 monthly tool calls, burst limits and existing resource access controls."
+      },
+      {
+        "title": "Setup requirements",
+        "url": "https://docs.datadoghq.com/mcp_server/setup/",
+        "evidence": "MCP read/write permissions and underlying Datadog resource permissions are required."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted"
+  },
+  {
+    "id": "dbt",
+    "name": "dbt",
+    "category": "Developer tools",
+    "status": "included",
+    "access": "All dbt platform plans",
+    "cost": "Access included; one AI tool uses actions",
+    "summary": "Remote MCP is available on all dbt platform plans. Only text_to_sql consumes the dbt Copilot action allotment; other tools keep working without AI enabled.",
+    "conditions": [
+      "Underlying Discovery and Semantic Layer API entitlements vary by product plan.",
+      "The self-hosted server can work with local projects without a dbt platform account.",
+      "Underlying warehouse queries and product usage can still incur costs."
+    ],
+    "sources": [
+      {
+        "title": "MCP access and tools",
+        "url": "https://docs.getdbt.com/docs/dbt-ai/about-mcp",
+        "evidence": "Remote MCP is available on all platform plans; text_to_sql alone consumes Copilot actions and other tools remain usable without AI features."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Hosted and self-hosted",
+    "noTax": true
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "category": "Business tools",
+    "status": "unclear",
+    "access": "Dropbox account; Paper tools explicitly available on all plans",
+    "cost": "Separate MCP pricing and call quota not established",
+    "summary": "Dropbox's hosted MCP is documented as an open beta. All-plan Paper tool access is explicit, but reviewed sources do not establish a separate-charge waiver.",
+    "conditions": [
+      "Existing Dropbox permissions and OAuth authorization apply.",
+      "Paper tools currently support Claude Code, Cursor and Codex.",
+      "Trusted clients support dynamic registration; other clients may require a Dropbox app.",
+      "Team-admin controls can restrict app registration or connection.",
+      "All-plan Paper availability is narrower than a guarantee that every MCP capability is free."
+    ],
+    "sources": [
+      {
+        "title": "Connect the Dropbox remote MCP server",
+        "url": "https://help.dropbox.com/integrations/connect-dropbox-mcp-server",
+        "evidence": "The setup guide labels the hosted server an open beta and documents OAuth, permissions, supported clients and app-registration requirements. It does not establish a separate MCP price or quota."
+      },
+      {
+        "title": "Dropbox release notes",
+        "url": "https://www.dropbox.com/release-notes",
+        "evidence": "The September 2026 notes make Paper tools through the public Dropbox MCP catalog available on all Dropbox plans."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted remote MCP",
+    "preview": true
+  },
+  {
+    "id": "elastic",
+    "name": "Elastic Agent Builder",
+    "category": "Observability",
+    "status": "gated",
+    "access": "Enterprise license for self-managed Agent Builder",
+    "cost": "Enterprise license; cloud terms differ",
+    "summary": "The recommended Agent Builder MCP endpoint exposes built-in and custom tools. Self-managed Agent Builder requires an Enterprise license; other deployment types have different usage pricing.",
+    "conditions": [
+      "This classification covers Agent Builder on self-managed Elastic Stack, not every Elastic MCP implementation.",
+      "Cloud Hosted and Serverless can meter Agent Builder executions; those product execution fees are not asserted to apply to every raw MCP tool call.",
+      "An older official Elasticsearch MCP implementation is a separate limited alternative.",
+      "Self-managed usage is currently under promotional pricing with no additional charge beyond license requirements."
+    ],
+    "sources": [
+      {
+        "title": "Official MCP options",
+        "url": "https://www.elastic.co/docs/explore-analyze/ai-features",
+        "evidence": "Elastic recommends Agent Builder MCP for current deployments and documents an older, limited Elasticsearch MCP alternative."
+      },
+      {
+        "title": "Agent Builder pricing and license",
+        "url": "https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/monitor-usage",
+        "evidence": "Self-managed Agent Builder is included in the Enterprise license tier; current promotional usage has no additional charge. Cloud deployments have their own execution-based models."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Self-managed Agent Builder"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "Design",
+    "status": "limited",
+    "access": "Remote access on all plans; Starter and View/Collab seats have 20 read calls/month.",
+    "cost": "Higher read limits require an eligible Dev/Full seat and plan. Some AI tools consume existing credits. Canvas writing is free during beta, with future usage pricing announced.",
+    "summary": "Figma offers a small remote MCP allowance on all plans, with substantially higher read limits for eligible Dev and Full seats. The desktop server and canvas-writing features have additional plan and seat requirements.",
+    "conditions": [
+      "Remote server: https://mcp.figma.com/mcp. Only supported clients in Figma's MCP catalog can connect.",
+      "View/Collab seats: up to 20 read-tool calls/month across Starter, Professional, Organization and Enterprise.",
+      "Professional Full/Dev: up to 200 read calls/day and 10/minute; Organization: 200/day and 15/minute; Enterprise: 600/day and 20/minute.",
+      "Desktop server requires a Dev or Full seat on Professional, Education, Organization, Government or Enterprise.",
+      "Canvas writing requires Professional, Education, Organization or Enterprise; writing outside drafts requires a Full seat.",
+      "Most MCP tools do not consume Figma AI credits; generate_image and send_prompt do. Weave tools use Weave credits.",
+      "Organization Dev is USD25/seat/month and Enterprise Dev USD35/seat/month, both billed annually. Professional cadence was not established, so its displayed price is omitted."
+    ],
+    "sources": [
+      {
+        "title": "Figma MCP rate limits and access",
+        "url": "https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/",
+        "evidence": "Lists 20 monthly read calls for View/Collab seats, higher daily limits for eligible Full/Dev seats, and upgrades as the path to higher limits. Separates credit-consuming image and Make tools from most MCP tools."
+      },
+      {
+        "title": "Get started with the Figma MCP server",
+        "url": "https://help.figma.com/hc/en-us/articles/39216419318551-Get-started-with-the-Figma-MCP-server",
+        "evidence": "Lists all-plan access, desktop seat requirements, and paid-plan canvas-writing eligibility. In the canvas-writing context, says the feature is free during beta and will become usage-priced."
+      },
+      {
+        "title": "Figma pricing",
+        "url": "https://www.figma.com/pricing/",
+        "evidence": "Shows Organization Dev at USD25/month and Enterprise Dev at USD35/month, both billed annually."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Hosted and desktop",
+    "preview": true,
+    "notice": "Beta pricing warning applies to canvas writing; it is not evidence that all MCP calls will become paid. An older official indexed page gives different quotas; this record follows the newer live rate-limits page."
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "category": "Developer tools",
+    "status": "included",
+    "access": "All GitHub plans, including Free",
+    "cost": "Included access; individual tools inherit GitHub or Copilot feature requirements.",
+    "summary": "GitHub makes its official MCP server available regardless of account plan.",
+    "conditions": [
+      "Tools for paid GitHub or Copilot features require the corresponding subscription; Copilot Cloud Agent tools are one example.",
+      "Organization or enterprise Copilot policies can control use through Copilot.",
+      "No MCP-specific monetary surcharge or quota is stated in the cited setup documentation."
+    ],
+    "sources": [
+      {
+        "title": "Setting up the GitHub MCP Server",
+        "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server",
+        "evidence": "The server is available to all GitHub users regardless of plan. Individual MCP tools inherit the access requirements of their corresponding GitHub features. The documentation supports GitHub-hosted remote and local servers."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "GitHub-hosted remote server; local server also supported.",
+    "noTax": true
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab",
+    "category": "Developer tools",
+    "status": "included",
+    "access": "Free, Premium, or Ultimate",
+    "cost": "No paid subscription required for MCP access since GitLab 19.2; paid feature entitlements still apply.",
+    "summary": "GitLab removed the Premium requirement for its official MCP server.",
+    "conditions": [
+      "Access must be enabled for the top-level group on GitLab.com or for the instance on Self-Managed and Dedicated.",
+      "GitLab.com lists per-user limits of 60 requests per minute on Free and 600 on Premium or Ultimate.",
+      "The documentation lists hourly limits of 3,600 on Free and 5,000 on Premium or Ultimate, with hourly availability controlled by feature flags.",
+      "Duo Agent Platform tools require the applicable platform eligibility; code security tools inherit Ultimate feature requirements.",
+      "The stdio option uses mcp-remote as a proxy to the instance endpoint."
+    ],
+    "sources": [
+      {
+        "title": "GitLab MCP server",
+        "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+        "evidence": "The live server page lists Free, Premium, Ultimate and general availability. History records the move from Premium to Free in 19.2. It documents group or instance enablement, feature-dependent toolsets, instance endpoints, per-user minute limits, and feature-flag-controlled hourly limits."
+      },
+      {
+        "title": "GitLab 19.2 release notes",
+        "url": "https://docs.gitlab.com/releases/19/gitlab-19-2-released/",
+        "evidence": "The section announcing MCP for Free users explicitly says the server can be used without a paid subscription or subscription upgrade."
+      },
+      {
+        "title": "Model Context Protocol overview",
+        "url": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/",
+        "evidence": "This umbrella page still labels MCP Premium and Ultimate. The more specific server documentation and explicit 19.2 release announcement establish current Free access."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "GitLab.com-hosted endpoint or MCP endpoint on a Self-Managed or Dedicated GitLab instance.",
+    "notice": "The umbrella MCP page still shows a paid-tier label; the specific server page and release notes explicitly document Free access.",
+    "noTax": true
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "category": "Observability",
+    "status": "metered",
+    "access": "Free includes 3 active AI users",
+    "cost": "Cloud MCP counts as active AI use; Pro additional users start at $20 per active AI user per month.",
+    "summary": "Connecting to Grafana Cloud MCP counts toward AI-user billing even when data queries consume no Grafana AI tokens.",
+    "conditions": [
+      "Free includes three active AI users, with 40 million tokens per user per month.",
+      "Pro's separate $19 monthly platform fee includes the first three active AI users; additional active AI users start at $20 each.",
+      "Connecting through Cloud MCP counts as active AI use even with zero Grafana AI tokens.",
+      "Ordinary MCP data queries consume no Grafana AI tokens; invoking features using Grafana-provided models consumes tokens.",
+      "Additional tokens start at $2 per million under published Pro pricing.",
+      "Self-run OSS MCP is separate: hosting is the user's responsibility and normal Grafana usage rules apply; do not automatically apply Cloud MCP's AI-user billing to it."
+    ],
+    "sources": [
+      {
+        "title": "Grafana Assistant pricing documentation",
+        "url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/assistant/",
+        "evidence": "Cloud MCP connections count as active AI use even without Grafana AI-token consumption. Data queries do not use tokens, while Grafana-model Assistant features do. Billing counts active AI users above included users, independently of other Grafana Cloud features."
+      },
+      {
+        "title": "Grafana pricing",
+        "url": "https://grafana.com/pricing/",
+        "evidence": "Free includes three active AI users with 40 million tokens each. Pro has a $19 monthly platform fee including the first three users, additional active AI users starting at $20, and additional tokens starting at $2 per million."
+      },
+      {
+        "title": "AI tools in Grafana OSS",
+        "url": "https://grafana.com/docs/grafana/latest/ai-tools/",
+        "evidence": "Grafana distinguishes its hosted Cloud MCP from the self-run OSS MCP server. Cloud MCP counts toward Assistant usage and active users; OSS server hosting is the user's responsibility and Grafana usage rules apply."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Grafana-hosted Cloud MCP; separately available self-run OSS MCP.",
+    "notice": "Cloud MCP access itself can trigger active-AI-user billing beyond included users, even when queries use no Grafana AI tokens."
+  },
+  {
+    "id": "hubspot",
+    "name": "HubSpot",
+    "category": "Business tools",
+    "status": "unclear",
+    "access": "All HubSpot accounts; individual tools depend on subscription",
+    "cost": "Separate MCP pricing not established in reviewed official sources",
+    "summary": "The hosted CRM server is available to all accounts, including accounts using free tools. Availability does not establish a zero MCP fee.",
+    "conditions": [
+      "OAuth with PKCE and existing user permissions apply.",
+      "AEO tools require Marketing Hub Professional or Enterprise; quote tools require Revenue Hub Professional or Enterprise.",
+      "Accounts using free tools cannot create custom pipelines through MCP.",
+      "Sensitive Data configurations block activity and conversation data through MCP.",
+      "The local Developer MCP is a separate app and CMS development tool."
+    ],
+    "sources": [
+      {
+        "title": "Remote HubSpot MCP server is now generally available",
+        "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "evidence": "The April 2026 announcement makes the HubSpot-hosted CRM MCP server generally available to all HubSpot accounts. It distinguishes the remote server from the local developer server."
+      },
+      {
+        "title": "Integrate AI tools with the remote HubSpot MCP server",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "evidence": "Tool availability depends on subscription, permissions and configuration. The guide documents free-account pipeline restrictions, paid product requirements for AEO and quotes, and Sensitive Data restrictions. It does not establish a separate MCP price."
+      },
+      {
+        "title": "Set up the developer MCP server",
+        "url": "https://developers.hubspot.com/docs/developer-tooling/local-development/developer-mcp/setup",
+        "evidence": "The separate local developer MCP runs through the HubSpot CLI for development workflows."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted CRM server; separate official local Developer MCP"
+  },
+  {
+    "id": "intercom",
+    "name": "Intercom",
+    "category": "Business tools",
+    "status": "unclear",
+    "access": "Intercom workspace; optional Fin Operator requires Pro add-on",
+    "cost": "Core-server fee not established; sending Fin Operator work uses existing Operator credits",
+    "summary": "The hosted server exposes core Intercom tools and optional Fin Operator tools. Operator billing follows existing product credits; this does not establish core MCP pricing.",
+    "conditions": [
+      "US and EU hosted workspaces are supported; AU workspaces are not.",
+      "Core tools support OAuth or bearer tokens and follow normal Intercom API limits.",
+      "Fin Operator tools require an entitled workspace, OAuth, and the connecting teammate's Operator permission.",
+      "Only send_operator_message uses Operator credits; reading responses and reviewing, applying or rejecting proposals are free Operator tool calls.",
+      "Operator tools share a limit of 60 calls per minute per connection, and Operator product usage limits still apply.",
+      "No minimum core-server plan or explicit zero-fee promise was established in reviewed sources."
+    ],
+    "sources": [
+      {
+        "title": "Intercom Model Context Protocol guide",
+        "url": "https://developers.intercom.com/docs/guides/mcp",
+        "evidence": "Intercom hosts regional US and EU servers with OAuth or bearer-token access. Core API limits apply. Optional Operator tools have workspace and permission requirements; only sending a message consumes Operator credits."
+      },
+      {
+        "title": "Fin Operator tools",
+        "url": "https://developers.intercom.com/docs/guides/fin-operator-mcp",
+        "evidence": "Operator MCP tools require OAuth and existing Operator entitlement and permissions. The guide specifies 60 calls per minute per connection and says in-product Operator limits apply."
+      },
+      {
+        "title": "Fin Operator explained",
+        "url": "https://www.intercom.com/help/en/articles/14707198-fin-operator-explained",
+        "evidence": "Fin Operator requires the Pro add-on. Sending Operator work through MCP uses Operator credits as it does inside Intercom; other Operator response and proposal operations are free."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted regional MCP servers"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "category": "Developer tools",
+    "status": "included",
+    "access": "All plans, including Free",
+    "cost": "MCP access included",
+    "summary": "Linear lists MCP access as included on every plan, including Free.",
+    "conditions": [
+      "Product and workspace limits still apply.",
+      "A paid AI client is separate from Linear MCP access."
+    ],
+    "sources": [
+      {
+        "title": "Plan comparison",
+        "url": "https://linear.app/pricing",
+        "evidence": "The MCP access row is included under Free, Basic, Business and Enterprise."
+      },
+      {
+        "title": "MCP server documentation",
+        "url": "https://linear.app/docs/mcp",
+        "evidence": "Linear provides a hosted MCP server for finding, creating and updating Linear objects."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "noTax": true
+  },
+  {
+    "id": "make",
+    "name": "Make",
+    "category": "Automation",
+    "status": "limited",
+    "access": "Free for scenario-run tools; management tools require a paid plan",
+    "cost": "Zero separate MCP fee; executed scenarios consume ordinary Make credits",
+    "summary": "Make explicitly includes hosted MCP at no extra cost in every plan. Scenario-run access includes Free, while management tools are gated to paid plans.",
+    "conditions": [
+      "Scenario-run tools are available on all plans; management tools require a paid plan.",
+      "Executed scenarios retain ordinary module and AI credit usage.",
+      "OAuth or an API key is supported.",
+      "Scenarios must be active and on demand to run through MCP.",
+      "No specific paid-plan dollar minimum or universal MCP call quota was established here."
+    ],
+    "sources": [
+      {
+        "title": "Make MCP Server pricing FAQ",
+        "url": "https://www.make.com/mcp",
+        "evidence": "Make explicitly includes MCP Server in all plans, including Free, at no extra cost. Hosting is included; customers pay for credits consumed by scenarios executed in Make."
+      },
+      {
+        "title": "Make MCP Server developer guide",
+        "url": "https://developers.make.com/mcp-server",
+        "evidence": "Make hosts the server using Streamable HTTP with OAuth or API-key access. Scenario-run tools are available to all plans, while management tools require paid plans. Tools can run active, on-demand scenarios."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted cloud MCP",
+    "noTax": false
+  },
+  {
+    "id": "miro",
+    "name": "Miro",
+    "category": "Design",
+    "status": "limited",
+    "access": "Every plan, including Free, includes a daily MCP allowance.",
+    "cost": "Higher plans include more MCP calls; Miro AI operations through MCP may also consume existing Miro AI credits.",
+    "summary": "Miro includes MCP access on Free and paid plans, but daily allowances rise with the product plan. Calls stop when the allowance is exhausted, and Enterprise customers can request additional capacity.",
+    "conditions": [
+      "Official remote connection URL: https://mcp.miro.com.",
+      "Daily allowances: Free 100; Starter 500; Business 2,000; Enterprise 10,000. Reset is midnight UTC.",
+      "Every MCP tool call counts toward the allowance. The documentation does not clearly establish whether this allowance is per user or shared, so no sharing unit is asserted.",
+      "Upgrade the plan for higher limits; Enterprise customers can ask their account team for more than 10,000 daily calls.",
+      "Enterprise access requires admin enablement and can be restricted by team, user group or client.",
+      "Generating or writing content with Miro AI through an MCP connection consumes Miro AI credits; this does not establish that every write consumes credits."
+    ],
+    "sources": [
+      {
+        "title": "Miro MCP server",
+        "url": "https://developers.miro.com/docs/miro-mcp",
+        "evidence": "Identifies the official Miro MCP server and explicitly says it works on every plan, including free teams."
+      },
+      {
+        "title": "Miro MCP usage and daily limits",
+        "url": "https://developers.miro.com/docs/mcp-usage-and-daily-limits",
+        "evidence": "Provides Free/Starter/Business/Enterprise daily quotas of 100/500/2,000/10,000, midnight UTC reset, blocked calls after exhaustion, and plan upgrades or Enterprise requests for more capacity."
+      },
+      {
+        "title": "Enable Miro MCP",
+        "url": "https://help.miro.com/hc/en-us/articles/31625301583890-How-to-enable-Miro-s-MCP-Server-user-guide",
+        "evidence": "Documents https://mcp.miro.com and Enterprise admin access restrictions."
+      },
+      {
+        "title": "Configuring Miro AI",
+        "url": "https://help.miro.com/hc/en-us/articles/35932375411346-5-1-Configuring-Miro-AI",
+        "evidence": "States that users generating and writing content with Miro AI through MCP consume Miro AI credits."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "notice": "No separate MCP price was established. Included allowances do not imply unlimited free use; exact credit costs for individual operations remain unverified."
+  },
+  {
+    "id": "monday",
+    "name": "monday.com",
+    "category": "Productivity",
+    "status": "included",
+    "access": "MCP is explicitly included on every monday.com plan at no additional cost.",
+    "cost": "No additional MCP charge or monday AI-credit consumption. Standard API allowances apply; extra daily API capacity is a paid add-on with price unverified.",
+    "summary": "monday.com explicitly includes its hosted MCP server on every plan without an extra MCP charge. MCP operations count toward the account's normal API limits, which can be expanded with an API add-on.",
+    "conditions": [
+      "Official hosted server: https://mcp.monday.com/mcp.",
+      "MCP is preinstalled; account admins can restrict connector access. User authorization and existing permissions apply.",
+      "MCP consumes API calls rather than monday AI credits.",
+      "Dedicated API documentation gives daily limits of Free 200, Basic/Standard 1,000, Pro/Trial 10,000 and Enterprise 25,000, resetting midnight UTC.",
+      "Additional complexity, minute, concurrency and resource limits apply; a tool request need not equal one charged quota unit.",
+      "API add-on packages provide 25,000 to 250,000 extra daily calls. Public dollar price and billing cadence were not established."
+    ],
+    "sources": [
+      {
+        "title": "Get started with monday MCP",
+        "url": "https://support.monday.com/hc/en-us/articles/28588158981266-Get-started-with-monday-MCP",
+        "evidence": "Explicitly says MCP is available on all plans at no additional cost, is preinstalled, and follows standard API limits."
+      },
+      {
+        "title": "Integrate with monday MCP",
+        "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "evidence": "Documents https://mcp.monday.com/mcp and says MCP requests consume account API quota."
+      },
+      {
+        "title": "monday AI feature catalog",
+        "url": "https://support.monday.com/hc/en-us/articles/24047211522194-AI-Feature-Catalog",
+        "evidence": "Explicitly says monday MCP does not consume AI credits and instead uses API calls."
+      },
+      {
+        "title": "monday API rate limits",
+        "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+        "evidence": "Explicitly includes hosted MCP in daily API limits and lists Free 200, Basic/Standard 1,000, Pro/Trial 10,000 and Enterprise 25,000 daily calls, plus other limits and quota-accounting exceptions."
+      },
+      {
+        "title": "monday API analytics and add-on",
+        "url": "https://developer.monday.com/api-reference/docs/api-analytics",
+        "evidence": "Documents purchasing 25,000–250,000 extra daily API calls through the API analytics dashboard."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "notice": "A separate general AI developer page lists Free at 1,000 daily calls, conflicting with the dedicated rate-limit page and support FAQ. The 200 figure follows the dedicated documentation and should retain this conflict flag."
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "category": "Infrastructure",
+    "status": "unclear",
+    "access": "Documented free-account access",
+    "cost": "Free-account MCP access documented; a separate hosted MCP surcharge is not explicitly addressed.",
+    "summary": "Neon supports using MCP with a free account, but the checked sources do not explicitly publish a standalone MCP fee policy.",
+    "conditions": [
+      "Managed remote access supports OAuth or API-key authentication.",
+      "The November 4 update says the local stdio server was removed and its npm package deprecated on February 16, 2026.",
+      "The same update says SSE endpoints were retired on November 2, 2026; current connections use the /mcp endpoint.",
+      "Underlying database and backend usage remains subject to Neon plan allowances and pricing.",
+      "Open-source availability is not used as proof of free hosted MCP access."
+    ],
+    "sources": [
+      {
+        "title": "Manage Neon Databases from ChatGPT",
+        "url": "https://neon.com/blog/manage-neon-databases-from-chatgpt",
+        "evidence": "The official MCP walkthrough explains connecting ChatGPT to Neon's hosted MCP server and invites users without a Neon free account to create one and try it."
+      },
+      {
+        "title": "Neon's current Free-plan announcement",
+        "url": "https://neon.com/blog/neon-free-plan-1-gb-per-project",
+        "evidence": "The October 2026 announcement describes free-plan backend allowances and installs the Neon plugin bundling agent skills and MCP so an agent can manage projects end-to-end."
+      },
+      {
+        "title": "Neon MCP Server overview",
+        "url": "https://neon.com/docs/ai/neon-mcp-server",
+        "evidence": "Current documentation describes the managed MCP server, OAuth and API-key authentication, project scoping, read-only access, and available tool categories. It does not specify a separate MCP fee."
+      },
+      {
+        "title": "Is MCP good yet?",
+        "url": "https://neon.com/blog/is-mcp-good-yet",
+        "evidence": "The November 4, 2026 post records local stdio removal and npm deprecation on February 16, 2026, followed by SSE retirement on November 2. It directs clients to https://mcp.neon.tech/mcp."
+      },
+      {
+        "title": "Neon pricing",
+        "url": "https://neon.com/pricing",
+        "evidence": "The pricing page offers Free and usage-based paid plans for Neon's underlying platform. No MCP-specific price was found on the checked page."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Neon-managed remote MCP endpoint; the former local stdio package is deprecated.",
+    "notice": "Free-account access is documented. An explicit blanket no-extra-hosted-MCP-fee statement was not found."
+  },
+  {
+    "id": "netlify",
+    "name": "Netlify",
+    "category": "Infrastructure",
+    "status": "included",
+    "access": "Free",
+    "cost": "No extra connection charge in the documented coding-agent workflow; platform credits apply.",
+    "summary": "Netlify explicitly says its free plan includes connecting coding agents through the documented MCP workflow without extra charge.",
+    "conditions": [
+      "The strongest explicit no-extra-charge statement is framed around Codex with Netlify and also mentions many other AI tools.",
+      "The Free plan includes 300 monthly platform credits; production deployments consume 15 credits each.",
+      "Compute, bandwidth, and model use have separate platform meters.",
+      "Current setup documentation recommends the remote MCP server and retains the local package as an alternative."
+    ],
+    "sources": [
+      {
+        "title": "Build with Codex. Ship with Netlify.",
+        "url": "https://www.netlify.com/with/codex/",
+        "evidence": "The page identifies adding Netlify as an MCP server as the coding-agent workflow. Its FAQ says there is no extra charge to use Codex with Netlify and that Free includes connecting Codex and many other AI tools."
+      },
+      {
+        "title": "Set up Claude Code for Netlify",
+        "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/set-up-claude-code-for-netlify/",
+        "evidence": "The current setup guide recommends https://mcp.netlify.com/mcp and gives local @netlify/mcp as an alternative when remote servers are blocked."
+      },
+      {
+        "title": "Netlify Pricing and Plans",
+        "url": "https://www.netlify.com/pricing/",
+        "evidence": "The Free plan has a 300-credit monthly limit. Production deployments consume 15 credits each, with separate compute, bandwidth, request, and model-related meters. These are platform resource charges."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Netlify-hosted remote endpoint; local @netlify/mcp package also supported.",
+    "noTax": true
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "category": "Productivity",
+    "status": "limited",
+    "access": "Basic access on all plans; full MCP on Business/Enterprise",
+    "cost": "Advanced search options require a higher plan",
+    "summary": "Basic MCP access is broader than full MCP. Advanced search filters and connected-source AI search require Business or Enterprise.",
+    "conditions": [
+      "Full MCP is required for editor/date/multiple-teamspace filters and date sorting; other search filters are available on every plan.",
+      "Connected-source search requires Business or Enterprise with Notion AI.",
+      "This describes Notion as an MCP server, not the separate Notion Agent MCP client feature."
+    ],
+    "sources": [
+      {
+        "title": "Search tools and requirements",
+        "url": "https://developers.notion.com/guides/mcp/tools-search-reference",
+        "evidence": "Advanced filters and date sorting require full MCP on Business or Enterprise. Connected-source search requires the same plans with Notion AI."
+      },
+      {
+        "title": "Tool access FAQ",
+        "url": "https://developers.notion.com/guides/mcp/tools-faqs",
+        "evidence": "Tool and parameter availability depends on workspace plan, connection capabilities and admin controls."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted"
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal",
+    "category": "Payments",
+    "status": "unclear",
+    "access": "PayPal account/application credentials; no paid MCP minimum established",
+    "cost": "Hosted MCP fee unclear; local code is Apache-2.0; ordinary payment fees remain",
+    "summary": "PayPal documents both hosted and local MCP servers. The local software license does not establish free hosted access or free payments.",
+    "conditions": [
+      "Official hosted endpoints support sandbox testing and production activity.",
+      "Local operation requires Node.js 18 or later.",
+      "Hosted access supports PayPal application client credentials and SSE or Streamable HTTP.",
+      "Ordinary merchant transaction fees vary by transaction type and market.",
+      "No explicit hosted-server fee waiver or MCP-specific call quota was established."
+    ],
+    "sources": [
+      {
+        "title": "PayPal MCP server quickstart",
+        "url": "https://developer.paypal.com/ai-tools/mcp-server",
+        "evidence": "PayPal documents official local and hosted server options, local Node.js requirements, sandbox and production endpoints, and supported authentication and transports. The guide does not establish a hosted MCP price."
+      },
+      {
+        "title": "PayPal Agent Toolkit repository",
+        "url": "https://github.com/paypal/agent-toolkit",
+        "evidence": "PayPal publishes its MCP-capable Agent Toolkit under Apache-2.0. This establishes the software license, not hosted-service or transaction pricing."
+      },
+      {
+        "title": "PayPal merchant fees",
+        "url": "https://www.paypal.com/us/business/paypal-business-fees",
+        "evidence": "PayPal separately charges for merchant payment activity, with rates depending on payment and transaction type. These are ordinary payment fees rather than evidence of an MCP-specific surcharge."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted sandbox and production servers; official Apache-2.0 local implementation"
+  },
+  {
+    "id": "posthog",
+    "name": "PostHog",
+    "category": "Developer tools",
+    "status": "included",
+    "access": "Free",
+    "cost": "Connecting and MCP tool calls are free; AI-powered tools may incur PostHog AI spend.",
+    "summary": "PostHog explicitly separates free MCP access from chargeable AI work performed by some tools.",
+    "conditions": [
+      "MCP tools using LLMs internally may be billed as PostHog AI spend.",
+      "AI-powered MCP tools require AI data processing enabled in organization settings.",
+      "Current pricing includes 500 monthly PostHog AI credits worth $5, usable across surfaces including MCP.",
+      "Free product usage has allowances, one project, and usage stops at free limits.",
+      "The hosted authentication service routes users to the appropriate US or EU data region."
+    ],
+    "sources": [
+      {
+        "title": "PostHog Model Context Protocol documentation",
+        "url": "https://posthog.com/docs/model-context-protocol",
+        "evidence": "The official documentation calls MCP a free hosted endpoint and explicitly says connecting and calling MCP tools is free. It warns that LLM-powered tools may count as PostHog AI spend and require AI data processing enabled. It documents region routing."
+      },
+      {
+        "title": "PostHog pricing",
+        "url": "https://posthog.com/pricing",
+        "evidence": "The pricing page lists monthly product allowances and 500 PostHog AI credits worth $5 across supported surfaces including MCP. Free includes one project and stops usage at free-tier limits."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "PostHog-hosted remote endpoint at https://mcp.posthog.com/mcp.",
+    "notice": "Free MCP calls can invoke separately metered AI processing.",
+    "noTax": true
+  },
+  {
+    "id": "salesforce",
+    "name": "Salesforce",
+    "category": "Business tools",
+    "status": "unclear",
+    "access": "Hosted access varies by product; free Developer Edition supports testing",
+    "cost": "Future HPI Flex Credit pricing announced; multiplier TBA and agentic usage currently unmetered",
+    "summary": "Salesforce has announced a new meter for registered-agent MCP and direct API calls, but official guidance says it is not active yet. Existing product usage charges can still apply.",
+    "conditions": [
+      "Salesforce promises 30 days' notice before a numerical HPI multiplier and metering begin.",
+      "Future HPI charges apply to active production orgs; sandbox, scratch and Developer Edition orgs are excluded from HPI metering.",
+      "Agent registration requirements apply under the announced model.",
+      "Data 360 Headless specifically includes MCP access with Enterprise Edition and above, with existing API limits; this is not a universal Salesforce minimum.",
+      "Agentforce actions, Data 360 queries and Prompt Builder can consume existing product Flex Credits.",
+      "Local DX MCP is an Apache-2.0 development server; its license does not establish free production data access."
+    ],
+    "sources": [
+      {
+        "title": "Understand AIforce Impact",
+        "url": "https://help.salesforce.com/s/articleView?id=005360285&language=en_US&type=1",
+        "evidence": "Registered-agent MCP and direct API calls will be counted as Headless Platform Interactions. The multiplier is unannounced, agentic usage is currently not metered, and Salesforce will provide 30 days' notice before metering starts. HPI metering excludes sandbox, scratch and Developer Edition orgs."
+      },
+      {
+        "title": "Flex Credits Rate Card, November 3, 2026",
+        "url": "https://www.salesforce.com/en-us/wp-content/uploads/sites/4/assets/pdf/agentforce/Flex-Credits-Rate-Card-11.3.2026.pdf?bc=OTH",
+        "evidence": "The Headless Platform Interaction multiplier remains TBA. The rate card says Headless 360 usage types are additional to other listed usage types."
+      },
+      {
+        "title": "Data 360 Headless",
+        "url": "https://www.salesforce.com/data/headless/?bc=OTH",
+        "evidence": "The product FAQ says MCP access is included with Enterprise Edition and above without a separate SKU. Data 360 MCP uses existing API limits; Agentforce actions, Data 360 queries and Prompt Builder use Flex Credits."
+      },
+      {
+        "title": "Salesforce Hosted MCP Servers come to Developer Edition",
+        "url": "https://developer.salesforce.com/blogs/2026/04/new-developer-edition-agentforce-vibes-claude-mcp",
+        "evidence": "Hosted MCP is included in free Developer Edition orgs. The article distinguishes Salesforce-hosted data and logic access from local DX MCP development tools."
+      },
+      {
+        "title": "Salesforce DX MCP repository",
+        "url": "https://github.com/salesforcecli/mcp",
+        "evidence": "Salesforce publishes its separate local DX MCP implementation under Apache-2.0."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted servers; separate official local Apache-2.0 DX MCP",
+    "notice": "Announced future pricing: HPI multiplier TBA; official guidance says agentic usage is currently unmetered. No active per-call surcharge or billing start date established."
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry",
+    "category": "Observability",
+    "status": "included",
+    "access": "Developer Free",
+    "cost": "MCP access included; Seer requires a separate subscription.",
+    "summary": "Sentry explicitly lists MCP access in its free Developer plan.",
+    "conditions": [
+      "The free Developer plan includes one user and product usage allowances.",
+      "The hosted server authenticates with OAuth and supports organization or project scoping.",
+      "Seer root-cause analysis and fix generation are additional-cost features.",
+      "No independent MCP call quota was found in the cited sources."
+    ],
+    "sources": [
+      {
+        "title": "Sentry pricing",
+        "url": "https://sentry.io/pricing/",
+        "evidence": "Developer is free, includes one user, and explicitly lists MCP access. Seer requires a subscription and its root-cause analysis and fix generation appear as additional-cost features. The page announces new Seer credit pricing coming December 8."
+      },
+      {
+        "title": "Sentry MCP Server",
+        "url": "https://mcp.sentry.dev/",
+        "evidence": "The official page documents the hosted endpoint https://mcp.sentry.dev/mcp, OAuth authentication, organization and project scoping, and local stdio through the Sentry CLI's sentry mcp command."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Sentry-hosted remote endpoint; local stdio through the Sentry CLI.",
+    "notice": "Seer is separately priced; do not treat its AI analysis as part of free MCP access.",
+    "noTax": true
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "category": "Productivity",
+    "status": "unclear",
+    "access": "Official server; minimum plan not established",
+    "cost": "Separate MCP pricing unconfirmed",
+    "summary": "Slack documents its official MCP server and shared Web API rate limits, but the checked sources do not establish a universal MCP price.",
+    "conditions": [
+      "A registered internal or Marketplace-published Slack app is required; unlisted apps cannot use MCP.",
+      "Workspace approval, existing permissions and method-specific rate limits apply.",
+      "Slackbot acting as an MCP client is a separate feature and is not used to infer server pricing."
+    ],
+    "sources": [
+      {
+        "title": "Slack MCP overview",
+        "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+        "evidence": "Slack documents hosted server features, app requirements and rate limits shared with direct Slack Web API methods."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted"
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "category": "Infrastructure",
+    "status": "unclear",
+    "access": "Managed server; price terms not established",
+    "cost": "MCP-specific pricing unconfirmed",
+    "summary": "Snowflake offers a managed MCP server for Cortex tools and SQL. The checked server guide does not establish an MCP-specific price.",
+    "conditions": [
+      "Creating and using the server requires Snowflake account privileges and per-tool grants.",
+      "Cortex and warehouse usage remain separate cost considerations.",
+      "No inference of free access is made from managed hosting or lack of a separate price in this guide."
+    ],
+    "sources": [
+      {
+        "title": "Managed MCP server",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "evidence": "Snowflake documents managed MCP servers, Cortex/SQL tools, authentication and per-tool permissions."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "category": "Payments",
+    "status": "included",
+    "access": "Stripe account; MCP access listed as free",
+    "cost": "No MCP access fee; ordinary Stripe product and transaction fees remain",
+    "summary": "Stripe lists its hosted MCP access as free. Payment and product activity through its tools retains ordinary Stripe pricing.",
+    "conditions": [
+      "OAuth or an agent API key is required, with existing account permissions and administrator controls.",
+      "Some write actions require human approval.",
+      "Migrate non-Agent-tag secret or restricted keys by November 30, 2026; those keys stop working for MCP in December.",
+      "The legacy local MCP and agent-toolkit packages are deprecated and receive no further security fixes.",
+      "No universal MCP call quota was established in reviewed sources."
+    ],
+    "sources": [
+      {
+        "title": "Stripe MCP in Stripe Apps",
+        "url": "https://marketplace.stripe.com/apps/stripe-mcp",
+        "evidence": "Stripe's own app listing identifies Stripe as the builder and lists MCP pricing as Free."
+      },
+      {
+        "title": "Stripe MCP Server on AWS Marketplace",
+        "url": "https://aws.amazon.com/marketplace/pp/prodview-bmcz2yd35w5xk",
+        "evidence": "The listing sold by Stripe Inc. marks the MCP product free of charge and says free subscriptions have no end date."
+      },
+      {
+        "title": "Stripe MCP documentation",
+        "url": "https://docs.stripe.com/mcp",
+        "evidence": "The hosted server supports OAuth and agent API keys, account access controls, and approval requirements for certain writes. The guide specifies the November 30, 2026 migration deadline for unsupported API keys."
+      },
+      {
+        "title": "Stripe pricing",
+        "url": "https://stripe.com/pricing",
+        "evidence": "Stripe separately prices payment processing and other products. Those ordinary product charges are distinct from free MCP access."
+      },
+      {
+        "title": "Stripe AI repository",
+        "url": "https://github.com/stripe/ai",
+        "evidence": "Stripe deprecates its legacy MCP and agent-toolkit packages and directs users to its hosted server. Those packages receive no further updates, including security fixes."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted MCP; legacy official local packages deprecated",
+    "noTax": true
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "category": "Infrastructure",
+    "status": "included",
+    "access": "All Supabase plans, including Free",
+    "cost": "MCP access included; resource charges and paid feature requirements remain.",
+    "summary": "Supabase documents its MCP connector as available on every Supabase plan.",
+    "conditions": [
+      "Branching MCP tools are experimental and require a paid plan.",
+      "Creating projects or branches may incur resource charges and uses documented cost-confirmation flows.",
+      "Local and self-hosted variants expose a subset of the hosted tools.",
+      "The client subscription requirements in connector announcements describe the AI client, not a paid Supabase MCP gate.",
+      "No separately priced MCP meter was found in the cited sources."
+    ],
+    "sources": [
+      {
+        "title": "Supabase is now an official Claude connector",
+        "url": "https://supabase.com/blog/supabase-is-now-an-official-claude-connector",
+        "evidence": "The official announcement says the MCP connector works on all Supabase plans and invites new users to start a free Supabase project. It separately identifies supported paid Claude plans."
+      },
+      {
+        "title": "Supabase MCP Server documentation",
+        "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+        "evidence": "The documentation provides the hosted MCP endpoint, local CLI access, feature groups, paid-plan requirements for experimental branching, and cost confirmation for project and branch creation that incurs additional charges."
+      },
+      {
+        "title": "Supabase MCP Server feature page",
+        "url": "https://supabase.com/features/mcp-server",
+        "evidence": "The feature page marks Supabase's official MCP server as generally available and available on self-hosted deployments."
+      },
+      {
+        "title": "Supabase MCP official repository",
+        "url": "https://github.com/supabase/mcp",
+        "evidence": "The repository documents hosted access and says local CLI and self-hosted environments offer a limited subset of tools and no OAuth 2.1."
+      },
+      {
+        "title": "Supabase pricing",
+        "url": "https://supabase.com/pricing",
+        "evidence": "Supabase offers a free plan and separately prices database, compute, storage, bandwidth, and other platform usage. Free projects have product allowances and a limit of two active projects."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Supabase-hosted remote endpoint; local CLI and self-hosted variants with fewer tools.",
+    "noTax": true
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "category": "Infrastructure",
+    "status": "included",
+    "access": "All plans, including Hobby Free",
+    "cost": "MCP available on all plans; ordinary platform entitlements and usage apply.",
+    "summary": "Vercel's live documentation makes its official hosted MCP server available on every plan.",
+    "conditions": [
+      "Vercel AI Product Terms apply.",
+      "Available tools depend on server configuration, OAuth grants, and team permissions.",
+      "Clients using a Client ID Metadata Document can connect without review; other supported clients may be reviewed and approved by Vercel.",
+      "No separate MCP charge or allowance is stated on the checked MCP page."
+    ],
+    "sources": [
+      {
+        "title": "Use Vercel's MCP server",
+        "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "evidence": "The opened live page states MCP is available on all plans, documents the official remote OAuth server at https://mcp.vercel.com, explains permission-dependent tool access, and permits CIMD clients without review. It no longer labels the server Beta."
+      },
+      {
+        "title": "Account Plans on Vercel",
+        "url": "https://vercel.com/docs/plans",
+        "evidence": "Vercel's plan documentation identifies Hobby as free and distinguishes its included resources from Pro and Enterprise usage-based resources."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vercel-hosted remote OAuth MCP server.",
+    "notice": "Older search snippets still show Beta and stricter client-review wording. The opened live page documents all-plan access and CIMD; absence of a Beta label is not treated as proof of GA.",
+    "noTax": true
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "category": "Automation",
+    "status": "metered",
+    "access": "Free plan and above; sharing server access requires Team or Enterprise",
+    "cost": "2 plan tasks per successful tool call; no separate MCP subscription",
+    "summary": "MCP shares Zapier's existing task allowance. Successful external-app calls consume two tasks each, including tests; failed calls do not.",
+    "conditions": [
+      "Authentication, setup and tool discovery do not consume tasks.",
+      "Successful test calls count toward the account task allowance.",
+      "At the task limit, calls stop unless applicable pay-per-task billing permits charged overages.",
+      "Server sharing requires Team or Enterprise; tool bundles can be shared on any plan.",
+      "Starting December 1, 2026, free By Zapier app calls consume no tasks, while AI by Zapier tools use that product's own pricing. These exceptions are not yet effective on the checked date."
+    ],
+    "sources": [
+      {
+        "title": "Zapier MCP usage and billing",
+        "url": "https://docs.zapier.com/mcp/overview/usage",
+        "evidence": "There is no separate MCP billing. Each successful external-app tool call consumes two tasks from the shared account allowance. Failed calls do not count; successful tests do. At the allowance limit, overage billing or stopping follows the account's billing configuration."
+      },
+      {
+        "title": "What is Zapier MCP?",
+        "url": "https://help.zapier.com/hc/en-us/articles/48308034391821-What-is-Zapier-MCP",
+        "evidence": "Free through Enterprise plans support MCP. Shared server access requires Team or Enterprise. The article announces December 1, 2026 exceptions for free By Zapier apps and AI by Zapier pricing."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Vendor-hosted MCP",
+    "notice": "Future change on December 1, 2026: free By Zapier app calls use no tasks; AI by Zapier calls follow that product's pricing. Current general rate is two tasks per successful call."
+  },
+  {
+    "id": "zendesk",
+    "name": "Zendesk",
+    "category": "Business tools",
+    "status": "unclear",
+    "access": "General-purpose official server announced; public access requirements unconfirmed",
+    "cost": "Official general-purpose server pricing not established",
+    "summary": "Zendesk announced a server for external AI access to tickets, knowledge and data. Public setup, minimum plan, pricing and quotas were not found in reviewed official sources.",
+    "conditions": [
+      "The May 2026 announcement described general-purpose server early access as coming that summer; current availability remains unconfirmed.",
+      "The listed ChatGPT customer-support-channel EAP is narrower than a general-purpose employee or agent ticket-access server.",
+      "Zendesk's documented MCP client and action-flow credit charges do not establish MCP server pricing.",
+      "Third-party marketplace servers, including Swifteq, are excluded from this vendor-server classification."
+    ],
+    "sources": [
+      {
+        "title": "Zendesk Relate 2026 announcement",
+        "url": "https://www.zendesk.com/newsroom/press-releases/relate-2026/",
+        "evidence": "Zendesk announced an MCP server for tickets, knowledge and other data, with an availability footnote specifying early access that summer. The announcement does not establish server pricing."
+      },
+      {
+        "title": "Current and upcoming Zendesk early access programs",
+        "url": "https://support.zendesk.com/hc/en-us/articles/4408829663642-Current-and-upcoming-Zendesk-early-access-programs-EAPs",
+        "evidence": "The reviewed directory lists a ChatGPT customer-support-channel EAP using MCP. A general-purpose Zendesk data-access MCP server program was not found on this page."
+      },
+      {
+        "title": "Connecting to MCP servers and using MCP tools in action flows",
+        "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows",
+        "evidence": "This guide describes Zendesk acting as an MCP client that calls external servers. Its action-credit rules are not evidence of pricing for Zendesk's own server."
+      }
+    ],
+    "checked": "2026-11-10",
+    "delivery": "Official hosted general-purpose server announced; public connection availability unconfirmed"
+  }
+]
