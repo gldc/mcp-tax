@@ -14,6 +14,11 @@ test('build renders names, evidence and safe JSON into a standalone relative-pat
     assert.ok(html.includes('Access is included &lt;/script&gt;'));
     assert.ok(html.includes('href="#vendor-example"'));
     assert.ok(html.includes('src="./assets/site.js"'));
+    assert.ok(html.includes('aria-controls="evidence-example"'));
+    assert.ok(html.includes('id="evidence-example"'));
+    assert.match(html, /class="inspector-jump" href="#inspector-body"/);
+    assert.match(html, /id="inspector-body"[^>]*tabindex="-1"/);
+    assert.ok(html.includes('access. <br>Ordinary'));
     assert.ok(!html.includes('</script><script>alert(1)'));
     const data = JSON.parse(html.match(/<script id="vendor-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
     assert.deepEqual(data,fixture);

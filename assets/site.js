@@ -9,17 +9,44 @@ const statusButtons = [...document.querySelectorAll('[data-status]')];
 const desktop = matchMedia('(min-width: 1001px)');
 let status = 'all';
 let selected = null;
-function syncViewport() { document.documentElement.classList.toggle('js-desktop',desktop.matches); }
+function syncViewport() {
+  const active = document.activeElement;
+  const inlineFocused = [...rows.values()].some(row=>row.querySelector('.evidence-content').contains(active));
+  const inspectorFocused = document.getElementById('inspector-body').contains(active);
+  document.documentElement.classList.toggle('js-desktop',desktop.matches);
+  rows.forEach((row,id)=>{
+    const summary = row.querySelector('summary');
+    summary.setAttribute('aria-controls',desktop.matches ? 'inspector-body' : `evidence-${id}`);
+    if (desktop.matches) {
+      row.open = id === selected;
+      summary.setAttribute('aria-expanded',String(row.open));
+    } else {
+      summary.removeAttribute('aria-expanded');
+      if (id === selected) row.open = true;
+    }
+  });
+  if (desktop.matches && inlineFocused) document.getElementById('inspector-body').focus();
+  if (!desktop.matches && inspectorFocused && selected) rows.get(selected).querySelector('summary').focus();
+}
 syncViewport();
 desktop.addEventListener('change',syncViewport);
-function selectVendor(id, { navigate = false, scroll = false } = {}) {
+function selectVendor(id, { navigate = false, scroll = false, expand = true } = {}) {
   const row = rows.get(id);
   if (!row) return;
-  rows.forEach(other=>other.classList.toggle('selected',other === row));
+  rows.forEach(other=>{
+    other.classList.toggle('selected',other === row);
+    if (desktop.matches) {
+      other.open = other === row;
+      other.querySelector('summary').setAttribute('aria-expanded',String(other.open));
+    }
+  });
   selected = id;
   const clone = row.querySelector('.evidence-content').cloneNode(true);
+  clone.removeAttribute('id');
   document.getElementById('inspector-body').replaceChildren(clone);
-  if (!desktop.matches && (navigate || scroll)) row.open = true;
+  document.getElementById('inspector-body').setAttribute('aria-label',`${vendors.find(v=>v.id===id).name} evidence`);
+  if (navigate) document.getElementById('selection-announcement').textContent = `${vendors.find(v=>v.id===id).name} evidence selected.`;
+  if (!desktop.matches && expand && (navigate || scroll)) row.open = true;
   if (navigate) history.replaceState(null,'',`#vendor-${id}`);
   if (scroll) row.scrollIntoView({block:'nearest'});
 }
@@ -34,7 +61,7 @@ function render() {
   // Keep the inspector consistent with the visible result set.
   if (!ids.has(selected)) {
     if (found.length) selectVendor(found[0].id);
-    else { selected = null; document.getElementById('inspector-body').replaceChildren(); rows.forEach(row=>row.classList.remove('selected')); }
+    else { selected = null; document.getElementById('inspector-body').replaceChildren(); rows.forEach(row=>row.classList.remove('selected')); syncViewport(); }
   }
 }
 function reset() { search.value=''; category.value='all'; status='all'; sort.value='name'; render(); }
@@ -45,10 +72,8 @@ sort.addEventListener('change',render);
 document.getElementById('clear').addEventListener('click',reset);
 document.getElementById('empty-reset').addEventListener('click',reset);
 rows.forEach((row,id)=>row.querySelector('summary').addEventListener('click',event=>{
-  event.preventDefault();
-  const nextOpen = !row.open;
-  selectVendor(id,{navigate:true});
-  if (!desktop.matches) row.open = nextOpen;
+  if (desktop.matches) event.preventDefault();
+  selectVendor(id,{navigate:true,expand:false});
 }));
 function fromHash({ scroll = false } = {}) {
   const id = location.hash.slice(1).replace(/^vendor-/,'');
@@ -58,6 +83,11 @@ function fromHash({ scroll = false } = {}) {
 }
 window.addEventListener('hashchange',()=>fromHash({scroll:true}));
 document.addEventListener('click',event=>{
+  if (event.target.closest('.inspector-jump')) {
+    event.preventDefault();
+    document.getElementById('inspector-body').focus();
+    return;
+  }
   const link=event.target.closest('a[href^="#vendor-"]');
   if (!link) return;
   const id=link.getAttribute('href').slice(8);
