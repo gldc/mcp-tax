@@ -1,0 +1,79 @@
+name: Vendor addition or correction
+description: Suggest a vendor or help update an evidence-backed entry.
+title: "[Vendor] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep MCP Tax accurate. Please link official vendor documentation or terms and explain the specific claim they support. Partial evidence is welcome; say what remains unclear. You do not need to test a paid account. Do not include credentials, private account details, or personal information.
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor and MCP server
+      description: Name the vendor and the specific official MCP server or implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Requested addition or correction
+      description: What should the entry say? For a correction, quote or describe the current claim and the exact change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Official evidence
+      description: Link primary vendor documentation, pricing pages, terms, or an official announcement. Explain which claim each URL supports.
+      placeholder: "https://vendor.example/docs/mcp — states which plans include access"
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Access tier and availability
+      description: Which plans, seats, accounts, or regions can use this server? Note preview status, tool restrictions, and anything unknown.
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: Cost, billing, and quotas
+      description: Describe any MCP-specific fee, usage billing, quota, or paid expansion. Distinguish ordinary product subscription and API costs. Unknown is a useful answer; missing published fees alone do not establish free access.
+    validations:
+      required: true
+  - type: dropdown
+    id: timing
+    attributes:
+      label: When does this apply?
+      options:
+        - Currently available or effective
+        - Announced future change
+        - Both current and future terms (explain below)
+        - Unclear
+    validations:
+      required: true
+  - type: input
+    id: effective-date
+    attributes:
+      label: Effective date or timing details
+      description: For future or mixed terms, give the announced date and explain which terms apply now.
+  - type: dropdown
+    id: hosting
+    attributes:
+      label: Server hosting
+      options:
+        - Vendor-hosted
+        - Self-hosted official implementation
+        - Both (explain differences in the request)
+        - Unclear
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Last checked date
+      description: When did you review the linked evidence? Use YYYY-MM-DD.
+      placeholder: "2026-11-10"
+    validations:
+      required: true
