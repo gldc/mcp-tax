@@ -340,21 +340,21 @@
     "id": "datadog",
     "name": "Datadog",
     "category": "Observability",
-    "status": "unclear",
-    "access": "Existing customers and 14-day trial invited; billing terms unresolved",
-    "cost": "100,000 monthly tool calls under fair-use limits; separate fees and above-limit terms unconfirmed.",
-    "summary": "Datadog invites existing customers and trial users to its hosted MCP server. It publishes fair-use limits, but the checked sources do not say whether calls incur a separate charge or what commercial terms apply above those limits.",
+    "status": "included",
+    "access": "Existing Datadog customer account; no separate MCP upgrade required",
+    "cost": "Included customer access; ordinary Datadog product charges remain separate from MCP access.",
+    "summary": "Datadog MCP is available to existing Datadog customers without a separate MCP upsell. Normal account permissions and product entitlements apply; the current server guide lists no monthly tool-call limit.",
     "conditions": [
-      "Current fair-use limits are 100,000 monthly tool calls and 50 requests per 10 seconds; Datadog says limits may change and support can adjust them.",
-      "Organization-wide MCP access and user MCP read/write permissions are required alongside underlying resource permissions.",
-      "The GA announcement invites existing customers to connect and new customers to a 14-day trial; it does not publish a minimum permanent plan.",
-      "Are the fair-use calls included without a separate MCP fee, and above the limit are calls blocked, charged or subject to a paid agreement?"
+      "Organization-wide MCP access and MCP read/write permissions are required alongside permissions for the underlying resources.",
+      "The current guide lists a fair-use burst limit of 50 tool calls per 10 seconds and no monthly tool-call cap. Datadog can adjust the burst limit through support and says it may change.",
+      "The GA announcement directs existing customers to connect immediately and offers a separate 14-day trial for new users; this is not a permanently free Datadog account.",
+      "Underlying Datadog products and optional tools retain their normal entitlements and charges; a customer subscription alone is not an MCP-specific upsell."
     ],
     "sources": [
       {
         "title": "Datadog MCP Server",
         "url": "https://docs.datadoghq.com/mcp_server/",
-        "evidence": "Current documentation publishes adjustable fair-use limits of 100,000 monthly calls and 50 requests per 10 seconds."
+        "evidence": "On November 11, 2026 the current guide lists 50 tool calls per 10 seconds as adjustable burst protection and explicitly states there is no monthly tool-call limit."
       },
       {
         "title": "Datadog MCP setup",
@@ -367,8 +367,10 @@
         "evidence": "March 9, 2026 launch invites existing Datadog customers to connect and new users to a 14-day trial."
       }
     ],
-    "checked": "2026-11-10",
-    "delivery": "Vendor-hosted"
+    "checked": "2026-11-11",
+    "delivery": "Vendor-hosted",
+    "notice": "Included access reflects the maintainer’s assessment and Datadog’s existing-customer setup guidance; no universal vendor fee-waiver statement or account billing test is claimed.",
+    "noTax": true
   },
   {
     "id": "dbt",
