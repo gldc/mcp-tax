@@ -989,16 +989,16 @@
     "id": "salesforce",
     "name": "Salesforce",
     "category": "Business tools",
-    "status": "unclear",
-    "access": "Free Developer Edition includes hosted MCP; production entitlements vary by product",
-    "cost": "HPI multiplier still TBA and agentic usage unmetered; existing product usage charges apply",
-    "summary": "Free Developer Edition explicitly includes hosted MCP, and Data 360 says MCP is included with Enterprise Edition+. Salesforce still announces future HPI billing without an active numerical rate.",
+    "status": "metered",
+    "access": "Paid hosted MCP access; product and account entitlements apply",
+    "cost": "Salesforce charges for hosted MCP access; public price and billing basis not confirmed. Underlying product usage can also incur charges.",
+    "summary": "Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions.",
     "conditions": [
-      "Generic hosted-server guidance requires Flex Credits eligibility and warns server usage may be billed.",
-      "Data 360 Headless includes MCP with Enterprise Edition+ without a separate SKU and uses existing API limits; underlying actions, queries and prompts can consume Flex Credits.",
-      "The announced HPI model covers registered-agent MCP and direct API calls; current official guidance says metering has not begun and promises 30 days’ notice.",
-      "HPI metering excludes Developer Edition, sandbox and scratch orgs; this does not waive underlying product usage charges.",
-      "When will HPI metering start, at what numerical multiplier, and how will it interact with Data 360 included MCP access?"
+      "The project maintainer confirms charged MCP access; no amount, per-call rate, billing unit or minimum commitment is asserted.",
+      "The official hosted-server guide requires Flex Credits eligibility and warns that server usage may be billed.",
+      "Free Developer Edition includes hosted MCP. Data 360 Headless describes MCP as included with Enterprise Edition+ without a separate SKU, within existing API limits; underlying actions, queries and prompts can consume credits.",
+      "Published HPI guidance describes an undisclosed multiplier and notice before metering. It does not provide a verified public tariff for the charged offering recorded here.",
+      "The commercial relationship between charged hosted MCP, the HPI model and the documented included routes remains unconfirmed."
     ],
     "sources": [
       {
@@ -1009,7 +1009,7 @@
       {
         "title": "Understand AIforce Impact (September 17, 2026)",
         "url": "https://help.salesforce.com/s/articleView?id=005360285&language=en_US&type=1",
-        "evidence": "HPI multiplier is TBA and agentic usage is not metered; 30 days’ notice precedes metering. Non-production HPI exclusions apply."
+        "evidence": "September 17 guidance leaves the HPI multiplier TBA, describes agentic usage as unmetered in that context and promises notice before metering; it is not a disclosed tariff for all hosted MCP offerings."
       },
       {
         "title": "Flex Credits Rate Card (November 3, 2026)",
@@ -1029,7 +1029,8 @@
     ],
     "checked": "2026-11-10",
     "delivery": "Vendor-hosted MCP servers",
-    "notice": "Future pricing announcement: HPI is TBA, with 30 days’ notice promised before metering. Do not treat it as a current surcharge."
+    "notice": "Charged MCP access is confirmed by the project maintainer. Public price and billing basis remain unverified; the relationship to published HPI guidance and included-product exceptions is unconfirmed.",
+    "noTax": false
   },
   {
     "id": "sentry",
@@ -1066,16 +1067,16 @@
     "id": "slack",
     "name": "Slack",
     "category": "Productivity",
-    "status": "unclear",
-    "access": "Free Developer Program sandbox supported; production minimum plan unconfirmed",
-    "cost": "Free sandbox route documented; separate production MCP fee or waiver unconfirmed",
-    "summary": "Slack explicitly supports trying its hosted MCP in a free developer sandbox. Production plan eligibility and a universal MCP fee waiver remain unresolved; shared Web API limits are ordinary quotas.",
+    "status": "included",
+    "access": "Existing Slack workspace and approved internal or Marketplace app; ordinary product entitlements apply",
+    "cost": "No additional MCP charge; ordinary Slack subscriptions and AI-client costs remain separate.",
+    "summary": "Slack’s hosted MCP server is free to use, as confirmed by the project maintainer. Existing workspace permissions, app eligibility and ordinary Web API limits still apply.",
     "conditions": [
       "Registered internal or Marketplace-published Slack apps can use MCP; unlisted apps cannot.",
       "Workspace approval, OAuth permissions and the same method limits as direct Web API access apply.",
-      "Marketplace paid-plan rules for automation-platform apps do not establish a universal MCP-server plan minimum.",
-      "Slackbot as an MCP client and paid AI-client subscriptions are separate offerings.",
-      "Can normal Free production workspaces use the hosted server, and is any MCP-specific fee or paid entitlement required?"
+      "No MCP surcharge does not waive ordinary Slack product entitlements or establish unlimited calls.",
+      "A free Developer Program sandbox is documented separately; this entry does not assert that every tool is available in every Free production workspace.",
+      "Slackbot as an MCP client and paid AI-client subscriptions are separate offerings."
     ],
     "sources": [
       {
@@ -1095,7 +1096,9 @@
       }
     ],
     "checked": "2026-11-10",
-    "delivery": "Vendor-hosted"
+    "delivery": "Vendor-hosted",
+    "notice": "Free MCP access is confirmed by the project maintainer; official links document setup, app eligibility and API limits.",
+    "noTax": true
   },
   {
     "id": "snowflake",
