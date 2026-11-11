@@ -271,36 +271,32 @@
     "id": "cloudflare",
     "name": "Cloudflare",
     "category": "Infrastructure",
-    "status": "unclear",
-    "access": "General API: Cloudflare account documented; minimum plan unconfirmed",
-    "cost": "General API MCP fee policy unresolved; DEX explicitly permits Free accounts.",
-    "summary": "Cloudflare documents account-based access to its general API MCP server without naming a minimum plan or server charge. Its separate DEX MCP server explicitly supports Free, Pay-as-you-go and Enterprise accounts.",
+    "status": "included",
+    "access": "Cloudflare account, including Free; no paid plan required for MCP access",
+    "cost": "No additional MCP charge; underlying Cloudflare product usage follows normal plans and limits.",
+    "summary": "Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply.",
     "conditions": [
       "The general API MCP server accepts OAuth or API tokens; normal permissions determine available API operations.",
-      "Current DEX documentation explicitly allows Cloudflare One Free, Pay-as-you-go and Enterprise customers.",
-      "Custom MCP hosting, Dynamic Worker usage and MCP Server Portals are separate offerings; their pricing does not establish the general API server fee.",
-      "Can a Free account use the general API server without a separate subscription or call charge, and does execution consume billable Workers resources?"
+      "MCP access does not upgrade the connected account’s underlying product entitlements or remove normal API and resource limits.",
+      "Resources created or services used through MCP follow their ordinary Cloudflare billing; that is separate from MCP access.",
+      "This entry covers Cloudflare’s hosted API MCP. Hosting a custom server and MCP Server Portals are separate offerings."
     ],
     "sources": [
       {
-        "title": "Cloudflare own MCP servers",
+        "title": "Cloudflare API MCP setup",
         "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
-        "evidence": "Current catalog documents the managed general API server and authentication but does not state a minimum plan or price."
+        "evidence": "Official catalog documents the hosted API MCP server and account authentication. Pricing and Free-tier eligibility are confirmed separately by the project maintainer."
       },
       {
         "title": "General API MCP walkthrough",
         "url": "https://developers.cloudflare.com/agent-setup/visual-studio-code/detailed-walkthrough/",
-        "evidence": "Prerequisites include a Cloudflare account; the explicit free tier mention concerns GitHub Copilot, not Cloudflare."
-      },
-      {
-        "title": "DEX MCP server",
-        "url": "https://developers.cloudflare.com/cloudflare-one/insights/dex/dex-mcp-server/",
-        "evidence": "Current DEX guide explicitly allows Cloudflare One Free, Pay-as-you-go and Enterprise accounts."
+        "evidence": "Documents connecting to the hosted API MCP with a Cloudflare account and the account’s existing permissions."
       }
     ],
     "checked": "2026-11-10",
-    "delivery": "Cloudflare-managed remote general API server and additional product-specific MCP servers.",
-    "notice": "DEX Free-plan evidence does not establish general API MCP pricing or all product-specific server terms."
+    "delivery": "Cloudflare-managed remote API MCP server",
+    "notice": "Free-tier eligibility and no MCP charge were confirmed by the project maintainer; the official links document setup and permissions.",
+    "noTax": true
   },
   {
     "id": "coda",
