@@ -566,6 +566,40 @@
     "noTax": true
   },
   {
+    "id": "google-workspace",
+    "name": "Google Workspace",
+    "category": "Productivity",
+    "status": "included",
+    "access": "Included MCP access; Developer Preview enrollment and GCP/OAuth setup required.",
+    "cost": "No separate MCP add-on, confirmed by the maintainer. Ordinary Workspace entitlements, API usage and client costs remain separate.",
+    "summary": "Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes.",
+    "conditions": [
+      "The official remote servers are in Developer Preview and require Developer Preview Program membership.",
+      "Create a Google Cloud project and enable the underlying Workspace APIs and their dedicated MCP services.",
+      "Configure OAuth consent, product-specific scopes and client-specific redirect URIs. User-delegated OAuth clients must be designated for an AI-powered agent.",
+      "Existing user permissions and data governance apply. Google Chat additionally requires Chat app configuration.",
+      "Ordinary API quotas apply. Google announces future paid scaling above standard daily thresholds under a shared API/MCP model; no activation date or rate is asserted here.",
+      "Client subscriptions and optional agent-hosting charges are separate from Google MCP access."
+    ],
+    "sources": [
+      {
+        "title": "Configure the Google Workspace MCP servers",
+        "url": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "evidence": "Documents Google-hosted remote servers in Developer Preview, program membership, a Cloud project, API/MCP service enablement, OAuth consent and scopes, client configuration, and inherited permissions."
+      },
+      {
+        "title": "Google Workspace standardized model for agent tools and APIs",
+        "url": "https://developers.google.com/workspace/tools-safety",
+        "evidence": "Applies a common usage model to Workspace APIs including MCP. Describes ordinary quotas and planned paid scaling with advance notice; it does not establish a separate MCP access fee."
+      }
+    ],
+    "checked": "2026-11-11",
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "preview": true,
+    "notice": "Included-access classification is based on maintainer confirmation. Official documentation establishes the setup requirements and preview scope; setup friction is not a paid MCP gate."
+  },
+  {
     "id": "grafana",
     "name": "Grafana",
     "category": "Observability",
@@ -1259,6 +1293,37 @@
     "delivery": "Vercel-hosted remote OAuth MCP server.",
     "notice": "Older search snippets still show Beta and stricter client-review wording. The opened live page documents all-plan access and CIMD; absence of a Beta label is not treated as proof of GA.",
     "noTax": true
+  },
+  {
+    "id": "workday",
+    "name": "Workday",
+    "category": "Business tools",
+    "status": "gated",
+    "access": "Paid add-on for Workday MCP access, confirmed by the maintainer.",
+    "cost": "Paid add-on; exact price, package and billing unit remain unverified.",
+    "summary": "Workday Agent-Ready Tools provides official MCP access to Workday actions. The maintainer confirms this is a paid add-on beyond the underlying Workday subscription.",
+    "conditions": [
+      "This entry covers Workday Agent-Ready Tools & MCP, not third-party wrappers or ordinary REST/SOAP integrations.",
+      "Workday documents built-in security and governance for agent access to business actions.",
+      "The public Flex Credits page lists Agent-Ready Tools among eligible capabilities; this does not establish a per-call rate or the exact add-on terms.",
+      "No minimum commitment, compulsory package, included allowance or billing unit was established from the public sources reviewed."
+    ],
+    "sources": [
+      {
+        "title": "Workday Agent-Ready Tools & MCP",
+        "url": "https://www.workday.com/en-us/ai-platform/agent-tools-mcp.html",
+        "evidence": "Identifies Agent-Ready Tools as Workday connectors built on MCP, distinguishes them from existing integration APIs and describes available business actions and built-in security."
+      },
+      {
+        "title": "Workday AI Flex Credits",
+        "url": "https://www.workday.com/en-us/ai-agents/ai-flex-credits.html",
+        "evidence": "Describes purchased Flex Credits for eligible AI/platform capabilities and lists Agent-Ready Tools. Does not establish the precise MCP add-on price, package or billing unit."
+      }
+    ],
+    "checked": "2026-11-11",
+    "delivery": "Vendor-hosted",
+    "noTax": false,
+    "notice": "Paid-add-on classification is attributed to maintainer confirmation. The linked public pages establish the offering and broader commercial model, not the exact MCP tariff."
   },
   {
     "id": "zapier",

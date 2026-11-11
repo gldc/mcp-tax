@@ -61,3 +61,13 @@ The maintainer assessed Datadog MCP as included for existing customers, without 
 A November 11 recheck also found that the current server guide explicitly states there is no monthly tool-call limit. This supersedes the 100,000-call figure in our November 10 record; the exact timing of the documentation change was not established. The 50-calls-per-10-seconds burst protection remains adjustable and subject to change. No unlimited throughput or free underlying product usage is implied.
 
 The no-upsell assessment is attributed to the maintainer and the documented customer-access path, not presented as a universal vendor-published fee waiver. No authenticated account, invoice or private contract was tested.
+
+## Workday and Google Workspace additions — November 11, 2026
+
+Coverage is now 39 vendors, with 22 on the honor roll and three still unclear. Existing records are unchanged.
+
+The maintainer confirms Workday MCP is a paid add-on. [Agent-Ready Tools & MCP](https://www.workday.com/en-us/ai-platform/agent-tools-mcp.html) establishes the official offering; the [Flex Credits page](https://www.workday.com/en-us/ai-agents/ai-flex-credits.html) lists Agent-Ready Tools among eligible capabilities. Exact price, packaging and billing unit remain unverified; no per-call charge or current Extend Professional requirement is inferred.
+
+The maintainer confirms Google Workspace MCP access is included. It joins the honor roll with setup friction visible: [official setup](https://developers.google.com/workspace/guides/configure-mcp-servers) requires Developer Preview enrollment, a GCP project, API/MCP service enablement, OAuth consent, scopes and client configuration. Google's [shared API/MCP usage model](https://developers.google.com/workspace/tools-safety) describes ordinary quotas and planned paid scaling with advance notice; it does not establish a protocol-specific surcharge. Included does not mean unlimited, all-edition eligibility or free client/agent hosting.
+
+Fee classifications are attributed to the maintainer. Public documentation was reviewed for offering scope and conditions; no authenticated account, invoice or private contract was tested.
