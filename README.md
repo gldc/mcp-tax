@@ -2,6 +2,8 @@
 
 An independent, evidence-backed index of access to official Model Context Protocol servers. Public site: [mcp-tax.com](https://mcp-tax.com). No backend, dependencies, analytics or runtime CDN.
 
+Built and maintained by [Runlayer](https://runlayer.com/?utm_source=github&utm_medium=referral&utm_campaign=mcp-tax), the AI control plane for MCP.
+
 ## Local development
 
 Node.js 24 or newer:
