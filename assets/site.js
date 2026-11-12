@@ -6,8 +6,10 @@ const search = document.getElementById('search');
 const category = document.getElementById('category');
 const sort = document.getElementById('sort');
 const statusButtons = [...document.querySelectorAll('[data-status]')];
+const viewButtons = [...document.querySelectorAll('[data-view]')];
 const desktop = matchMedia('(min-width: 1001px)');
 let status = 'all';
+let view = 'all';
 let selected = null;
 function syncViewport() {
   const active = document.activeElement;
@@ -51,26 +53,39 @@ function selectVendor(id, { navigate = false, scroll = false, expand = true } = 
   if (scroll) row.scrollIntoView({block:'nearest'});
 }
 function render() {
-  const found = filterVendors(vendors,{query:search.value,status,category:category.value,sort:sort.value});
+  const found = filterVendors(vendors,{honorOnly:view==='honor',query:search.value,status,category:category.value,sort:sort.value});
   const ids = new Set(found.map(v=>v.id));
   rows.forEach((row,id)=> { row.hidden = !ids.has(id); });
   found.forEach(v=>list.append(rows.get(v.id)));
-  document.getElementById('result-count').textContent = `${found.length} of ${vendors.length} vendors`;
+  const total = view === 'honor' ? vendors.filter(v=>v.noTax===true).length : vendors.length;
+  document.getElementById('result-count').textContent = `${found.length} of ${total} ${view==='honor'?'honor-roll ':''}vendors`;
   document.getElementById('empty').hidden = found.length !== 0;
   statusButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.status===status)));
+  viewButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===view)));
   // Keep the inspector consistent with the visible result set.
   if (!ids.has(selected)) {
     if (found.length) selectVendor(found[0].id);
     else { selected = null; document.getElementById('inspector-body').replaceChildren(); rows.forEach(row=>row.classList.remove('selected')); syncViewport(); }
   }
 }
-function reset() { search.value=''; category.value='all'; status='all'; sort.value='name'; render(); }
-statusButtons.forEach(button=>button.addEventListener('click',()=>{ status=button.dataset.status; render(); }));
+function reset(nextView = 'all') { search.value=''; category.value='all'; status='all'; sort.value='name'; view=nextView; render(); }
+viewButtons.forEach(button=>button.addEventListener('click',()=>{ view=button.dataset.view; status='all'; render(); }));
+statusButtons.forEach(button=>button.addEventListener('click',()=>{
+  status=button.dataset.status;
+  if (!['all','included'].includes(status)) view='all';
+  render();
+}));
+document.getElementById('honor-explore').addEventListener('click',event=>{
+  event.preventDefault();
+  reset('honor');
+  viewButtons.find(button=>button.dataset.view==='honor').focus({preventScroll:true});
+  document.getElementById('directory').scrollIntoView({block:'start'});
+});
 search.addEventListener('input',render);
 category.addEventListener('change',render);
 sort.addEventListener('change',render);
-document.getElementById('clear').addEventListener('click',reset);
-document.getElementById('empty-reset').addEventListener('click',reset);
+document.getElementById('clear').addEventListener('click',()=>reset());
+document.getElementById('empty-reset').addEventListener('click',()=>reset());
 rows.forEach((row,id)=>row.querySelector('summary').addEventListener('click',event=>{
   if (desktop.matches) event.preventDefault();
   selectVendor(id,{navigate:true,expand:false});

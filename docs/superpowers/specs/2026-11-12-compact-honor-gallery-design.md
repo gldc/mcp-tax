@@ -1,0 +1,13 @@
+# Compact honor roll gallery
+
+Approved in conversation: the user selected the recommended logo gallery with “that sounds great.” This is the written form of that approved design.
+
+Replace the full honor-roll name wall with a compact celebration: a large dynamic count, “Open access deserves recognition,” a short included-access/ordinary-cost caveat, twelve monochrome brand marks with names on desktop, six on mobile, and “Explore all 125” (count generated from current data). Preserve the cream/charcoal palette, olive hover/focus accents, existing typography and thin rules. Desktop logos occupy two rows of six; narrower tablets can reflow. Mobile uses two rows of three. No automatic rotation or animation.
+
+The twelve representative brands are GitHub, Cloudflare, Datadog, Stripe, Linear, Supabase, GitLab, Vercel, Sentry, Neon, Hugging Face and ClickHouse, in that order. This is a labeled selection, not a ranking. Render a selected brand only if its current record has `noTax: true`. Source actual marks from pinned Simple Icons 16.37.0 and retain provenance in the local SVG sprite; use readable text names alongside the marks, never invented logos. Do not load third-party assets at runtime.
+
+Add a prominent directory view switch: All vendors and Honor roll, both with dynamic counts. Honor roll includes only `noTax === true`, independently of the status filter. Search, category, sorting, evidence panels and existing vendor permalinks continue to work. Switching views clears the status filter; choosing a conflicting status returns to All vendors. Reset filters returns to the complete directory. Explore all resets other filters, selects Honor roll, and scrolls to the directory; keyboard focus lands on the selected view control. Direct logo links open the vendor's evidence through the existing selection behavior.
+
+Use native buttons with pressed states for the view switch, accessible names for links, visible focus, existing reduced-motion behavior and dark/light themes. With JavaScript disabled, the gallery links and full directory remain readable; Explore all falls back to the directory. No pricing data, classifications, domain, favicon, hosting or external integrations change.
+
+Verify real browser behavior at 1440px and 390px, both themes, six/twelve visible logos, no horizontal overflow, CTA/view/filter interactions, zero results/reset, evidence selection and permalink navigation. Capture screenshots and console output. Existing tests plus focused honor-roll membership and gallery eligibility tests, validator and production build must pass before publication through the existing feature-branch/PR/Pages workflow.
