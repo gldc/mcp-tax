@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>MCP Tax — The price of connecting</title>
+<desc>MCP is a protocol. Access shouldn’t be an upsell.</desc>
+<!-- Raster companion: share-card-v1.png, rendered with @resvg/resvg-js 2.6.2 and Helvetica Neue system fonts. MCP mark paths are copied unchanged from favicon.svg. -->
+<rect width="1200" height="630" fill="#f5f3ef"/>
+<g transform="translate(64 50) scale(.095)" fill="#191615"><path d="M392.2 58.6a64.7 64.7 0 0 0-90.2 0l-240.7 236a21.6 21.6 0 0 1-30 0 20.6 20.6 0 0 1 0-29.5L271.8 29a108 108 0 0 1 150.4 0 103 103 0 0 1 30 88.5 108 108 0 0 1 90.3 29.5l1.3 1.2a103 103 0 0 1 0 147.5L326.2 509.3a7 7 0 0 0 0 9.8l44.7 43.8a20.6 20.6 0 0 1 0 29.5 21.6 21.6 0 0 1-30 0L296 548.6a48 48 0 0 1 0-68.8l217.7-213.5a62 62 0 0 0 0-88.5l-1.3-1.2a64.7 64.7 0 0 0-90.1-.1L243 352.3l-.1.1-2.4 2.4a21.6 21.6 0 0 1-30.1 0 20.6 20.6 0 0 1 0-29.5L392.3 147a62 62 0 0 0-.1-88.4"/><path d="M362.1 117.6a20.6 20.6 0 0 0 0-29.5 21.6 21.6 0 0 0-30 0L154 262.6a103 103 0 0 0 0 147.5 108 108 0 0 0 150.4 0l178-174.5a20.6 20.6 0 0 0 0-29.5 21.6 21.6 0 0 0-30.2 0l-178 174.5a64.7 64.7 0 0 1-90.2 0 62 62 0 0 1 0-88.5z"/></g>
+<g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" fill="#191615">
+<text x="148" y="96" font-size="44" font-weight="600" letter-spacing="-2">MCP<tspan fill="#71695f" font-weight="400">Tax</tspan></text>
+<path d="M64 138H1136" stroke="#d1cbc1"/>
+<text x="64" y="200" font-family="Menlo, monospace" font-size="16" letter-spacing="3" fill="#71695f">THE MCP ACCESS INDEX</text>
+<g font-size="80" font-weight="500" letter-spacing="-3.5">
+<text x="64" y="297">MCP is a protocol.</text>
+<text x="64" y="386">Access shouldn’t be</text>
+<text x="64" y="475">an <tspan fill="#476335" text-decoration="underline">upsell.</tspan></text>
+</g>
+<path d="M64 526H1136" stroke="#d1cbc1"/>
+<text x="64" y="577" font-size="23" fill="#71695f">Compare MCP access, pricing and the fine print.</text>
+<text x="1136" y="577" text-anchor="end" font-size="23" fill="#476335">mcp-tax.com</text>
+</g>
+</svg>
