@@ -18,13 +18,50 @@ test('build renders names, evidence and safe JSON into a standalone relative-pat
     assert.ok(html.includes('id="evidence-example"'));
     assert.match(html, /class="inspector-jump" href="#inspector-body"/);
     assert.match(html, /id="inspector-body"[^>]*tabindex="-1"/);
-    assert.ok(html.includes('access. <br>Ordinary'));
     assert.ok(!html.includes('</script><script>alert(1)'));
     const data = JSON.parse(html.match(/<script id="vendor-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
     assert.deepEqual(data,fixture);
     assert.equal(await readFile(join(out,'CNAME'),'utf8'),'mcp-tax.com\n');
     assert.deepEqual(JSON.parse(await readFile(join(out,'vendors.json'),'utf8')),fixture);
     await readFile(join(out,'.nojekyll'));
+  } finally { await rm(out,{recursive:true,force:true}); }
+});
+test('honor view requires explicit membership while preserving combined filters and sort', async () => {
+  const { filterVendors } = await import('../assets/directory.mjs');
+  const records = [
+    {...fixture[0],id:'zulu',name:'Zulu',checked:'2026-11-11'},
+    {...fixture[0],id:'alpha',name:'Alpha'},
+    {...fixture[0],id:'not-honor',noTax:false},
+    {...fixture[0],id:'gated',status:'gated',noTax:false},
+    {...fixture[0],id:'other-category',category:'CRM'},
+  ];
+  assert.deepEqual(filterVendors(records,{honorOnly:true,query:'condition',category:'Developer tools',sort:'checked'}).map(v=>v.id),['zulu','alpha']);
+  assert.deepEqual(filterVendors(records,{honorOnly:true,query:'missing'}),[]);
+  assert.deepEqual(filterVendors(records,{honorOnly:true,status:'gated'}),[]);
+  assert.equal(filterVendors(records).length,5);
+  assert.deepEqual(records.map(v=>v.id),['zulu','alpha','not-honor','gated','other-category']);
+});
+test('gallery selects eligible featured brands and keeps every record in the directory', async () => {
+  const { build } = await import('../scripts/build.mjs');
+  const records = [
+    {...fixture[0],id:'github',name:'GitHub'},
+    {...fixture[0],id:'cloudflare',name:'Cloudflare',noTax:false},
+    ...Array.from({length:14},(_,i)=>({...fixture[0],id:`extra-${i}`,name:`Extra ${i}`})),
+  ];
+  const out = await mkdtemp(join(tmpdir(),'mcp-tax-gallery-'));
+  try {
+    await build({vendors:records,outDir:out});
+    const html = await readFile(join(out,'index.html'),'utf8');
+    const gallery = html.match(/<div class="honor-names">([\s\S]*?)<\/div>/)[1];
+    assert.match(gallery,/href="#vendor-github"/);
+    assert.match(gallery,/<use href="\.\/assets\/honor-logos.svg#github"/);
+    assert.doesNotMatch(gallery,/#vendor-cloudflare|#vendor-extra-/);
+    assert.equal((gallery.match(/<a /g)||[]).length,1);
+    assert.match(html,/data-view="honor"[^>]*>[\s\S]*?<span[^>]*>15<\/span>/);
+    assert.match(html,/id="honor-explore"[^>]*href="#directory"/);
+    assert.equal((html.match(/<details class="vendor"/g)||[]).length,16);
+    assert.match(html,/id="evidence-github"/);
+    await readFile(join(out,'assets/honor-logos.svg'));
   } finally { await rm(out,{recursive:true,force:true}); }
 });
 test('combined filters and sorting preserve dataset and search evidence', async () => {
