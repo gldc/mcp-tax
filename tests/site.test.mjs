@@ -104,3 +104,14 @@ test('combined filters and sorting preserve dataset and search evidence', async 
   assert.deepEqual(filterVendors(records,{sort:'name'}).map(v=>v.id),['another','example']);
   assert.equal(records[0].id,'example');
 });
+test('built HTML credits Runlayer in the header, hero, CTA, footer and publisher metadata', async () => {
+  const { build } = await import('../scripts/build.mjs');
+  const out = await mkdtemp(join(tmpdir(),'mcp-tax-runlayer-'));
+  try {
+    await build({vendors:fixture,outDir:out});
+    const html = await readFile(join(out,'index.html'),'utf8');
+    for (const spot of ['header','hero','cta','footer']) assert.match(html,new RegExp(`href="https://runlayer\\.com/\\?utm_source=mcp-tax[^"]*utm_content=${spot}"`));
+    const ld = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+    assert.equal(ld.publisher.name,'Runlayer');
+  } finally { await rm(out,{recursive:true,force:true}); }
+});
