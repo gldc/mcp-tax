@@ -26,6 +26,37 @@ test('build renders names, evidence and safe JSON into a standalone relative-pat
     await readFile(join(out,'.nojekyll'));
   } finally { await rm(out,{recursive:true,force:true}); }
 });
+test('built HTML gives crawlers a canonical share card and a deployable raster image', async () => {
+  const { build } = await import('../scripts/build.mjs');
+  const out = await mkdtemp(join(tmpdir(),'mcp-tax-share-'));
+  try {
+    await build({vendors:fixture,outDir:out});
+    const head = (await readFile(join(out,'index.html'),'utf8')).split('</head>')[0];
+    const tags = [...head.matchAll(/<(?:meta|link)\s[^>]+>/g)].map(([tag])=>Object.fromEntries([...tag.matchAll(/([\w:]+)="([^"]*)"/g)].map(([,key,value])=>[key,value])));
+    const meta = new Map(tags.map(t=>[t.property||t.name,t.content]));
+    const canonical = tags.find(t=>t.rel==='canonical')?.href;
+    assert.equal(canonical,'https://mcp-tax.com/');
+    assert.equal(meta.get('og:url'),canonical);
+    assert.equal(meta.get('og:type'),'website');
+    assert.equal(meta.get('og:title'),head.match(/<title>(.*?)<\/title>/)[1]);
+    assert.equal(meta.get('og:description'),meta.get('description'));
+    assert.ok(meta.get('og:site_name'));
+    assert.equal(meta.get('twitter:card'),'summary_large_image');
+    for (const key of ['title','description','image','image:alt']) {
+      assert.ok(meta.get(`og:${key}`),`missing og:${key}`);
+      assert.equal(meta.get(`twitter:${key}`),meta.get(`og:${key}`));
+    }
+    const imageUrl = new URL(meta.get('og:image'));
+    assert.equal(imageUrl.origin,new URL(canonical).origin);
+    assert.equal(meta.get('og:image:type'),'image/png');
+    const png = await readFile(join(out,imageUrl.pathname.slice(1)));
+    assert.equal(png.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+    assert.equal(png.readUInt32BE(16),1200);
+    assert.equal(png.readUInt32BE(20),630);
+    assert.equal(meta.get('og:image:width'),'1200');
+    assert.equal(meta.get('og:image:height'),'630');
+  } finally { await rm(out,{recursive:true,force:true}); }
+});
 test('honor view requires explicit membership while preserving combined filters and sort', async () => {
   const { filterVendors } = await import('../assets/directory.mjs');
   const records = [
