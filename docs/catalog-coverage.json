@@ -19,9 +19,9 @@
       "recordIds": [
         "runlayer"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Official self-MCP verified; public commercial terms remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: /api/v1/proxy/runlayer/mcp",
-      "question": "Which Runlayer plans include the platform self-MCP, and are there MCP-specific fees or usage allowances?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "Runlayer always includes its platform self-MCP for existing customers, according to the maintainer. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: /api/v1/proxy/runlayer/mcp",
+      "question": "Are there MCP-specific usage allowances beyond normal platform permissions?"
     },
     {
       "catalogId": "com.atlassian/mcp",
@@ -313,9 +313,9 @@
       "recordIds": [
         "zoom"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Vendor server verified; paid-client documentation cannot price server access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp-us.zoom.us/mcp/zoom/streamable",
-      "question": "Which Zoom account plans can use the Zoom-hosted meeting/data MCP server, and are there server-specific fees or quotas?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Zoom-hosted MCP access is assessed as included by the maintainer; paid MCP-client licenses describe a separate offering. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp-us.zoom.us/mcp/zoom/streamable",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.clickup/mcp",
@@ -343,9 +343,9 @@
       "recordIds": [
         "grep"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Official hosted MCP verified; primary-source commercial inclusion remains unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.grep.app",
-      "question": "Does Vercel explicitly offer hosted Grep MCP for free, and what authentication, plan, quota or future billing conditions apply?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "Grep’s hosted public-code search MCP is included, according to the maintainer. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.grep.app",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.brex/mcp",
@@ -441,9 +441,9 @@
       "recordIds": [
         "postman"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Postman provides official remote and local MCP servers; shared API limits are documented, but server-specific plan and fee policy remains unclear. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.postman.com/minimal",
-      "question": "Is the official remote Minimal MCP server available on Free, and does any MCP-specific fee or entitlement apply beyond ordinary Postman API limits?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Postman MCP access is assessed as included by the maintainer; shared API limits and underlying feature entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.postman.com/minimal",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.replit/mcp",
@@ -451,9 +451,9 @@
       "recordIds": [
         "replit"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Replit offers an official OAuth MCP server for creating and changing apps; commercial MCP terms remain unclear beyond existing account access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://replit-mcp.com/server/mcp",
-      "question": "Which existing Replit plans can use the inbound hosted MCP server, and is there a separate connection or tool fee beyond normal Replit Agent/hosting usage?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Replit’s inbound hosted MCP is assessed as included by the maintainer; building work uses ordinary Agent and hosting entitlements. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://replit-mcp.com/server/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.wix/mcp",
@@ -717,9 +717,9 @@
       "recordIds": [
         "lattice"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Lattice offers official hosted MCP for permitted employee/performance workflows, but its commercial entitlement is unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.latticehq.com/mcp",
-      "question": "Which Lattice plans include MCP, and does a separate MCP fee or tool-usage meter apply?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Lattice MCP access is assessed as included by the maintainer; employee/performance workflows retain existing permissions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.latticehq.com/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.metabase/mcp",
@@ -777,9 +777,9 @@
       "recordIds": [
         "browserbase"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Browserbase hosts a browser MCP and covers its documented default Gemini model, but free signup and resource prices do not alone settle MCP fees. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.browserbase.com/mcp?browserbaseApiKey={BROWSERBASE_API_KEY}",
-      "question": "Is hosted MCP included on all Browserbase plans including Free, with only ordinary browser/resource usage charges?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "Browserbase includes hosted MCP access, according to the maintainer; browser usage and custom-model costs remain separate. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.browserbase.com/mcp?browserbaseApiKey={BROWSERBASE_API_KEY}",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.circleci/mcp-server-circleci",
@@ -827,9 +827,9 @@
       "recordIds": [
         "drata"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Drata hosts MCP for governed compliance reads and writes; published setup does not settle commercial eligibility. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.drata.com/mcp/",
-      "question": "Which Drata plans include MCP, and does any separate MCP charge or usage meter apply?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Drata MCP access is assessed as included by the maintainer; hosted compliance tools retain administrator and permission requirements. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.drata.com/mcp/",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.excalidraw/mcp",
@@ -867,9 +867,9 @@
       "recordIds": [
         "hugging-face"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Official hosted offering verified; affirmative hosted pricing/plan inclusion remains unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hf.co/mcp",
-      "question": "Is the official hosted Hub MCP included for free Hub accounts, and are there any MCP-specific fees, allowances or paid-plan requirements?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "Hugging Face includes hosted Hub MCP access, according to the maintainer; authenticated tools and paid resources retain their own requirements. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hf.co/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.microsoft/mcp-learn",
@@ -1007,9 +1007,9 @@
       "recordIds": [
         "navan"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Navan hosts an official MCP server under user permissions; fee policy remains unresolved after official documentation and commercial research. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.navan.com/mcp",
-      "question": "Is MCP included in Navan Business/free and Enterprise accounts, and is there any MCP-specific fee or usage charge?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Navan MCP access is assessed as included by the maintainer; account permissions and SSO administrator enablement still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.navan.com/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.ramp/mcp",
@@ -1017,9 +1017,9 @@
       "recordIds": [
         "ramp"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Ramp runs separate account-action and public-benchmark MCP services. Benchmark data is described as free; commercial terms for the main account server remain unclear. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.ramp.com/mcp",
-      "question": "Which plans may use the main account-action Ramp MCP, and is there any additional MCP access or tool-call charge? Keep Ramp Data benchmark terms separate."
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Ramp account MCP is assessed as included by the maintainer. Its separate free benchmark service still requires provisioned Partner Program access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.ramp.com/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.ramp/data.mcp",
@@ -1067,9 +1067,9 @@
       "recordIds": [
         "render"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Render provides an official hosted MCP server and local implementation, but the read commercial documentation does not settle hosted MCP pricing. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.render.com/mcp",
-      "question": "Is the official hosted MCP included on every Render workspace plan, including Hobby, without an additional MCP-specific fee?"
+      "finding": "Included access: tentative maintainer assessment on November 12, 2026.",
+      "scopeNote": "Render-hosted MCP access is assessed as included by the maintainer; creating or using resources can still incur normal charges. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.render.com/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.resend/mcp",
@@ -2119,9 +2119,9 @@
       "recordIds": [
         "gumloop"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "Shared platform MCP is official, but separate custom-hosting and agent-pricing pages cannot price it. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.gumloop.com/gumloop/mcp",
-      "question": "Which plans include the shared Gumloop platform MCP, and do its incoming tool calls carry any separate credits, allowance or surcharge?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "Gumloop includes its shared platform MCP, according to the maintainer; custom-server hosting is a separate offering. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.gumloop.com/gumloop/mcp",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.hugeicons/mcp-server",
@@ -2427,9 +2427,9 @@
       "recordIds": [
         "clickhouse"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "ClickHouse offers hosted Cloud MCP and local open-source MCP; the local license does not settle Cloud service fees. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
-      "question": "Is ClickHouse Cloud remote MCP included at no extra cost on all Cloud plans, beyond ordinary query/resource usage?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "ClickHouse includes Cloud remote MCP access, according to the maintainer; the self-run adapter remains a separate deployment option. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "com.digitalocean/mcp",
@@ -2437,9 +2437,9 @@
       "recordIds": [
         "digitalocean"
       ],
-      "finding": "Reviewed scoped offering added; current status: unclear.",
-      "scopeNote": "DigitalOcean has a free local MCP server and newer hosted remote endpoints; local release pricing is not applied to remote hosting. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
-      "question": "Are DigitalOcean hosted remote MCP endpoints free/included like the explicitly free local release, beyond ordinary cloud-resource usage?"
+      "finding": "Included access: maintainer-confirmed on November 12, 2026.",
+      "scopeNote": "DigitalOcean includes hosted remote MCP access, according to the maintainer, alongside its explicitly free local server. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Exact plan eligibility and usage allowances remain unverified; no all-plan or unlimited-use claim is made."
     },
     {
       "catalogId": "io.elevenlabs/mcp",

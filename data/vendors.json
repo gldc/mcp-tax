@@ -634,10 +634,10 @@
     "id": "browserbase",
     "name": "Browserbase",
     "category": "Developer tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Browserbase API key for hosted MCP; browser resources follow the account's ordinary plan.",
-    "cost": "Hosted default Gemini inference is covered by Browserbase. MCP-specific surcharge/plan entitlement not explicitly established.",
-    "summary": "Browserbase hosts a browser MCP and covers its documented default Gemini model, but free signup and resource prices do not alone settle MCP fees.",
+    "cost": "Hosted MCP access is included, per maintainer confirmation. Ordinary browser/resource charges apply; Browserbase covers the documented default Gemini inference.",
+    "summary": "Browserbase includes hosted MCP access, according to the maintainer; browser usage and custom-model costs remain separate.",
     "conditions": [
       "Official endpoint: https://mcp.browserbase.com/mcp; tool calls require Browserbase API credentials.",
       "Current setup allows other models with the corresponding model API key.",
@@ -662,7 +662,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "MCP-specific fee and exact commercial eligibility remain unverified; missing pricing is not proof of free access."
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "buildkite",
@@ -1001,10 +1002,10 @@
     "id": "clickhouse",
     "name": "ClickHouse",
     "category": "Infrastructure",
-    "status": "unclear",
+    "status": "included",
     "access": "ClickHouse Cloud service with remote MCP enabled and authorized identity; local adapter available for self-managed databases.",
-    "cost": "Local adapter has Apache-2.0 no-charge rights. Hosted MCP-specific pricing or all-plan inclusion not established.",
-    "summary": "ClickHouse offers hosted Cloud MCP and local open-source MCP; the local license does not settle Cloud service fees.",
+    "cost": "Cloud remote MCP access is included, per maintainer confirmation. Ordinary Cloud query and resource charges remain.",
+    "summary": "ClickHouse includes Cloud remote MCP access, according to the maintainer; the self-run adapter remains a separate deployment option.",
     "conditions": [
       "Hosted endpoint: https://mcp.clickhouse.cloud/mcp; service-level enablement and OAuth/API-key authentication.",
       "Current Cloud guide describes hosted tools as read-only and distinguishes the self-run stdio adapter.",
@@ -1029,7 +1030,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Mixed: vendor-hosted Cloud MCP and self-run adapter",
-    "notice": "MCP-specific fee and exact commercial eligibility remain unverified; missing pricing is not proof of free access."
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "clickup",
@@ -1569,10 +1571,10 @@
     "id": "digitalocean",
     "name": "DigitalOcean",
     "category": "Infrastructure",
-    "status": "unclear",
+    "status": "included",
     "access": "DigitalOcean credentials for resource access; current docs support hosted remote and local MCP.",
-    "cost": "Official release explicitly calls the local server free; hosted remote fee policy remains unverified. Underlying cloud resources are separate.",
-    "summary": "DigitalOcean has a free local MCP server and newer hosted remote endpoints; local release pricing is not applied to remote hosting.",
+    "cost": "Hosted remote MCP access is included, per maintainer confirmation. Underlying cloud resources are billed normally.",
+    "summary": "DigitalOcean includes hosted remote MCP access, according to the maintainer, alongside its explicitly free local server.",
     "conditions": [
       "The free announcement describes a server running locally, so it cannot establish a hosted-service tariff.",
       "Current docs and repository document multiple per-service hosted endpoints with OAuth or API-token authentication.",
@@ -1597,7 +1599,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Mixed: free local server and vendor-hosted remote endpoints",
-    "notice": "MCP-specific fee and exact commercial eligibility remain unverified; missing pricing is not proof of free access."
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "docusign",
@@ -1660,14 +1663,14 @@
     "id": "drata",
     "name": "Drata",
     "category": "Security",
-    "status": "unclear",
+    "status": "included",
     "access": "Drata tenant administrator sets up MCP OAuth; users receive intersected role/scope access.",
-    "cost": "Current setup and plan pages do not establish MCP-specific pricing or plan entitlement.",
-    "summary": "Drata hosts MCP for governed compliance reads and writes; published setup does not settle commercial eligibility.",
+    "cost": "No separate MCP add-on, per maintainer assessment. Ordinary Drata product entitlements and role/scope restrictions remain.",
+    "summary": "Drata MCP access is assessed as included by the maintainer; hosted compliance tools retain administrator and permission requirements.",
     "conditions": [
       "Current hosted guide lists US, EU and APAC endpoints.",
       "Users can only perform operations allowed by both OAuth scopes and their existing Drata roles.",
-      "The2025 announcement called MCP experimental/early access; current setup does not explicitly confirm a later launch stage."
+      "The 2025 announcement called MCP experimental/early access; current setup does not explicitly confirm a later launch stage."
     ],
     "sources": [
       {
@@ -1688,7 +1691,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "MCP-specific fee and exact commercial eligibility remain unverified; missing pricing is not proof of free access."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "dropbox",
@@ -2543,13 +2547,13 @@
     "id": "grep",
     "name": "Grep",
     "category": "Developer tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Official Vercel-operated hosted MCP for searching public GitHub code.",
-    "cost": "A current affirmative hosted fee policy and plan/usage limits were not found in the reviewed official sources.",
-    "summary": "Vercel confirms the Grep MCP endpoint, but its launch article and service terms do not settle whether hosted use is unconditionally free.",
+    "cost": "Hosted Grep MCP access is included, per maintainer confirmation. No unlimited-use or permanent fee guarantee is asserted.",
+    "summary": "Grep’s hosted public-code search MCP is included, according to the maintainer.",
     "conditions": [
       "The official article demonstrates public code-search tools and hosted setup.",
-      "Third-party descriptions calling the service free were not used as commercial evidence."
+      "Included status is based on direct maintainer confirmation, not third-party directory pricing."
     ],
     "sources": [
       {
@@ -2564,16 +2568,18 @@
       }
     ],
     "checked": "2026-11-12",
-    "delivery": "Vendor-hosted"
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted."
   },
   {
     "id": "gumloop",
     "name": "Gumloop",
     "category": "Automation",
-    "status": "unclear",
+    "status": "included",
     "access": "Hosted Gumloop platform MCP with OAuth or API key and account/team permissions.",
-    "cost": "Pricing or plan eligibility for this shared platform MCP was not established.",
-    "summary": "Gumloop documents a platform MCP, while separate custom-server hosting and agent credit policies do not establish this endpoint's commercial terms.",
+    "cost": "Platform MCP access is included, per maintainer confirmation. Ordinary workflow and agent usage costs remain separate.",
+    "summary": "Gumloop includes its shared platform MCP, according to the maintainer; custom-server hosting is a separate offering.",
     "conditions": [
       "Pro/Enterprise custom MCP hosting concerns deploying a user's own GitHub server, not automatically the shared Gumloop platform server.",
       "Agent conversations incur model, tool, compute and orchestration costs; applicability to incoming platform MCP requests was not stated."
@@ -2596,7 +2602,9 @@
       }
     ],
     "checked": "2026-11-12",
-    "delivery": "Vendor-hosted"
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted."
   },
   {
     "id": "guru",
@@ -2756,10 +2764,10 @@
     "id": "hugging-face",
     "name": "Hugging Face",
     "category": "Developer tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Official hosted Hub MCP; anonymous tools are limited, while tokens enable authenticated capabilities.",
-    "cost": "Hosted MCP fees and plan eligibility were not established in the reviewed official sources.",
-    "summary": "Hugging Face documents its hosted Hub MCP, but the reviewed sources do not affirmatively settle hosted commercial terms.",
+    "cost": "Hosted Hub MCP access is included, per maintainer confirmation. Inference, Spaces and compute retain ordinary resource pricing.",
+    "summary": "Hugging Face includes hosted Hub MCP access, according to the maintainer; authenticated tools and paid resources retain their own requirements.",
     "conditions": [
       "Hub discovery tools, Spaces and authenticated actions have different permissions and resource requirements.",
       "The official local server is MIT licensed; that license does not price the hosted endpoint or paid inference and compute."
@@ -2783,7 +2791,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "Hosted commercial status remains unclear despite official-domain search and full documentation crawl."
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "incident-io",
@@ -3004,10 +3013,10 @@
     "id": "lattice",
     "name": "Lattice",
     "category": "Business tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Lattice user account; custom AI-system setup requires Lattice Integrations Admin and AI-system administrator.",
-    "cost": "MCP fee/included-plan policy not established by current official setup, marketing or pricing pages.",
-    "summary": "Lattice offers official hosted MCP for permitted employee/performance workflows, but its commercial entitlement is unresolved.",
+    "cost": "No separate MCP add-on, per maintainer assessment. Ordinary Lattice product subscriptions and permissions remain.",
+    "summary": "Lattice MCP access is assessed as included by the maintainer; employee/performance workflows retain existing permissions.",
     "conditions": [
       "Current custom-server guide documents https://api.latticehq.com/mcp and OAuth client setup.",
       "Connected users keep existing Lattice data and action permissions.",
@@ -3032,7 +3041,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "MCP-specific fee and exact commercial eligibility remain unverified; missing pricing is not proof of free access."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "launchdarkly",
@@ -3607,10 +3617,10 @@
     "id": "navan",
     "name": "Navan",
     "category": "Business tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Navan login using SSO or username/password; SSO organizations need admin MCP enablement.",
-    "cost": "Current MCP guide and ordinary pricing do not establish MCP-specific fee or plan eligibility.",
-    "summary": "Navan hosts an official MCP server under user permissions; fee policy remains unresolved after official documentation and commercial research.",
+    "cost": "No separate MCP add-on, per maintainer assessment. Normal Navan account and product entitlements apply.",
+    "summary": "Navan MCP access is assessed as included by the maintainer; account permissions and SSO administrator enablement still apply.",
     "conditions": [
       "Official endpoint: https://mcp.navan.com/mcp.",
       "Current docs support SSO and username/password, with admin enablement required for SSO companies.",
@@ -3635,7 +3645,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "MCP-specific fee and exact commercial eligibility remain unverified; missing pricing is not proof of free access."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "neon",
@@ -4458,10 +4469,10 @@
     "id": "postman",
     "name": "Postman",
     "category": "Developer tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Postman account; US remote supports OAuth or API key, while EU remote and local require an API key.",
-    "cost": "Tool calls share ordinary Postman API monthly limits. Explicit server-plan eligibility and any separate MCP access fee were not established.",
-    "summary": "Postman provides official remote and local MCP servers; shared API limits are documented, but server-specific plan and fee policy remains unclear.",
+    "cost": "No separate MCP access add-on, per maintainer assessment. Tool calls consume ordinary Postman API allowances.",
+    "summary": "Postman MCP access is assessed as included by the maintainer; shared API limits and underlying feature entitlements still apply.",
     "conditions": [
       "US Minimal endpoint: https://mcp.postman.com/minimal; other tool profiles have separate paths.",
       "Full profile capabilities still depend on underlying product entitlements; Context Graph must be enabled for that profile.",
@@ -4486,7 +4497,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Mixed: vendor-hosted and local server",
-    "notice": "UNVERIFIED: explicit remote-server availability on Free and any separate MCP fee. Advanced official-domain search and full crawls did not settle it."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "pulumi",
@@ -4556,10 +4568,10 @@
     "id": "ramp",
     "name": "Ramp",
     "category": "Business tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Ramp account MCP requires authenticated user permissions; Ramp Data benchmarks require provisioned Partner Program API access.",
-    "cost": "Ramp publicly describes its benchmark datasets as free. Main Ramp account MCP plan eligibility and separate-fee policy were not established.",
-    "summary": "Ramp runs separate account-action and public-benchmark MCP services. Benchmark data is described as free; commercial terms for the main account server remain unclear.",
+    "cost": "No separate account MCP add-on, per maintainer assessment. Ramp separately describes its benchmark datasets as free.",
+    "summary": "Ramp account MCP is assessed as included by the maintainer. Its separate free benchmark service still requires provisioned Partner Program access.",
     "conditions": [
       "Account endpoint: https://mcp.ramp.com/mcp, with OAuth and the user's role/access restrictions.",
       "Ramp Data endpoint: https://mcp.ramp.com/ramp-data/mcp; it serves Ramp Rate and AI Index datasets using a provisioned Ramp Data API key.",
@@ -4585,7 +4597,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "UNVERIFIED: main account MCP eligible plans and any extra MCP fee. Ramp Data is not customer financial-account access."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "ravenna",
@@ -4654,10 +4667,10 @@
     "id": "render",
     "name": "Render",
     "category": "Developer tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Render account and selected workspace; OAuth or API-key authentication.",
-    "cost": "Ordinary Render workspace, compute and resource charges apply; hosted MCP plan eligibility or a separate access fee was not explicitly established.",
-    "summary": "Render provides an official hosted MCP server and local implementation, but the read commercial documentation does not settle hosted MCP pricing.",
+    "cost": "No separate hosted MCP add-on, per maintainer assessment. Workspace, compute and resource charges remain ordinary platform costs.",
+    "summary": "Render-hosted MCP access is assessed as included by the maintainer; creating or using resources can still incur normal charges.",
     "conditions": [
       "Official hosted server: https://mcp.render.com/mcp; tools are scoped to the selected workspace.",
       "OAuth is supported for interactive clients and API keys for headless setup.",
@@ -4677,16 +4690,17 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Mixed: vendor-hosted and local server",
-    "notice": "UNVERIFIED: whether hosted MCP is included on every workspace plan without an additional fee; advanced domain search and full guide/pricing/FAQ crawls did not settle it."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "replit",
     "name": "Replit",
     "category": "Developer tools",
-    "status": "unclear",
+    "status": "included",
     "access": "Replit account/workspace OAuth; the connected agent uses the user's existing Replit access.",
-    "cost": "Replit publishes ordinary subscription and Agent usage terms; direct MCP connection/tool fee policy and eligible plans were not established.",
-    "summary": "Replit offers an official OAuth MCP server for creating and changing apps; commercial MCP terms remain unclear beyond existing account access.",
+    "cost": "No separate inbound MCP add-on, per maintainer assessment. Normal Replit Agent and hosting usage costs still apply.",
+    "summary": "Replit’s inbound hosted MCP is assessed as included by the maintainer; building work uses ordinary Agent and hosting entitlements.",
     "conditions": [
       "Current endpoint: https://mcp.replit.com/server/mcp, replacing the catalog's older host.",
       "Official product page says tools use the access the user already has on Replit; it does not explicitly settle Free-plan MCP eligibility or pricing.",
@@ -4712,7 +4726,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "UNVERIFIED: eligible plans and any separate inbound MCP connection/tool fee after advanced official-domain search and full crawls."
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted.",
+    "noTax": true
   },
   {
     "id": "resend",
@@ -4748,13 +4763,13 @@
     "id": "runlayer",
     "name": "Runlayer",
     "category": "Infrastructure",
-    "status": "unclear",
+    "status": "included",
     "access": "Runlayer platform self-MCP, with account roles and permissions controlling available operations.",
-    "cost": "Plan inclusion, any incremental charge and usage allowances were not established from public sources.",
-    "summary": "Runlayer documents its own platform MCP for analytics and administration, but public evidence reviewed does not settle its commercial terms.",
+    "cost": "Included for existing Runlayer customers without a separate MCP add-on.",
+    "summary": "Runlayer always includes its platform self-MCP for existing customers, according to the maintainer.",
     "conditions": [
       "This is the platform self-MCP, distinct from the Runlayer Plugin connector-discovery interface.",
-      "Role-based availability or a statement that users can connect does not establish free commercial access."
+      "Existing Runlayer roles and permissions still control available operations."
     ],
     "sources": [
       {
@@ -4765,7 +4780,8 @@
     ],
     "checked": "2026-11-12",
     "delivery": "Vendor-hosted",
-    "notice": "Only public vendor documentation was used; no internal workspace or customer configuration informs this classification."
+    "notice": "Maintainer confirmation, November 12, 2026: included MCP access. Official documentation establishes setup and roles; commercial inclusion is attributed to the maintainer. No account or billing test was performed.",
+    "noTax": true
   },
   {
     "id": "salesforce",
@@ -6212,10 +6228,10 @@
     "id": "zoom",
     "name": "Zoom",
     "category": "Productivity",
-    "status": "unclear",
+    "status": "included",
     "access": "Zoom-hosted product MCP servers with OAuth and account/admin permissions.",
-    "cost": "Server pricing and exact eligible account plans were not resolved.",
-    "summary": "Zoom documents hosted MCP servers sharing ordinary API limits, but its paid MCP-client licenses do not establish the server's commercial gate.",
+    "cost": "No separate hosted MCP add-on, per maintainer assessment. Ordinary account entitlements and shared API limits apply.",
+    "summary": "Zoom-hosted MCP access is assessed as included by the maintainer; paid MCP-client licenses describe a separate offering.",
     "conditions": [
       "The official server guide refers to account-plan limits and shared Zoom Open API rate limits.",
       "Custom AI Companion requirements found in search concern Zoom acting as an MCP client, a different offering."
@@ -6238,7 +6254,9 @@
       }
     ],
     "checked": "2026-11-12",
-    "delivery": "Vendor-hosted"
+    "delivery": "Vendor-hosted",
+    "noTax": true,
+    "notice": "Tentative maintainer assessment, November 12, 2026: MCP access is included. Official links establish setup and scope; they are not represented as a vendor-published fee waiver. No account or billing test was performed. Exact plan and usage allowances are not asserted."
   },
   {
     "id": "zoominfo",
