@@ -1,0 +1,2595 @@
+{
+  "checked": "2026-11-12",
+  "method": "Reconciled every entry in the November 12 Runlayer catalog snapshot with scoped public-primary-source research and existing vendor records. Titles, variants and related offerings are retained; mapping does not establish identical access or pricing.",
+  "scope": "261 catalog IDs; grouped vendor/product records. Explicitly unsupported, wrapper-only and unresolved legacy variants remain visible. No authenticated accounts, invoices, private contracts or live billing behavior tested.",
+  "entries": [
+    {
+      "catalogId": "com.github/mcp",
+      "title": "GitHub",
+      "recordIds": [
+        "github"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: GitHub makes its official MCP server available regardless of account plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.githubcopilot.com/mcp/",
+      "question": ""
+    },
+    {
+      "catalogId": "com.runlayer/platform.mcp",
+      "title": "Runlayer",
+      "recordIds": [
+        "runlayer"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official self-MCP verified; public commercial terms remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: /api/v1/proxy/runlayer/mcp",
+      "question": "Which Runlayer plans include the platform self-MCP, and are there MCP-specific fees or usage allowances?"
+    },
+    {
+      "catalogId": "com.atlassian/mcp",
+      "title": "Atlassian",
+      "recordIds": [
+        "atlassian"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Connecting is free. Enriched Teamwork Graph calls through Rovo MCP consume pooled Rovo credits; extra usage billing is announced for December 3, 2026. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.atlassian.com/v2/mcp",
+      "question": "Commercial parity of this exact Atlassian catalog variant with the reviewed Atlassian Rovo offering remains unverified."
+    },
+    {
+      "catalogId": "com.slack/official.mcp",
+      "title": "Slack",
+      "recordIds": [
+        "slack"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Slack’s hosted MCP server is free to use, as confirmed by the project maintainer. Existing workspace permissions, app eligibility and ordinary Web API limits still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.slack.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "so.notion/mcp",
+      "title": "Notion",
+      "recordIds": [
+        "notion"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Basic MCP access is broader than full MCP. Advanced search filters and connected-source AI search require Business or Enterprise. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.notion.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "app.linear/mcp",
+      "title": "Linear",
+      "recordIds": [
+        "linear"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Linear lists MCP access as included on every plan, including Free. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.linear.app/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.amazonaws/aws-mcp",
+      "title": "AWS",
+      "recordIds": [
+        "aws"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: AWS explicitly charges nothing extra for its managed MCP server. You pay for the AWS resources your agents use. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://aws-mcp.us-east-1.api.aws/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.google/bigquery.mcp",
+      "title": "Google BigQuery",
+      "recordIds": [
+        "google-cloud"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Google documents official hosted MCP servers for BigQuery, Compute Engine and GKE, but reviewed references do not establish their MCP fee policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access. Catalog endpoint: https://bigquery.googleapis.com/mcp",
+      "question": "Do BigQuery, Compute Engine and GKE remote MCP endpoints have any MCP-specific fee or paid eligibility beyond ordinary service/resource usage?"
+    },
+    {
+      "catalogId": "com.google/calendar.mcp",
+      "title": "Google Calendar",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Google Calendar catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "com.google/gmail.mcp",
+      "title": "Gmail",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Gmail catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "io.sentry/mcp",
+      "title": "Sentry",
+      "recordIds": [
+        "sentry"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Sentry explicitly lists MCP access in its free Developer plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.sentry.dev/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.amazonaws/mcp",
+      "title": "AWS (local CLI)",
+      "recordIds": [
+        "aws"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: AWS explicitly charges nothing extra for its managed MCP server. You pay for the AWS resources your agents use. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Commercial parity of this exact AWS (local CLI) catalog variant with the reviewed AWS offering remains unverified."
+    },
+    {
+      "catalogId": "com.google/drive.mcp",
+      "title": "Google Drive",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Google Drive catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "com.asana/mcp",
+      "title": "Asana",
+      "recordIds": [
+        "asana"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Asana documents its official MCP server and makes its Claude and ChatGPT integrations available on Personal as well as paid plans. Its own AWS Marketplace MCP listing is free; that pricing evidence is scoped to the listed offering. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.asana.com/v2/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.google/docs.mcp",
+      "title": "Google Docs",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Google Docs catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "com.snowflake/official.mcp",
+      "title": "Snowflake",
+      "recordIds": [
+        "snowflake"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Snowflake explicitly states that its managed MCP server requires no additional compute and incurs no separate charges. Costs come from the Snowflake services its tools invoke. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{ACCOUNT}.snowflakecomputing.com/api/v2/databases/{DATABASE}/schemas/{SCHEMA}/mcp-servers/{MCP_SERVER_NAME}",
+      "question": ""
+    },
+    {
+      "catalogId": "com.google/sheets.mcp",
+      "title": "Google Sheets",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Google Sheets catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "com.hubspot/mcp",
+      "title": "HubSpot",
+      "recordIds": [
+        "hubspot"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: HubSpot explicitly offers its hosted CRM MCP server to all accounts. Current docs describe free-tool accounts editing their default pipeline; premium tools follow their underlying Hub subscriptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.hubspot.com/",
+      "question": ""
+    },
+    {
+      "catalogId": "org.postgresql/mcp",
+      "title": "PostgreSQL",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Generic PostgreSQL/community server; no separately verified PostgreSQL vendor-hosted commercial offering is established.",
+      "question": "Is there an independently documented first-party offering with explicit account eligibility and commercial terms?"
+    },
+    {
+      "catalogId": "com.box/mcp",
+      "title": "Box",
+      "recordIds": [
+        "box"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Box conditionally includes MCP API access for standard signed-in users of published integrations. Custom, service-account and scaled workflows incur API usage; product charges remain separate. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.box.com",
+      "question": ""
+    },
+    {
+      "catalogId": "com.google/compute.mcp",
+      "title": "Google Compute Engine",
+      "recordIds": [
+        "google-cloud"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Google documents official hosted MCP servers for BigQuery, Compute Engine and GKE, but reviewed references do not establish their MCP fee policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://compute.googleapis.com/mcp",
+      "question": "Do BigQuery, Compute Engine and GKE remote MCP endpoints have any MCP-specific fee or paid eligibility beyond ordinary service/resource usage?"
+    },
+    {
+      "catalogId": "com.runlayer/microsoft-outlook-mcp",
+      "title": "Microsoft Outlook",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Runlayer Outlook wrapper; Microsoft 365 Work IQ is a separate offering and does not price this wrapper. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What wrapper-specific and underlying Microsoft Graph account, licensing or usage terms apply to this Runlayer catalog wrapper, separately from the verified native Microsoft 365 Work IQ offering?"
+    },
+    {
+      "catalogId": "com.microsoft/mcp-outlook-calendar",
+      "title": "Microsoft Outlook Calendar (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_CalendarTools",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.microsoft/mcp-outlook-mail",
+      "title": "Microsoft Outlook Mail (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_MailTools",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.microsoft/mcp-sharepoint-onedrive",
+      "title": "Microsoft SharePoint and OneDrive (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_ODSPRemoteServer",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.runlayer/microsoft-teams-mcp",
+      "title": "Microsoft Teams",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Runlayer Teams wrapper; Microsoft 365 Work IQ is a separate offering and does not price this wrapper. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What wrapper-specific and underlying Microsoft Graph account, licensing or usage terms apply to this Runlayer catalog wrapper, separately from the verified native Microsoft 365 Work IQ offering?"
+    },
+    {
+      "catalogId": "com.microsoft/mcp-teams",
+      "title": "Microsoft Teams (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_TeamsServer",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.microsoft/mcp-word",
+      "title": "Microsoft Word (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_WordServer",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.salesforce/salesforce.mcp",
+      "title": "Salesforce",
+      "recordIds": [
+        "salesforce"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What commercial terms apply to this exact deploy-based catalog variant, separately from the linked reviewed offering?"
+    },
+    {
+      "catalogId": "com.salesforce/dx.mcp",
+      "title": "Salesforce DX",
+      "recordIds": [
+        "salesforce"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Commercial parity of this exact Salesforce DX catalog variant with the reviewed Salesforce offering remains unverified."
+    },
+    {
+      "catalogId": "com.salesforce/sobject-all.mcp",
+      "title": "Salesforce sObjects (Remote)",
+      "recordIds": [
+        "salesforce"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.salesforce.com/platform/mcp/v1/platform/sobject-all",
+      "question": "Commercial parity of this exact Salesforce sObjects (Remote) catalog variant with the reviewed Salesforce offering remains unverified."
+    },
+    {
+      "catalogId": "us.zoom/mcp",
+      "title": "Zoom",
+      "recordIds": [
+        "zoom"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Vendor server verified; paid-client documentation cannot price server access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp-us.zoom.us/mcp/zoom/streamable",
+      "question": "Which Zoom account plans can use the Zoom-hosted meeting/data MCP server, and are there server-specific fees or quotas?"
+    },
+    {
+      "catalogId": "com.clickup/mcp",
+      "title": "ClickUp",
+      "recordIds": [
+        "clickup"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: ClickUp includes limited MCP access on Free and paid plans. Daily workspace quotas increase with the plan, and its ongoing pricing migration means new Max and legacy Everything AI customers follow different packaging. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.clickup.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.granola/meetings",
+      "title": "Granola",
+      "recordIds": [
+        "granola"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit currently read public/free/all-plan eligibility in vendor documentation. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.granola.ai/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "app.grep/mcp",
+      "title": "Grep",
+      "recordIds": [
+        "grep"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official hosted MCP verified; primary-source commercial inclusion remains unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.grep.app",
+      "question": "Does Vercel explicitly offer hosted Grep MCP for free, and what authentication, plan, quota or future billing conditions apply?"
+    },
+    {
+      "catalogId": "com.brex/mcp",
+      "title": "Brex",
+      "recordIds": [
+        "brex"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Brex makes beta MCP available to any API-enabled account, including the API access included in free Essentials. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.brex.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.getdbt/mcp",
+      "title": "dbt",
+      "recordIds": [
+        "dbt"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Remote MCP is available on all dbt platform plans. Only text_to_sql consumes the dbt Copilot action allotment; other tools keep working without AI enabled. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{DBT_HOST}/api/ai/v1/mcp/",
+      "question": ""
+    },
+    {
+      "catalogId": "com.glean/remote.mcp",
+      "title": "Glean",
+      "recordIds": [
+        "glean"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Explicit feature pricing defeats a free-access inference from default enablement. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{GLEAN_INSTANCE}-be.glean.com/mcp/{MCP_SERVER_NAME}",
+      "question": "What FlexCredit rates and included allowances apply to each Glean MCP tool?"
+    },
+    {
+      "catalogId": "com.google/gke.mcp",
+      "title": "Google Kubernetes Engine",
+      "recordIds": [
+        "google-cloud"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Google documents official hosted MCP servers for BigQuery, Compute Engine and GKE, but reviewed references do not establish their MCP fee policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://container.googleapis.com/mcp",
+      "question": "Do BigQuery, Compute Engine and GKE remote MCP endpoints have any MCP-specific fee or paid eligibility beyond ordinary service/resource usage?"
+    },
+    {
+      "catalogId": "com.google/slides.mcp",
+      "title": "Google Slides",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Google Slides catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "com.google/looker.mcp",
+      "title": "Looker",
+      "recordIds": [
+        "looker"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Looker includes its managed MCP for eligible Looker-hosted instances without an additional MCP charge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: {LOOKER_INSTANCE_URL}/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.make/mcp",
+      "title": "Make",
+      "recordIds": [
+        "make"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Make explicitly includes hosted MCP at no extra cost in every plan. Scenario-run access includes Free, while management tools are gated to paid plans. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.make.com",
+      "question": ""
+    },
+    {
+      "catalogId": "com.runlayer/microsoft-outlook-calendar-mcp",
+      "title": "Microsoft Outlook Calendar",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Runlayer Outlook Calendar wrapper; Microsoft 365 Work IQ is a separate offering and does not price this wrapper. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What wrapper-specific and underlying Microsoft Graph account, licensing or usage terms apply to this Runlayer catalog wrapper, separately from the verified native Microsoft 365 Work IQ offering?"
+    },
+    {
+      "catalogId": "com.okta/mcp",
+      "title": "Okta",
+      "recordIds": [
+        "okta"
+      ],
+      "finding": "Catalog wrapper/community variant; separately verified native offering is linked.",
+      "scopeNote": "The catalog wrapper/community implementation is distinct from the linked first-party offering. Native plan/credit terms do not price this wrapper. Official managed service requires an MCP-specific subscription. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "What commercial terms, if any, apply specifically to this catalog wrapper/community variant?"
+    },
+    {
+      "catalogId": "com.postman/minimal.mcp",
+      "title": "Postman",
+      "recordIds": [
+        "postman"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Postman provides official remote and local MCP servers; shared API limits are documented, but server-specific plan and fee policy remains unclear. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.postman.com/minimal",
+      "question": "Is the official remote Minimal MCP server available on Free, and does any MCP-specific fee or entitlement apply beyond ordinary Postman API limits?"
+    },
+    {
+      "catalogId": "com.replit/mcp",
+      "title": "Replit",
+      "recordIds": [
+        "replit"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Replit offers an official OAuth MCP server for creating and changing apps; commercial MCP terms remain unclear beyond existing account access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://replit-mcp.com/server/mcp",
+      "question": "Which existing Replit plans can use the inbound hosted MCP server, and is there a separate connection or tool fee beyond normal Replit Agent/hosting usage?"
+    },
+    {
+      "catalogId": "com.wix/mcp",
+      "title": "Wix",
+      "recordIds": [
+        "wix"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Wix offers a hosted server for building and managing projects and explicitly disclaims a separate MCP connection fee. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.wix.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.amplitude/mcp",
+      "title": "Amplitude",
+      "recordIds": [
+        "amplitude"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit free/all-plan eligibility supports included access despite optional Enterprise authentication features. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.amplitude.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.carta/mcp",
+      "title": "Carta",
+      "recordIds": [
+        "carta"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Carta has official hosted MCP for cap-table, investor and CRM workflows, but its MCP commercial terms remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.app.carta.com/mcp",
+      "question": "Is hosted Carta MCP included for all eligible Carta cap-table/investor/CRM customers, or is there a separate plan entitlement/fee?"
+    },
+    {
+      "catalogId": "com.datadoghq/mcp",
+      "title": "Datadog",
+      "recordIds": [
+        "datadog"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Datadog MCP is available to existing Datadog customers without a separate MCP upsell. Normal account permissions and product entitlements apply; the current server guide lists no monthly tool-call limit. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.datadoghq.com/api/unstable/mcp-server/mcp?toolsets=all",
+      "question": ""
+    },
+    {
+      "catalogId": "com.figma/mcp",
+      "title": "Figma",
+      "recordIds": [
+        "figma"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Figma offers a small remote MCP allowance on all plans, with substantially higher read limits for eligible Dev and Full seats. The desktop server and canvas-writing features have additional plan and seat requirements. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.figma.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.figma/desktop-mcp",
+      "title": "Figma Desktop",
+      "recordIds": [
+        "figma"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Figma offers a small remote MCP allowance on all plans, with substantially higher read limits for eligible Dev and Full seats. The desktop server and canvas-writing features have additional plan and seat requirements. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Commercial parity of this exact Figma Desktop catalog variant with the reviewed Figma offering remains unverified."
+    },
+    {
+      "catalogId": "dev.firecrawl/mcp",
+      "title": "FireCrawl",
+      "recordIds": [
+        "firecrawl"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Firecrawl offers a free keyless hosted MCP tier for three tools, while account connections expand access under the team's ordinary plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.firecrawl.dev/{FIRECRAWL_API_KEY}/v2/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.gitlab/remote.mcp",
+      "title": "GitLab (Remote)",
+      "recordIds": [
+        "gitlab"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: GitLab removed the Premium requirement for its official MCP server. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{GITLAB_HOST}/api/v4/mcp",
+      "question": "Commercial parity of this exact GitLab (Remote) catalog variant with the reviewed GitLab offering remains unverified."
+    },
+    {
+      "catalogId": "io.gong/deploy.mcp",
+      "title": "Gong",
+      "recordIds": [
+        "gong"
+      ],
+      "finding": "Catalog wrapper/community variant; separately verified native offering is linked.",
+      "scopeNote": "The catalog wrapper/community implementation is distinct from the linked first-party offering. Native plan/credit terms do not price this wrapper. First-party server verified beyond wrapper; MCP credit consumption is explicit. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What is the current Gong MCP credit-consumption formula and purchased-credit price for each tool? What commercial terms, if any, apply specifically to this catalog wrapper/community variant?"
+    },
+    {
+      "catalogId": "com.google/forms.mcp",
+      "title": "Google Forms",
+      "recordIds": [
+        "google-workspace"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Workspace vendor already listed; catalog wrapper is not independent pricing evidence. Record scope: Google Workspace joins the honor roll for included MCP access, with substantial setup friction: a GCP project, API and MCP service enablement, OAuth consent, client configuration and product-specific scopes. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Google Forms catalog variant with the reviewed Google Workspace offering remains unverified."
+    },
+    {
+      "catalogId": "io.incident/mcp",
+      "title": "incident.io",
+      "recordIds": [
+        "incident-io"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "incident.io reserves remote MCP for Team, Pro and Enterprise plans and excludes its free Basic plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.incident.io/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.microsoft/mcp-work-iq",
+      "title": "Microsoft 365 (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://workiq.svc.cloud.microsoft/mcp",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.microsoft/mcp-365-admin",
+      "title": "Microsoft 365 Admin Center (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_AdminTools",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.microsoft/mcp-365-copilot-search",
+      "title": "Microsoft 365 Copilot Search (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_M365Copilot",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.microsoft/mcp-365-user-profile",
+      "title": "Microsoft 365 User Profile (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_MeServer",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.runlayer/microsoft-onedrive-mcp",
+      "title": "Microsoft OneDrive",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Runlayer OneDrive wrapper; Microsoft 365 Work IQ is a separate offering and does not price this wrapper. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What wrapper-specific and underlying Microsoft Graph account, licensing or usage terms apply to this Runlayer catalog wrapper, separately from the verified native Microsoft 365 Work IQ offering?"
+    },
+    {
+      "catalogId": "com.runlayer/microsoft-sharepoint-mcp",
+      "title": "Microsoft SharePoint",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Runlayer SharePoint wrapper; Microsoft 365 Work IQ is a separate offering and does not price this wrapper. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What wrapper-specific and underlying Microsoft Graph account, licensing or usage terms apply to this Runlayer catalog wrapper, separately from the verified native Microsoft 365 Work IQ offering?"
+    },
+    {
+      "catalogId": "com.microsoft/mcp-sharepoint-lists",
+      "title": "Microsoft SharePoint Lists (Work IQ)",
+      "recordIds": [
+        "microsoft-365-work-iq"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Unified API usage-based policy is explicit; catalog workload variants are grouped without assuming identical billing. Unified Work IQ API credit billing is distinct from legacy workload-specific tools under Copilot Studio licensing and billing; this mapping does not assert endpoint or tariff equivalence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agent365.svc.cloud.microsoft/mcp/environments/{ENVIRONMENT_ID}/servers/mcp_SharepointListsTools",
+      "question": "What exact unit prices and workload-specific terms apply to this catalog endpoint? Legacy endpoint details remain unverified."
+    },
+    {
+      "catalogId": "com.oracle/netsuite.mcp",
+      "title": "NetSuite",
+      "recordIds": [
+        "netsuite"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Direct vendor FAQ explicitly resolves the MCP charge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{ACCOUNT_ID}.suitetalk.api.netsuite.com/services/mcp/v1/suiteapp/com.netsuite.mcpstandardtools",
+      "question": ""
+    },
+    {
+      "catalogId": "io.outreach/mcp",
+      "title": "Outreach",
+      "recordIds": [
+        "outreach"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Current official rate card establishes MCP-specific metering. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.outreach.io/mcp/",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.perplexity/mcp",
+      "title": "Perplexity",
+      "recordIds": [
+        "perplexity"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit standard-API billing parity; ordinary API charges are not classified as an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.workday/workday-oauth.mcp",
+      "title": "Workday",
+      "recordIds": [
+        "workday"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: gated.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Workday Agent-Ready Tools provides official MCP access to Workday actions. The maintainer confirms this is a paid add-on beyond the underlying Workday subscription. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What commercial terms apply to this exact deploy-based catalog variant, separately from the linked reviewed offering?"
+    },
+    {
+      "catalogId": "io.redis/mcp",
+      "title": "Redis",
+      "recordIds": [
+        "redis"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Redis offers a self-run data server and a separate hosted Cloud-management server; local MIT rights do not price the hosted service. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Is hosted Redis Cloud management MCP included at no additional cost, and is it available to free Cloud accounts/API users?"
+    },
+    {
+      "catalogId": "com.stripe/mcp",
+      "title": "Stripe",
+      "recordIds": [
+        "stripe"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Stripe lists its hosted MCP access as free. Payment and product activity through its tools retains ordinary Stripe pricing. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.stripe.com/",
+      "question": ""
+    },
+    {
+      "catalogId": "com.crowdstrike/falcon-mcp",
+      "title": "CrowdStrike Falcon",
+      "recordIds": [
+        "crowdstrike-falcon"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative MIT rights scoped solely to the assigned official local repository. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.deel/mcp",
+      "title": "Deel",
+      "recordIds": [
+        "deel"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Deel explicitly includes its MCP connector in the Deel plan and offers free public hiring/compliance questions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.letsdeel.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.lattice/mcp",
+      "title": "Lattice",
+      "recordIds": [
+        "lattice"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Lattice offers official hosted MCP for permitted employee/performance workflows, but its commercial entitlement is unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.latticehq.com/mcp",
+      "question": "Which Lattice plans include MCP, and does a separate MCP fee or tool-usage meter apply?"
+    },
+    {
+      "catalogId": "com.metabase/mcp",
+      "title": "Metabase",
+      "recordIds": [
+        "metabase"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Direct native every-plan statement plus free OSS feature list resolves inclusion and corrects stale catalog endpoint. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{METABASE_HOST}/api/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.mongodb/mcp",
+      "title": "MongoDB",
+      "recordIds": [
+        "mongodb"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "MongoDB offers local MCP software and an Atlas-managed service. The local license does not settle hosted pricing. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Does Atlas Managed MCP have a separate charge, and exactly which Atlas plans/cluster tiers are eligible?"
+    },
+    {
+      "catalogId": "com.shadcn/mcp",
+      "title": "shadcn/ui",
+      "recordIds": [
+        "shadcn-ui"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "The official shadcn/ui MCP is an MIT-licensed local CLI for browsing and installing registry components. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.ahrefs/mcp",
+      "title": "Ahrefs",
+      "recordIds": [
+        "ahrefs"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Specific Lite+ MCP prerequisite establishes a gate; standard API metering is separately described. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.ahrefs.com/mcp/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.airtable/official.mcp",
+      "title": "Airtable",
+      "recordIds": [
+        "airtable"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Airtable explicitly includes its hosted MCP server on every plan, including Free, without an additional MCP charge. Read and write operations follow the connected user's permissions and ordinary API and base limits. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.airtable.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.browserbase/mcp",
+      "title": "Browserbase",
+      "recordIds": [
+        "browserbase"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Browserbase hosts a browser MCP and covers its documented default Gemini model, but free signup and resource prices do not alone settle MCP fees. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.browserbase.com/mcp?browserbaseApiKey={BROWSERBASE_API_KEY}",
+      "question": "Is hosted MCP included on all Browserbase plans including Free, with only ordinary browser/resource usage charges?"
+    },
+    {
+      "catalogId": "com.circleci/mcp-server-circleci",
+      "title": "CircleCI",
+      "recordIds": [
+        "circleci"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "CircleCI documents hosted MCP access for all displayed Cloud plan tiers, including Free, alongside its local CLI alternative. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.clay/mcp",
+      "title": "Clay",
+      "recordIds": [
+        "clay"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit free search and ordinary-credit parity support scoped inclusion, without universalizing every client’s terms. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.clay.com/v3/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.datadoghq/datadog.mcp",
+      "title": "Datadog (Service Account)",
+      "recordIds": [
+        "datadog"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Datadog MCP is available to existing Datadog customers without a separate MCP upsell. Normal account permissions and product entitlements apply; the current server guide lists no monthly tool-call limit. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Datadog (Service Account) catalog variant with the reviewed Datadog offering remains unverified."
+    },
+    {
+      "catalogId": "com.docusign/mcp",
+      "title": "Docusign",
+      "recordIds": [
+        "docusign"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Free demo is explicit; it cannot establish production pricing or all-plan inclusion. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.docusign.com/mcp",
+      "question": "Which production Docusign plans include each MCP tool, and is there any MCP-specific charge beyond ordinary product/API entitlements?"
+    },
+    {
+      "catalogId": "com.drata/drata.mcp",
+      "title": "Drata",
+      "recordIds": [
+        "drata"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Drata hosts MCP for governed compliance reads and writes; published setup does not settle commercial eligibility. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.drata.com/mcp/",
+      "question": "Which Drata plans include MCP, and does any separate MCP charge or usage meter apply?"
+    },
+    {
+      "catalogId": "com.excalidraw/mcp",
+      "title": "Excalidraw",
+      "recordIds": [
+        "excalidraw"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Excalidraw offers an open-source MCP App and a separate paid Plus MCP beta; local software rights do not establish the hosted App's commercial policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.excalidraw.com/mcp",
+      "question": "Is the hosted MCP App at mcp.excalidraw.com explicitly open to unauthenticated/public users without charge, separate from paid Plus MCP?"
+    },
+    {
+      "catalogId": "com.google/analytics-mcp",
+      "title": "Google Analytics",
+      "recordIds": [
+        "google-analytics"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Google publishes self-run Analytics MCP software under Apache-2.0; inclusion here is strictly scoped to the local adapter. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.google/maps.remote.mcp",
+      "title": "Google Maps (Remote)",
+      "recordIds": [
+        "google-maps"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Google bills Maps Experience agent tools under the same product SKUs and quotas over REST and MCP. MCP access carries the ordinary published product usage model. Included refers to transport price parity, not free Maps usage. Google explicitly applies the same SKUs, Pro-option rules and quotas to REST and MCP; ordinary product usage can be charged. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mapstools.googleapis.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "co.huggingface/mcp",
+      "title": "Hugging Face",
+      "recordIds": [
+        "hugging-face"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official hosted offering verified; affirmative hosted pricing/plan inclusion remains unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hf.co/mcp",
+      "question": "Is the official hosted Hub MCP included for free Hub accounts, and are there any MCP-specific fees, allowances or paid-plan requirements?"
+    },
+    {
+      "catalogId": "com.microsoft/mcp-learn",
+      "title": "Microsoft Learn",
+      "recordIds": [
+        "microsoft-learn"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Microsoft Learn provides a no-charge public hosted MCP server for documentation and code samples, without authentication. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://learn.microsoft.com/api/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.miro/miro-mcp",
+      "title": "Miro",
+      "recordIds": [
+        "miro"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: limited.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Miro includes MCP access on Free and paid plans, but daily allowances rise with the product plan. Calls stop when the allowance is exhausted, and Enterprise customers can request additional capacity. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.miro.com",
+      "question": ""
+    },
+    {
+      "catalogId": "com.pigment/mcp",
+      "title": "Pigment",
+      "recordIds": [
+        "pigment"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official server confirmed; neither generic AI-credit documentation nor activation establishes MCP fees. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{PIGMENT_HOST}/api/mcp/public/{PIGMENT_MCP_ID}",
+      "question": "Which Pigment plans include MCP, does MCP consume AI credits, and is any MCP-specific add-on required?"
+    },
+    {
+      "catalogId": "com.pulumi/mcp",
+      "title": "Pulumi",
+      "recordIds": [
+        "pulumi"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Pulumi explicitly provides no-charge core MCP tools, edition-included resource search and ordinary Neo usage billing for the optional Neo bridge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.ai.pulumi.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.salesforce/tableau-next.mcp",
+      "title": "Salesforce Tableau Next (Remote)",
+      "recordIds": [
+        "salesforce"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.salesforce.com/platform/mcp/v1/analytics/tableau-next",
+      "question": "Commercial parity of this exact Salesforce Tableau Next (Remote) catalog variant with the reviewed Salesforce offering remains unverified."
+    },
+    {
+      "catalogId": "dev.socket/mcp",
+      "title": "Socket",
+      "recordIds": [
+        "socket"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Socket explicitly includes MCP in every published plan, including Free, and supports hosted OAuth or running its package locally. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.vanta/mcp",
+      "title": "Vanta",
+      "recordIds": [
+        "vanta"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Current all-customer beta eligibility supersedes the historical local launch’s core-package wording. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.adaptive/adaptive.mcp",
+      "title": "Workday Adaptive Planning",
+      "recordIds": [
+        "workday-adaptive-planning"
+      ],
+      "finding": "Catalog wrapper/community variant; separately verified native offering is linked.",
+      "scopeNote": "The catalog wrapper/community implementation is distinct from the linked first-party offering. Native plan/credit terms do not price this wrapper. First-party MCP verified beyond catalog wrapper; specific purchased-SKU requirement is explicit. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Which Adaptive Planning SKUs qualify, what do they cost, and how are production MCP/agent operations charged in Flex Credits? What commercial terms, if any, apply specifically to this catalog wrapper/community variant?"
+    },
+    {
+      "catalogId": "com.x/mcp",
+      "title": "X",
+      "recordIds": [
+        "x"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official API MCP verified; ordinary API pricing does not explicitly settle MCP eligibility or parity. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.x.com/mcp",
+      "question": "Does X API MCP use exactly the ordinary API credit schedule with no additional MCP fee or plan requirement?"
+    },
+    {
+      "catalogId": "com.zoominfo/mcp",
+      "title": "ZoomInfo",
+      "recordIds": [
+        "zoominfo"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit free platform access and parity with ordinary web-app credit pools establish included access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.zoominfo.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.browseruse/mcp",
+      "title": "Browser Use",
+      "recordIds": [
+        "browser-use"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Browser Use explicitly prices hosted MCP usage while offering a free local alternative; an additional MCP-only premium is not established. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.browser-use.com/v3/mcp",
+      "question": "Does hosted MCP impose any extra connection/tool charge beyond the explicitly priced browser, model and network usage?"
+    },
+    {
+      "catalogId": "com.demandbase/mcp",
+      "title": "Demandbase",
+      "recordIds": [
+        "demandbase"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Demandbase requires an MCP license and meters returned records with MCP credits; it publishes the unit but leaves commercial rates to the account team. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://gateway.demandbase.com/mcp/servers/db-mcp",
+      "question": "What are the MCP license price, included record-credit allocation and dollar price of purchased MCP credits?"
+    },
+    {
+      "catalogId": "com.egnyte/mcp-server",
+      "title": "Egnyte",
+      "recordIds": [
+        "egnyte"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Egnyte documents different MCP capabilities across plan families and AI entitlements; base content tools and AI/Agent tools need separate treatment. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp-server.egnyte.com/mcp",
+      "question": "Which base content tools are included on each Platform plan versus AI/Agent tools requiring an add-on, and is MCP priced separately?"
+    },
+    {
+      "catalogId": "com.navan/mcp",
+      "title": "Navan",
+      "recordIds": [
+        "navan"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Navan hosts an official MCP server under user permissions; fee policy remains unresolved after official documentation and commercial research. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.navan.com/mcp",
+      "question": "Is MCP included in Navan Business/free and Enterprise accounts, and is there any MCP-specific fee or usage charge?"
+    },
+    {
+      "catalogId": "com.ramp/mcp",
+      "title": "Ramp",
+      "recordIds": [
+        "ramp"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Ramp runs separate account-action and public-benchmark MCP services. Benchmark data is described as free; commercial terms for the main account server remain unclear. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.ramp.com/mcp",
+      "question": "Which plans may use the main account-action Ramp MCP, and is there any additional MCP access or tool-call charge? Keep Ramp Data benchmark terms separate."
+    },
+    {
+      "catalogId": "com.ramp/data.mcp",
+      "title": "Ramp Data",
+      "recordIds": [
+        "ramp"
+      ],
+      "finding": "Scoped benchmark-data service covered inside the mixed Ramp record.",
+      "scopeNote": "Official Ramp Data MCP guide identifies benchmark datasets and provisioned Partner Program API-key access; official announcement explicitly describes those datasets as free. Covered inside one mixed Ramp vendor row, not duplicated as customer-account MCP. Provisioned Partner Program API-key access is required; benchmark inclusion does not settle private account-action MCP terms. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.ramp.com/ramp-data/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.sourcegraph/mcp",
+      "title": "Sourcegraph",
+      "recordIds": [
+        "sourcegraph"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Sourcegraph explicitly includes full MCP Server access in Enterprise, with instance and user permission controls. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{SOURCEGRAPH_HOST}/.api/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.superhuman/mail.mcp",
+      "title": "Superhuman Mail",
+      "recordIds": [
+        "superhuman-mail"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Explicit exclusion of Starter establishes a feature plan gate, not a universal surcharge on existing Business subscribers. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.mail.superhuman.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "dev.braintrust/mcp",
+      "title": "Braintrust",
+      "recordIds": [
+        "braintrust"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Braintrust has hosted MCP for data and evaluation workflows; broad plan-feature wording does not explicitly settle its MCP fee policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.braintrust.dev/mcp",
+      "question": "Does Braintrust's general all-plan feature rule include MCP connection/access without extra fee, with only underlying feature usage billed?"
+    },
+    {
+      "catalogId": "com.render/mcp",
+      "title": "Render",
+      "recordIds": [
+        "render"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Render provides an official hosted MCP server and local implementation, but the read commercial documentation does not settle hosted MCP pricing. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.render.com/mcp",
+      "question": "Is the official hosted MCP included on every Render workspace plan, including Hobby, without an additional MCP-specific fee?"
+    },
+    {
+      "catalogId": "com.resend/mcp",
+      "title": "Resend",
+      "recordIds": [
+        "resend"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Resend explicitly allows Free teams to manage their included domains through MCP, with hosted OAuth and local-server options. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.resend.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.cloudflare/api",
+      "title": "Cloudflare API",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare API catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.contentful/mcp",
+      "title": "Contentful",
+      "recordIds": [
+        "contentful"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Exact vendor no-charge release resolves hosted pricing without relying on local open-source rights. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.contentful.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.upstash/mcp",
+      "title": "Context7",
+      "recordIds": [
+        "context7"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit Free-plan MCP inclusion with ordinary shared API quotas. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.context7.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.gainsight/staircase-ai.mcp",
+      "title": "Gainsight (Staircase AI)",
+      "recordIds": [
+        "gainsight-staircase-ai"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Gainsight provides hosted Staircase AI MCP with administrator activation, but its Staircase-specific fee policy remains unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.staircase.ai/mcp",
+      "question": "Is Staircase AI MCP included at no additional cost for every eligible Staircase account, or is a separate entitlement/fee required?"
+    },
+    {
+      "catalogId": "com.heroku/mcp",
+      "title": "Heroku",
+      "recordIds": [
+        "heroku"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Heroku publishes self-run MCP software under Apache-2.0; inclusion is scoped to the adapter software. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "io.github.containers/kubernetes-mcp-server",
+      "title": "Kubernetes",
+      "recordIds": [],
+      "finding": "Held; no vendor fee classification added for this catalog offering.",
+      "scopeNote": "Generic Kubernetes/community server; implementation availability and its software license do not establish vendor-hosted service terms.",
+      "question": "Is there an independently documented first-party offering with explicit account eligibility and commercial terms?"
+    },
+    {
+      "catalogId": "com.lever/lever.mcp",
+      "title": "Lever",
+      "recordIds": [],
+      "finding": "Held; no vendor record added.",
+      "scopeNote": "Assigned listing is a deployable wrapper. Current official-domain and broader searches found ordinary APIs, partner integrations and community wrappers; no first-party Lever MCP offering was verified. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Does Lever publish or endorse a first-party MCP offering with official setup and commercial terms?"
+    },
+    {
+      "catalogId": "app.lucid/lucid",
+      "title": "Lucid",
+      "recordIds": [
+        "lucid"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit Free plan eligibility supports inclusion without promising unlimited documents or every account type. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.lucid.app/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "io.numeric/mcp",
+      "title": "Numeric",
+      "recordIds": [
+        "numeric"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit every-customer availability supports scoped included access under CONTRIBUTING.md. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.numeric.io/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "dev.scanner/mcp",
+      "title": "Scanner",
+      "recordIds": [
+        "scanner"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Scanner explicitly makes its hosted MCP server available to all customers. It uses the connected account’s permissions and ordinary security-data query economics. All-customer eligibility supports scoped inclusion. It does not make underlying Scanner queries or storage free, or establish unlimited use. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.{SCANNER_ENVIRONMENT}.scanner.dev/v1/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.twilio/docs-mcp",
+      "title": "Twilio Docs",
+      "recordIds": [
+        "twilio-docs"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Twilio explicitly opens its hosted documentation MCP to clients without an account or API keys; it is a public beta. Explicit public documentation access without account/API credentials supports scoped inclusion; no universal fee waiver is inferred. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.twilio.com/docs",
+      "question": ""
+    },
+    {
+      "catalogId": "com.google/devtools.mcp",
+      "title": "Chrome DevTools",
+      "recordIds": [
+        "chrome-devtools"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Chrome DevTools provides an official open-source local MCP server with no-charge software rights under Apache-2.0. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.buildkite/mcp",
+      "title": "Buildkite",
+      "recordIds": [
+        "buildkite"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Buildkite publishes local MCP software and a hosted service; local software rights do not settle hosted MCP pricing. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.buildkite.com/mcp",
+      "question": "Is hosted Buildkite MCP included on all plans including Free, and does it have any fee beyond ordinary CI usage?"
+    },
+    {
+      "catalogId": "com.carta/crm-mcp",
+      "title": "Carta CRM",
+      "recordIds": [
+        "carta"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Carta has official hosted MCP for cap-table, investor and CRM workflows, but its MCP commercial terms remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.listalpha.com/mcp",
+      "question": "Is hosted Carta MCP included for all eligible Carta cap-table/investor/CRM customers, or is there a separate plan entitlement/fee?"
+    },
+    {
+      "catalogId": "ai.fireflies/mcp",
+      "title": "Fireflies",
+      "recordIds": [
+        "fireflies"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit currently read public/free/all-plan eligibility in vendor documentation. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.fireflies.ai/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.grain/mcp",
+      "title": "Grain",
+      "recordIds": [
+        "grain"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative Free eligibility supports core inclusion; paid underlying capabilities are not treated as a blanket MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.grain.com/_/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.getguru/mcp",
+      "title": "Guru",
+      "recordIds": [
+        "guru"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Guru explicitly uses the same action rates across channels, including MCP. It documents shared credit consumption rather than an MCP-specific price premium. Included refers to channel price parity, not free Guru work. The credit table lists MCP calls, retrievals and answers separately; no universal per-prompt total or additive charge is inferred. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.api.getguru.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.launchdarkly/mcp-server",
+      "title": "LaunchDarkly",
+      "recordIds": [
+        "launchdarkly"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "LaunchDarkly explicitly includes MCP across its plan comparison and recommends its hosted server where available. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.amazonaws/redshift-mcp",
+      "title": "Amazon Redshift",
+      "recordIds": [
+        "aws"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: AWS explicitly charges nothing extra for its managed MCP server. You pay for the AWS resources your agents use. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Commercial parity of this exact Amazon Redshift catalog variant with the reviewed AWS offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/docs-vectorize",
+      "title": "Cloudflare Documentation",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://docs.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Documentation catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/workers-bindings",
+      "title": "Cloudflare Workers Bindings",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://bindings.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Workers Bindings catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "ai.devin/deepwiki",
+      "title": "DeepWiki",
+      "recordIds": [
+        "deepwiki"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit currently read public/free/all-plan eligibility in vendor documentation. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.deepwiki.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.fellow/mcp",
+      "title": "Fellow",
+      "recordIds": [
+        "fellow"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Fellow plan requirement is distinct from a Claude client subscription. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://fellow.app/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.godaddy/domains-mcp",
+      "title": "GoDaddy Domains",
+      "recordIds": [
+        "godaddy-domains"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "GoDaddy’s hosted public MCP searches domain names without a GoDaddy account; buying a domain is a separate website transaction. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.godaddy.com/v1/domains/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.jamf/jamf-mcp",
+      "title": "Jamf",
+      "recordIds": [
+        "jamf"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Jamf provides an official documentation MCP for API discovery and code-generation assistance; management operations are not established for this endpoint. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://developer.jamf.com/mcp",
+      "question": "Is the official documentation MCP free/included for all users, or does it require a Jamf account, plan or separate entitlement?"
+    },
+    {
+      "catalogId": "com.logrocket/mcp",
+      "title": "LogRocket",
+      "recordIds": [
+        "logrocket"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "LogRocket documents hosted MCP and shared API/MCP credits, but the pricing page conflicts on Core versus Pro access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.logrocket.com/mcp",
+      "question": "Does Core or Free include MCP; what does one shared API/MCP credit buy, and what happens after Pro 500 or Enterprise 2,000 monthly credits?"
+    },
+    {
+      "catalogId": "com.pagerduty/remote.mcp",
+      "title": "PagerDuty (Remote)",
+      "recordIds": [
+        "pagerduty"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "PagerDuty lists its MCP product free of charge, but its MCP setup guide requires Advanced Permissions, which excludes the Free-plan permission model. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.pagerduty.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.salesforce/sobject-all-sandbox.mcp",
+      "title": "Salesforce sObjects Sandbox (Remote)",
+      "recordIds": [
+        "salesforce"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.salesforce.com/platform/mcp/v1/sandbox/platform/sobject-all",
+      "question": "Commercial parity of this exact Salesforce sObjects Sandbox (Remote) catalog variant with the reviewed Salesforce offering remains unverified."
+    },
+    {
+      "catalogId": "com.shutterstock/mcp",
+      "title": "Shutterstock",
+      "recordIds": [],
+      "finding": "Held; no vendor record added.",
+      "scopeNote": "Primary Shutterstock press confirms a ChatGPT licensed-content app, but advanced official-domain MCP/cciq searches did not establish the catalog MCP offering or canonical endpoint. Third-party listings are insufficient. Catalog endpoint: https://www.shutterstock.com/cciq/mcp",
+      "question": "Can Shutterstock provide official documentation or a release identifying https://www.shutterstock.com/cciq/mcp as its MCP service, with account and fee eligibility?"
+    },
+    {
+      "catalogId": "com.tripadvisor/mcp",
+      "title": "Tripadvisor",
+      "recordIds": [
+        "tripadvisor"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Primary confirms consumer Claude app and separately a Terra developer-docs MCP; advanced research did not resolve consumer endpoint/auth/fee. Ordinary Content API pricing not transplanted. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://production.ai-mcp-extensibility-prd.tamg.cloud/ogMvjY4De1G7CiHanMOAgddl/mcp",
+      "question": "What is the official consumer Claude MCP endpoint, does it require sign-in or paid eligibility, and is there any separate connector charge?"
+    },
+    {
+      "catalogId": "com.vimeo/mcp",
+      "title": "Vimeo",
+      "recordIds": [
+        "vimeo"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Explicit paid-plan prerequisite in the official help guide. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.vimeo.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.wolfram/mcp",
+      "title": "Wolfram",
+      "recordIds": [
+        "wolfram"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit free/no-auth hosted access, narrowed to the vendor's personal-use qualification. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agenttools.wolfram.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.vercel/mcp",
+      "title": "Vercel",
+      "recordIds": [
+        "vercel"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Vercel's live documentation makes its official hosted MCP server available on every plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.vercel.com",
+      "question": ""
+    },
+    {
+      "catalogId": "com.zapier/mcp",
+      "title": "Zapier",
+      "recordIds": [
+        "zapier"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: MCP shares Zapier's existing task allowance. Successful external-app calls consume two tasks each, including tests; failed calls do not. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.zapier.com/api/mcp/a/{ZAPIER_MCP_SERVER_ID}/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.clerk/mcp",
+      "title": "Clerk",
+      "recordIds": [
+        "clerk"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Clerk’s current server includes authenticated account operations and SDK snippets; its MCP-specific commercial eligibility remains unclear. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.clerk.com/mcp",
+      "question": "Which Clerk plans include the current authenticated MCP server, and are there any separate MCP fees or MCP-specific usage limits?"
+    },
+    {
+      "catalogId": "com.cloudflare/browser-rendering",
+      "title": "Cloudflare Browser Rendering",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://browser.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Browser Rendering catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/workers-observability",
+      "title": "Cloudflare Observability",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://observability.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Observability catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/radar",
+      "title": "Cloudflare Radar",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://radar.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Radar catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/workers-builds",
+      "title": "Cloudflare Workers Builds",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://builds.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Workers Builds catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.malwarebytes/scamguard-mcp",
+      "title": "Malwarebytes ScamGuard",
+      "recordIds": [
+        "malwarebytes-scamguard"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Malwarebytes makes its Claude threat-checking connector free without a Malwarebytes subscription. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://scamguard.malwarebytes.com/claude/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.metaview/interviews",
+      "title": "Metaview",
+      "recordIds": [
+        "metaview"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official offering verified; product/agent prices were not generalized into MCP pricing. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.metaview.ai/mcp",
+      "question": "Which Metaview plans include MCP, and are there MCP-specific fees or usage quotas?"
+    },
+    {
+      "catalogId": "tech.neon/mcp",
+      "title": "Neon",
+      "recordIds": [
+        "neon"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Neon explicitly recommends its hosted MCP integration to Free-plan users. No paid upgrade is stated for that access; database and backend resources retain their normal plan limits. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.neon.tech/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.salesforce/tableau-next-sandbox.mcp",
+      "title": "Salesforce Tableau Next Sandbox (Remote)",
+      "recordIds": [
+        "salesforce"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Salesforce charges for its hosted MCP offering, as confirmed by the project maintainer. No public price or billing unit has been verified. Documented Developer Edition and Data 360 inclusion are scoped exceptions. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.salesforce.com/platform/mcp/v1/sandbox/analytics/tableau-next",
+      "question": "Commercial parity of this exact Salesforce Tableau Next Sandbox (Remote) catalog variant with the reviewed Salesforce offering remains unverified."
+    },
+    {
+      "catalogId": "com.smartsheet/mcp",
+      "title": "Smartsheet",
+      "recordIds": [
+        "smartsheet"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Specific required-plan statement establishes a gate; ordinary subscriptions are not described as a per-call tax. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.smartsheet.com",
+      "question": ""
+    },
+    {
+      "catalogId": "com.statsig/statsig-mcp",
+      "title": "Statsig",
+      "recordIds": [
+        "statsig"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Statsig documents an official hosted MCP server, but its guides do not settle commercial MCP eligibility or a separate fee policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.statsig.com/v1/mcp",
+      "question": "Can Statsig Developer/Free accounts use the V3 MCP server, and is any separate MCP fee or entitlement required?"
+    },
+    {
+      "catalogId": "com.trivago/mcp",
+      "title": "Trivago",
+      "recordIds": [
+        "trivago"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit first-party free/no-key MCP access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.trivago.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.viator/experiences-mcp",
+      "title": "Viator",
+      "recordIds": [
+        "viator"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official MCP confirmed; lack of credentials in examples is insufficient affirmative public-access evidence. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://exp-app-mcp.prod.ep.viator.com/mcp",
+      "question": "Is Viator's hosted experiences MCP available without an account, and does ordinary conversational use have any MCP-specific fee, plan or allowance?"
+    },
+    {
+      "catalogId": "com.courtlistener/mcp",
+      "title": "CourtListener",
+      "recordIds": [
+        "courtlistener"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "CourtListener’s free MCP uses the account’s existing API access rather than a separately priced MCP tier. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.courtlistener.com/",
+      "question": ""
+    },
+    {
+      "catalogId": "com.usepylon/mcp",
+      "title": "Pylon",
+      "recordIds": [
+        "pylon"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative all-plan inclusion supports core access; add-on product tools are separately scoped. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.usepylon.com/",
+      "question": ""
+    },
+    {
+      "catalogId": "com.supabase/mcp",
+      "title": "Supabase",
+      "recordIds": [
+        "supabase"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Supabase documents its MCP connector as available on every Supabase plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.apollographql/graphos-mcp",
+      "title": "Apollo GraphOS",
+      "recordIds": [
+        "apollo-graphos"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit public/no-auth documentation access qualifies narrowly; no all-tool or graph-data fee waiver is inferred. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.apollographql.com",
+      "question": "For the separately authenticated graph tools, which GraphOS plans qualify and are any incremental MCP fees or allowances applied?"
+    },
+    {
+      "catalogId": "com.ashbyhq/official.mcp",
+      "title": "Ashby ATS",
+      "recordIds": [
+        "ashby"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "All-plan claim is scoped to the explicit ATS plan list rather than all Ashby products. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.ashbyhq.com/mcp/v1",
+      "question": ""
+    },
+    {
+      "catalogId": "com.autodesk/product-help",
+      "title": "Autodesk Product Help",
+      "recordIds": [
+        "autodesk-product-help"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "The public Product Help server supplies Autodesk documentation at no cost; this does not price other Autodesk MCP offerings. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://developer.api.autodesk.com/knowledge/public/v1/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.cloudflare/agents-sdk-docs",
+      "title": "Cloudflare Agents SDK Documentation",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://agents.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Agents SDK Documentation catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/ai-gateway",
+      "title": "Cloudflare AI Gateway",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://ai-gateway.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare AI Gateway catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/sandbox-container",
+      "title": "Cloudflare Container",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://containers.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Container catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/graphql",
+      "title": "Cloudflare GraphQL",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://graphql.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare GraphQL catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.datagrail/vera.mcp",
+      "title": "DataGrail Vera",
+      "recordIds": [
+        "datagrail"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "DataGrail includes its hosted Vera MCP for Enterprise customers, with administrator-controlled tool access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{SUBDOMAIN}.datagrail.io/api/v2/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.doordash/mcp",
+      "title": "DoorDash",
+      "recordIds": [
+        "doordash"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "DoorDash’s verified MCP documentation describes an approved corporate private beta, with commercial MCP terms still unstated. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://openapi.doordash.com/mcp/consumer",
+      "question": "What MCP fees, quotas and eligibility apply to approved corporate beta testers, and is the catalog consumer endpoint a distinct supported product?"
+    },
+    {
+      "catalogId": "com.legaldatahunter/mcp",
+      "title": "Legal Data Hunter",
+      "recordIds": [
+        "legal-data-hunter"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official developer pricing explicitly includes API+MCP on Free discovery/testing and shared paid tiers; ordinary shared credits are not an MCP tax. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://legaldatahunter.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.mermaidchart/mcp",
+      "title": "Mermaid Chart",
+      "recordIds": [
+        "mermaid-chart"
+      ],
+      "finding": "Related current offering linked; exact legacy catalog App terms remain unresolved.",
+      "scopeNote": "Mermaid includes its general hosted MCP server with a free Basic account for diagram creation, validation and rendering. Honor-roll scope is the general MCP server. Legacy/catalog App terms remain a separate unresolved variant, without an assumed fee waiver. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://chatgpt.mermaid.ai/anthropic/mcp",
+      "question": "Does the catalog Claude MCP App accept a free Basic account or public no-account access, and is any separate App access fee imposed?"
+    },
+    {
+      "catalogId": "design.paper/desktop-mcp",
+      "title": "Paper",
+      "recordIds": [
+        "paper"
+      ],
+      "finding": "Reviewed scoped offering added; current status: limited.",
+      "scopeNote": "Paper offers local desktop MCP on Free with a specific weekly tool-call cap; Pro increases the allowance. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.pendo/mcp",
+      "title": "Pendo",
+      "recordIds": [
+        "pendo"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit inclusion in free product resolves access; historical beta URL alone does not establish current preview. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.pendo.io/mcp/v0/shttp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.microsoft/mcp",
+      "title": "Playwright",
+      "recordIds": [
+        "playwright"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Microsoft's Playwright MCP server is local open-source browser automation software under Apache-2.0. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.turkishairlines/mcp",
+      "title": "Turkish Airlines",
+      "recordIds": [
+        "turkish-airlines"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Vendor-lab initiative is verified; current public-app ownership/access relationship and fee policy remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp-app.turkishtechlab.com/mcp",
+      "question": "Does Turkish Technology confirm the catalog mcp-app endpoint as its public no-account offering, and what fees, limits or eligibility apply to each experimental server?"
+    },
+    {
+      "catalogId": "com.webflow/webflow-mcp",
+      "title": "Webflow",
+      "recordIds": [
+        "webflow"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Webflow explicitly lists MCP in its Free Starter plan and documents hosted OAuth access to a user's sites. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.webflow.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.intercom/mcp",
+      "title": "Intercom",
+      "recordIds": [
+        "intercom"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: unclear.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Intercom explicitly excludes core MCP tools from Operator-credit billing. Optional Operator work costs the same credits as in-app use; public material still does not state core-server minimum plan or a universal fee waiver. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.intercom.com/mcp",
+      "question": "Which plans and trials include core-server access, and is there any separate non-Operator MCP fee?"
+    },
+    {
+      "catalogId": "com.shopify/mcp",
+      "title": "Shopify",
+      "recordIds": [
+        "shopify"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Shopify provides official commerce MCP servers, but current access paths and production commercial terms require careful scoping. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://catalog.shopify.com/api/mcp",
+      "question": "What fee/eligibility policy applies to current Global Catalog MCP production access, and how do profile-only discovery and credentialed higher-rate access differ?"
+    },
+    {
+      "catalogId": "com.airops/airops-mcp",
+      "title": "AirOps",
+      "recordIds": [
+        "airops"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Explicit paid-workspace requirement for resource access; free discovery retained as a caveat. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.airops.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.alltrails/mcp",
+      "title": "AllTrails",
+      "recordIds": [
+        "alltrails"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "AllTrails exposes public trail discovery to AI assistants without an AllTrails account or API key. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://www.alltrails.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.cloudflare/autorag",
+      "title": "Cloudflare AI Search",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://autorag.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare AI Search catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/auditlogs",
+      "title": "Cloudflare Audit Logs",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://auditlogs.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Audit Logs catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/dns-analytics",
+      "title": "Cloudflare DNS Analytics",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://dns-analytics.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare DNS Analytics catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/logpush",
+      "title": "Cloudflare Logpush",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://logs.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Logpush catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.crypto/market-data-mcp",
+      "title": "Crypto.com Market Data",
+      "recordIds": [
+        "crypto-com-market-data"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Crypto.com provides public exchange market data without a paid account or MCP fee. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.crypto.com/market-data/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.goodnotes/mcp",
+      "title": "Goodnotes",
+      "recordIds": [
+        "goodnotes"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Goodnotes includes its AI-assistant document integration on its Free plan without charging Goodnotes AI credits. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://claude-mcp-api.ml.goodnotes.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "tech.hex/hex-mcp",
+      "title": "Hex",
+      "recordIds": [
+        "hex"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Specific Team/Enterprise gate is proven; agent-inference costs are described separately. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.hex.tech/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "dev.jam/mcp",
+      "title": "Jam",
+      "recordIds": [
+        "jam"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Jam’s Free plan explicitly includes MCP debugging, with higher plans inheriting that access. Included access does not waive ordinary recording or AI-product limits. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.jam.dev/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.kiwi/flight-search-mcp",
+      "title": "Kiwi.com",
+      "recordIds": [],
+      "finding": "Held; no vendor record added.",
+      "scopeNote": "Vendor announcement/documentation URLs returned client challenges, and readable official confirmation of the current offering and terms was not obtained. Third-party wrapper reports are insufficient. Catalog endpoint: https://mcp.kiwi.com/",
+      "question": "Can Kiwi supply readable current official MCP documentation establishing ownership, availability, authentication and pricing?"
+    },
+    {
+      "catalogId": "app.cash/ordering-mcp",
+      "title": "Order by Cash App",
+      "recordIds": [
+        "order-by-cash-app"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Primary Block release explicitly says zero added seller costs for eligible official AI ordering channels; official docs verify exact endpoint. Custom third-party production terms remain unverified. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://connect.squareup.com/v2/mcp/cash-app",
+      "question": "For custom third-party production use, what commercial approval or terms does the Agentic Commerce team require?"
+    },
+    {
+      "catalogId": "com.pganalyze/mcp",
+      "title": "pganalyze",
+      "recordIds": [
+        "pganalyze"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "pganalyze includes MCP on current product plans. Its preview hourly throttle is not a published paid MCP allowance or overage charge. Scoped to current-plan inclusion, with legacy-plan eligibility and preview throughput limits visible. It does not promise unlimited use or waive the underlying subscription. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.pganalyze.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "gov.nih.pubmed/mcp",
+      "title": "PubMed",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://pubmed.mcp.claude.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.taxact/mcp",
+      "title": "TaxAct",
+      "recordIds": [
+        "taxact"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official MCP docs/product page expressly document anonymous no-account read-only use; filing charges separate. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.taxact.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.tines/mcp",
+      "title": "Tines",
+      "recordIds": [
+        "tines"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Current official FAQ gives explicit all-plan, no-extra-charge template terms. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://{TINES_TENANT}.tines.com/mcp/{TINES_MCP_PATH}",
+      "question": ""
+    },
+    {
+      "catalogId": "co.tinybird/mcp",
+      "title": "Tinybird",
+      "recordIds": [
+        "tinybird"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative Free-plan MCP allowance. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.tinybird.co?token={TINYBIRD_TOKEN}",
+      "question": ""
+    },
+    {
+      "catalogId": "com.blockscout/mcp",
+      "title": "Blockscout",
+      "recordIds": [
+        "blockscout"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Blockscout documents a limited shared-key fallback and customer API-key access, but the precise hosted MCP entitlement remains unsettled. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.blockscout.com/mcp",
+      "question": "Is the hosted shared-gateway MCP a supported free production service, what data and limits does it include, and does using a PRO key incur any charge beyond ordinary API usage?"
+    },
+    {
+      "catalogId": "com.chilipiper/mcp",
+      "title": "Chili Piper",
+      "recordIds": [
+        "chili-piper"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Conflicting breadth of official product-eligibility language retained honestly rather than silently selecting one. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://fire.chilipiper.com/api/fire-edge/v1/org/mcp",
+      "question": "Does the latest any-plan MCP statement supersede the setup guide’s All Products or Routing & Scheduling restriction, and is access included?"
+    },
+    {
+      "catalogId": "com.cloudflare/dex-analysis",
+      "title": "Cloudflare Digital Experience Monitoring",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://dex.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare Digital Experience Monitoring catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.cloudflare/cloudflare-one-casb",
+      "title": "Cloudflare One CASB",
+      "recordIds": [
+        "cloudflare"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Cloudflare’s hosted API MCP is available on the Free tier without an MCP surcharge. Existing permissions and underlying product entitlements still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://casb.mcp.cloudflare.com/mcp",
+      "question": "Commercial parity of this exact Cloudflare One CASB catalog variant with the reviewed Cloudflare offering remains unverified."
+    },
+    {
+      "catalogId": "com.daloopa/mcp",
+      "title": "Daloopa",
+      "recordIds": [
+        "daloopa"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official server verified; trial-specific MCP quotas do not price general customer access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.daloopa.com/server/mcp",
+      "question": "Which general Daloopa plans include MCP, what datapoint allowances apply, and is there any additional MCP fee?"
+    },
+    {
+      "catalogId": "com.getdx/dx-mcp-server",
+      "title": "DX Data Cloud",
+      "recordIds": [
+        "dx-data-cloud"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "DX supports hosted and local MCP, with shared Web API controls; its hosted commercial terms remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://ai.getdx.com/mcp",
+      "question": "Which DX plans/entitlements include hosted MCP, and is it included without a separate fee beyond ordinary DX/Data Cloud access?"
+    },
+    {
+      "catalogId": "com.pinpointhq/mcp",
+      "title": "Pinpoint",
+      "recordIds": [
+        "pinpoint"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official offering includes more than docs-only access; API-key eligibility and commercial inclusion remain unresolved. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://developers.pinpointhq.com/mcp",
+      "question": "Which plans can issue usable API keys, and is MCP access included without a separate fee?"
+    },
+    {
+      "catalogId": "com.taskrabbit/booking-mcp",
+      "title": "Taskrabbit",
+      "recordIds": [
+        "taskrabbit"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Primary announcement confirms U.S. Claude service checks/handoff. Additional official-domain research did not resolve MCP account/fee terms; Partner REST API approval not transplanted. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.taskrabbit.com/mcp",
+      "question": "Does the official Claude connector require a Taskrabbit account or specific plan, what is its canonical MCP endpoint, and is any connector fee charged?"
+    },
+    {
+      "catalogId": "com.anthropic/economic-index",
+      "title": "Anthropic Economic Index",
+      "recordIds": [
+        "anthropic-economic-index"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Primary launch says anyone can enable it in any Claude conversation/model; current client pricing includes connectors on Free. Scoped to Claude, not external hosted-client fee policy. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://econ-index.mcp.claude.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "gov.clinicaltrials/mcp",
+      "title": "Clinical Trials",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hcls.mcp.claude.com/clinical_trials/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.dice/mcp",
+      "title": "Dice",
+      "recordIds": [
+        "dice"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Dice’s official job-search MCP has no Dice MCP access charge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.dice.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.lastminute/mcp",
+      "title": "lastminute.com",
+      "recordIds": [
+        "lastminute-com"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "lastminute.com documents its travel-search MCP, but a configuration-only URL does not establish its commercial terms. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.lastminute.com/mcp",
+      "question": "Is lastminute.com MCP access free or included, does it require an account or paid entitlement, and what usage limits apply?"
+    },
+    {
+      "catalogId": "com.tigerdata/pg-aiguide",
+      "title": "pg-aiguide",
+      "recordIds": [
+        "pg-aiguide"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "TigerData provides a free public MCP service for PostgreSQL documentation and curated guidance, with no account required. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.tigerdata.com/docs",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.ravenna/mcp",
+      "title": "Ravenna",
+      "recordIds": [
+        "ravenna"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Vendor beta server confirmed; no explicit commercial inclusion established. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://core.ravenna.ai/mcp",
+      "question": "Which Ravenna plans include the beta MCP server, and are there additional charges or quotas?"
+    },
+    {
+      "catalogId": "com.tldraw/mcp",
+      "title": "tldraw",
+      "recordIds": [
+        "tldraw"
+      ],
+      "finding": "Related current offering linked; exact legacy catalog App terms remain unresolved.",
+      "scopeNote": "tldraw’s current MCP plugin for ChatGPT and Codex works with a free-to-use account and its saved multiplayer boards. Included scope is the current ChatGPT/Codex plugin; the legacy catalog App’s terms remain unverified. No universal SDK or every-client fee policy is asserted. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://tldraw-mcp-app.tldraw.workers.dev/mcp",
+      "question": "What account/plan or fee terms apply specifically to https://tldraw-mcp-app.tldraw.workers.dev/mcp, as distinct from the newer free-account plugin?"
+    },
+    {
+      "catalogId": "io.unthread/mcp",
+      "title": "Unthread",
+      "recordIds": [
+        "unthread"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Unthread provides an official hosted MCP server. The maintainer confirms MCP access is included with the underlying product. Included classification is attributed to the maintainer on November 12, 2026. Official sources establish the server and setup, not a universal published fee waiver. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.unthread.io/api/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "org.biorxiv/mcp",
+      "title": "bioRxiv",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hcls.mcp.claude.com/biorxiv/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "uk.ac.ebi.chembl/mcp",
+      "title": "ChEMBL",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hcls.mcp.claude.com/chembl/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "gov.cms/coverage-mcp",
+      "title": "CMS Coverage",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hcls.mcp.claude.com/cms_coverage/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.gumloop/mcp",
+      "title": "Gumloop",
+      "recordIds": [
+        "gumloop"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Shared platform MCP is official, but separate custom-hosting and agent-pricing pages cannot price it. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.gumloop.com/gumloop/mcp",
+      "question": "Which plans include the shared Gumloop platform MCP, and do its incoming tool calls carry any separate credits, allowance or surcharge?"
+    },
+    {
+      "catalogId": "com.hugeicons/mcp-server",
+      "title": "Hugeicons",
+      "recordIds": [
+        "hugeicons"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Hugeicons provides a free hosted MCP server without sign-up, with free icons used by default and separate Pro content terms. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "gov.cms/icd10-mcp",
+      "title": "ICD-10 Codes",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hcls.mcp.claude.com/icd10_codes/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "org.opentargets/platform-mcp",
+      "title": "Open Targets",
+      "recordIds": [
+        "open-targets"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official hosted/local experimental MCP verified; README and deep official-domain crawl do not explicitly state hosted free/no-auth or account eligibility. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.platform.opentargets.org/mcp",
+      "question": "Does the official hosted endpoint expressly allow public use without an account or separate MCP charge, and what limits apply?"
+    },
+    {
+      "catalogId": "com.tryordinal/mcp",
+      "title": "Ordinal",
+      "recordIds": [
+        "ordinal"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "Explicit higher-plan requirement for the MCP offering. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.tryordinal.com/api/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.pga/golf-mcp",
+      "title": "PGA Play Golf",
+      "recordIds": [
+        "pga-play-golf"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official docs affirm public no-sign-in search and distinguish protected booking tools and ordinary lesson prices. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.pga.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.super/travel-mcp",
+      "title": "Super.com Travel",
+      "recordIds": [
+        "super-com-travel"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official help expressly describes no-login/account-connection Claude hotel search and booking handoff; scope is search only. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://www.super.com/travel/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "io.supernova/mcp",
+      "title": "Supernova",
+      "recordIds": [
+        "supernova"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Supernova combines free MCP reads with credit-metered edits. Its pricing lists MCP editing and unlimited lookups across plans. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.supernova.io/mcp/ds/{SUPERNOVA_DESIGN_SYSTEM_ID}",
+      "question": ""
+    },
+    {
+      "catalogId": "com.theirstack/mcp",
+      "title": "TheirStack",
+      "recordIds": [
+        "theirstack"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "All-API-plan inclusion and ordinary API-credit parity are explicit. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.theirstack.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.civitatis/mcp",
+      "title": "Civitatis",
+      "recordIds": [
+        "civitatis"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Civitatis confirms its MCP-powered activity discovery and cart workflow, but does not establish the connector’s commercial entitlement. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://civitatis-claude-app.civitatis.com/mcp",
+      "question": "Is Civitatis MCP discovery/cart access included without an additional vendor fee or paid account, and what account, region or usage conditions apply?"
+    },
+    {
+      "catalogId": "in.dominos/order-mcp",
+      "title": "Domino's India",
+      "recordIds": [],
+      "finding": "Held; no vendor record added.",
+      "scopeNote": "No readable vendor-primary MCP publication was found after two official-domain discovery searches. The catalog endpoint and third-party listings alone do not establish official offering or terms. Catalog endpoint: https://genai-prod-ext.dominos.co.in/order-mcp/mcp",
+      "question": "Can the vendor provide its official MCP documentation and account, eligibility and fee policy?"
+    },
+    {
+      "catalogId": "com.nimbleway/mcp",
+      "title": "Nimble",
+      "recordIds": [
+        "nimble"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Official API-key MCP verified; ambiguous relationship between free API plan and paid MCP integration. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.nimbleway.com/mcp",
+      "question": "Can the Free API plan use the shared Nimble MCP endpoint, and are there additional MCP fees or managed-integration prerequisites?"
+    },
+    {
+      "catalogId": "gov.hhs.cms/npi-registry-mcp",
+      "title": "NPI Registry",
+      "recordIds": [
+        "anthropic-science-healthcare"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Mapped to one Anthropic-provided science/healthcare record. Official launch establishes this connector; documented client eligibility is scoped separately from data-owner pricing and external MCP terms. PubMed alone has explicit free-all-Claude-users wording. Included scope is documented Claude eligibility. No government, NCBI, bioRxiv or ChEMBL hosted-service fee policy is inferred. Verified connectors: PubMed, bioRxiv/medRxiv, ChEMBL, ClinicalTrials.gov, CMS Coverage, ICD-10 and NPI Registry. Anthropic explicitly hosts PubMed, Clinical Trials, ChEMBL and bioRxiv; its healthcare announcement establishes the other three as Claude connectors. PubMed endpoint: https://pubmed.mcp.claude.com/mcp. PubMed free-all-users eligibility is not generalized to the other connectors. The healthcare announcement includes the new connectors for Pro, Max, Team and Enterprise subscribers; client entitlement is not an MCP surcharge. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://hcls.mcp.claude.com/npi_registry/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "org.pophive/mcp",
+      "title": "PopHIVE",
+      "recordIds": [
+        "pophive"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official docs expressly require no account/key/OAuth for the public read-only service; testing phase retained. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.pophive.org/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.slidesgpt/mcp",
+      "title": "SlidesGPT",
+      "recordIds": [
+        "slidesgpt"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official docs identify the exact Claude endpoint and explicitly anonymous/stateless/no-account access. Generic REST quotas not transplanted. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://claude.slidesgpt.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "org.snomedtools/snowstorm-mcp",
+      "title": "SNOMED CT Terminology",
+      "recordIds": [
+        "snomed-ct-terminology"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Official terms identify the MCP proxy and explicitly free individual exploration; production/content licensing and hosted-instance limits remain visible. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://snowstorm-mcp.snomedtools.org/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.aiwyn/tax",
+      "title": "Aiwyn Tax",
+      "recordIds": [
+        "aiwyn-tax"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Vendor MCP verified; no primary affirmative free/no-account policy found after deeper official-domain search and full crawl. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.columnapi.com/mcp",
+      "question": "Can anyone use the current Aiwyn Tax MCP without an account, and what MCP fees, limits or firm eligibility apply?"
+    },
+    {
+      "catalogId": "com.checkatrade/mcp",
+      "title": "Checkatrade",
+      "recordIds": [
+        "checkatrade"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Checkatrade makes its public tradesperson search and fixed-price job-request tools available without a Checkatrade login. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.checkatrade.com/consumer-claude-mcp/v1/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.clarity/sfdr-mcp",
+      "title": "Clarity AI SFDR",
+      "recordIds": [
+        "clarity-ai-sfdr"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Clarity AI offers an unauthenticated fund lookup and SFDR simulation service; enterprise Clarity MCP entitlements are separate. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://clarity-sfdr20-mcp.pro.clarity.ai/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.metabase/deploy.mcp",
+      "title": "Metabase (Deploy)",
+      "recordIds": [
+        "metabase"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Direct native every-plan statement plus free OSS feature list resolves inclusion and corrects stale catalog endpoint. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "What commercial terms apply to this exact deploy-based catalog variant, separately from the linked reviewed offering?"
+    },
+    {
+      "catalogId": "gov.in.mospi/mcp",
+      "title": "MoSPI",
+      "recordIds": [
+        "mospi"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "Government beta launch/expansion verified; official setup crawl exposes no usable account/fee policy. General data free-access categories do not settle MCP eligibility. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.mospi.gov.in/",
+      "question": "Does the eSankhyiki MCP require registration or payment, and is there an explicit no-account/public-access or MCP fee policy?"
+    },
+    {
+      "catalogId": "com.slack/deploy.mcp",
+      "title": "Slack (Deploy)",
+      "recordIds": [
+        "slack"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Slack’s hosted MCP server is free to use, as confirmed by the project maintainer. Existing workspace permissions, app eligibility and ordinary Web API limits still apply. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Slack (Deploy) catalog variant with the reviewed Slack offering remains unverified."
+    },
+    {
+      "catalogId": "com.snowflake/snowflake.mcp",
+      "title": "Snowflake (Deploy)",
+      "recordIds": [
+        "snowflake"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Snowflake explicitly states that its managed MCP server requires no additional compute and incurs no separate charges. Costs come from the Snowflake services its tools invoke. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. This is a deploy-based catalog variant, not automatically the linked vendor-hosted service; local licensing does not price hosted access.",
+      "question": "Commercial parity of this exact Snowflake (Deploy) catalog variant with the reviewed Snowflake offering remains unverified."
+    },
+    {
+      "catalogId": "com.veltra/activities-mcp",
+      "title": "Veltra Activities",
+      "recordIds": [
+        "veltra-activities"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit public no-account/no-login access; inclusion is narrowly scoped to read-only search. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://ai.veltra.com/veltra/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.ashbyhq/ashby-mcp",
+      "title": "Ashby ATS (Community)",
+      "recordIds": [
+        "ashby"
+      ],
+      "finding": "Catalog wrapper/community variant; separately verified native offering is linked.",
+      "scopeNote": "The catalog wrapper/community implementation is distinct from the linked first-party offering. Native plan/credit terms do not price this wrapper. All-plan claim is scoped to the explicit ATS plan list rather than all Ashby products. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "What commercial terms, if any, apply specifically to this catalog wrapper/community variant?"
+    },
+    {
+      "catalogId": "com.grantedai/mcp",
+      "title": "Granted",
+      "recordIds": [
+        "granted"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Granted provides free grant discovery with anonymous daily budgets and reduced AI discovery after the search allowance. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://grantedai.com/api/mcp/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "co.kindora/mcp",
+      "title": "Kindora",
+      "recordIds": [
+        "kindora"
+      ],
+      "finding": "Reviewed scoped offering added; current status: metered.",
+      "scopeNote": "Kindora combines free public fundraising tools with credit-metered organization tools and higher-volume access. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://kindora-mcp.azurewebsites.net/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.courtroom5/mcp",
+      "title": "Courtroom5",
+      "recordIds": [
+        "courtroom5"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Courtroom5 offers three free public guidance tools with daily and per-minute caps; document preparation is outside this connector. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.courtroom5.com/v1",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.parallel/search.mcp",
+      "title": "Parallel Search",
+      "recordIds": [
+        "parallel"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative keyless free access and explicit API-rate parity. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://search-mcp.parallel.ai/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "online.boardwise/mcp",
+      "title": "BoardWise",
+      "recordIds": [
+        "boardwise"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "BoardWise publishes an unauthenticated, read-only educational guidance server for licensing-board matters. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://uakozrqrztgrgwoywxkx.supabase.co/functions/v1/mcp-server",
+      "question": ""
+    },
+    {
+      "catalogId": "com.atlassian/community.mcp",
+      "title": "Atlassian Community",
+      "recordIds": [
+        "atlassian"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: metered.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: Connecting is free. Enriched Teamwork Graph calls through Rovo MCP consume pooled Rovo credits; extra usage billing is announced for December 3, 2026. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Commercial parity of this exact Atlassian Community catalog variant with the reviewed Atlassian Rovo offering remains unverified."
+    },
+    {
+      "catalogId": "com.clickhouse/mcp",
+      "title": "ClickHouse",
+      "recordIds": [
+        "clickhouse"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "ClickHouse offers hosted Cloud MCP and local open-source MCP; the local license does not settle Cloud service fees. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Is ClickHouse Cloud remote MCP included at no extra cost on all Cloud plans, beyond ordinary query/resource usage?"
+    },
+    {
+      "catalogId": "com.digitalocean/mcp",
+      "title": "DigitalOcean",
+      "recordIds": [
+        "digitalocean"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "DigitalOcean has a free local MCP server and newer hosted remote endpoints; local release pricing is not applied to remote hosting. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Are DigitalOcean hosted remote MCP endpoints free/included like the explicitly free local release, beyond ordinary cloud-resource usage?"
+    },
+    {
+      "catalogId": "io.elevenlabs/mcp",
+      "title": "ElevenLabs",
+      "recordIds": [
+        "elevenlabs"
+      ],
+      "finding": "Reviewed scoped offering added; current status: unclear.",
+      "scopeNote": "ElevenLabs provides both a free-to-run local MCP adapter and a newer hosted OAuth server; local software pricing does not resolve hosted commercial terms. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": "Which ElevenLabs plans can access the hosted OAuth MCP server, and is there a separate hosted connection or tool-call fee beyond ordinary API credits?"
+    },
+    {
+      "catalogId": "ai.exa/mcp",
+      "title": "Exa",
+      "recordIds": [
+        "exa"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Exa includes free keyless MCP search and fetch, and lists MCP access in its Free product plan; authenticated research uses the team's usage-based service. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.exa.ai/mcp?exaApiKey=your-exa-api-key",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.exa/websets-mcp",
+      "title": "Exa Websets",
+      "recordIds": [
+        "exa"
+      ],
+      "finding": "Related current Exa record linked; standalone legacy Websets offering remains unresolved.",
+      "scopeNote": "Legacy Websets MCP guide redirects to current Exa MCP documentation, which does not identify a separate Websets endpoint. Current Exa free keyless search/fetch does not establish legacy Websets availability or commercial parity. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://websetsmcp.exa.ai/mcp?exaApiKey=your-exa-api-key",
+      "question": "Has the standalone Websets MCP been retired or merged into current Exa Agent, and what access/fee policy applies if it remains offered?"
+    },
+    {
+      "catalogId": "com.github/mcp.pat",
+      "title": "GitHub PAT",
+      "recordIds": [
+        "github"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: GitHub makes its official MCP server available regardless of account plan. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.githubcopilot.com/mcp/",
+      "question": "Commercial parity of this exact GitHub PAT catalog variant with the reviewed GitHub offering remains unverified."
+    },
+    {
+      "catalogId": "com.iterable/mcp",
+      "title": "Iterable",
+      "recordIds": [
+        "iterable"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative MIT software rights, strictly scoped to the local adapter. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.lemlist/lemlist.mcp",
+      "title": "lemlist",
+      "recordIds": [
+        "lemlist"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Explicit MCP inclusion from the ordinary entry product plan upward. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://app.lemlist.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.monday/mcp",
+      "title": "Monday",
+      "recordIds": [
+        "monday"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: monday.com explicitly includes its hosted MCP server on every plan without an extra MCP charge. MCP operations count toward the account's normal API limits, which can be expanded with an API add-on. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.monday.com/mcp",
+      "question": "Commercial parity of this exact Monday catalog variant with the reviewed monday.com offering remains unverified."
+    },
+    {
+      "catalogId": "com.pagerduty/mcp",
+      "title": "PagerDuty",
+      "recordIds": [
+        "pagerduty"
+      ],
+      "finding": "Reviewed scoped offering added; current status: gated.",
+      "scopeNote": "PagerDuty lists its MCP product free of charge, but its MCP setup guide requires Advanced Permissions, which excludes the Free-plan permission model. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "ai.parallel/task.mcp",
+      "title": "Parallel Task",
+      "recordIds": [
+        "parallel"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative keyless free access and explicit API-rate parity. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://task-mcp.parallel.ai/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "com.pipedream/mcp",
+      "title": "Pipedream",
+      "recordIds": [
+        "pipedream"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Pipedream explicitly makes its hosted MCP servers free for personal use, while separately pricing developer Connect production workloads. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.pipedream.net/v2",
+      "question": ""
+    },
+    {
+      "catalogId": "com.posthog/mcp",
+      "title": "PostHog",
+      "recordIds": [
+        "posthog"
+      ],
+      "finding": "Existing scoped vendor record; current reviewed status: included.",
+      "scopeNote": "Existing vendor listing; alternate endpoint does not independently establish pricing parity. Record scope: PostHog explicitly separates free MCP access from chargeable AI work performed by some tools. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.posthog.com/mcp",
+      "question": ""
+    },
+    {
+      "catalogId": "dev.semgrep/remote.mcp",
+      "title": "Semgrep",
+      "recordIds": [
+        "semgrep"
+      ],
+      "finding": "Related current hosted AppSec Platform offering linked; legacy catalog endpoint remains unresolved.",
+      "scopeNote": "Semgrep’s current hosted MCP beta requires a Teams or Enterprise organization. Its documentation explicitly rejects Free-plan organizations for this hosted connection. The catalog legacy experimental mcp.semgrep.ai endpoint is distinct from the current hosted AppSec Platform beta and local/Guardian tools; current plan gates are not assigned to that legacy endpoint. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://mcp.semgrep.ai/mcp",
+      "question": "Is the legacy catalog mcp.semgrep.ai service still supported, and what access, fee and quota policy applies specifically to it?"
+    },
+    {
+      "catalogId": "com.skyvern/mcp",
+      "title": "Skyvern",
+      "recordIds": [
+        "skyvern"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Skyvern explicitly makes MCP available across all customer plans, alongside a free self-hosted version; ordinary cloud automation charges remain. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity. Catalog endpoint: https://api.skyvern.com/mcp/",
+      "question": ""
+    },
+    {
+      "catalogId": "com.todoist/ai.mcp",
+      "title": "Todoist AI",
+      "recordIds": [
+        "todoist"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "Affirmative free/any-account platform statement and explicit all-user MCP eligibility. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    },
+    {
+      "catalogId": "com.wordpress/mcp",
+      "title": "WordPress",
+      "recordIds": [
+        "wordpress"
+      ],
+      "finding": "Reviewed scoped offering added; current status: included.",
+      "scopeNote": "WordPress.com includes hosted MCP across paid plans and currently extends access to Free and Jetpack-connected sites through November 30, 2026. The linked record’s classification applies only to its reviewed scope; catalog aliases and transports do not establish commercial parity.",
+      "question": ""
+    }
+  ]
+}

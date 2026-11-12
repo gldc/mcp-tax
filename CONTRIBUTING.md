@@ -20,8 +20,8 @@ The dataset is an array of records:
 | `notice` | Optional material caveat |
 | `noTax` | Optional boolean; only explicit included-access evidence qualifies for the honor roll |
 
-Affirmative free/all-plan eligibility supports scoped included access, without promising unlimited calls or every tool. Ordinary product/API quotas alone do not make MCP `limited`.
+Affirmative free/all-plan eligibility or documented public access without an account or authentication supports scoped included access, including public documentation/data tools, without promising unlimited calls or every tool. Ordinary product/API quotas alone do not make MCP `limited`.
 
-An ordinary API limit, product subscription, AI inference cost or feature entitlement alone does not establish an MCP surcharge. Keep future fees future-dated and preview availability visible. Include no unsupported prices, discounts or percentages.
+An ordinary API limit, product subscription, AI inference cost or feature entitlement alone does not establish an MCP surcharge. Explicit same-product API/MCP rate parity describes ordinary usage, not a protocol surcharge. A local software license establishes code rights, never hosted-service pricing. Keep future fees future-dated and preview availability visible. Include no unsupported prices, discounts or percentages.
 
 Run `npm test`, `npm run validate`, and `npm run build` before submitting. Check narrow and wide layouts, keyboard controls, evidence links and the no-JavaScript page after UI changes. Preserve stable IDs when correcting records.
