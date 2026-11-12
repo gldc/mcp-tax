@@ -1,6 +1,6 @@
 # Contributing
 
-[Suggest a vendor or correction](https://github.com/gldc/mcp-tax/issues/new?template=vendor.yml), or open a pull request with a small change to `data/vendors.json`. Use current official documentation and paraphrase the supported claim. Do not infer free access from a missing price.
+[Suggest a vendor or correction](https://github.com/gldc/mcp-tax/issues/new?template=vendor.yml), or open a pull request with a small change to `data/vendors.json`. Use current official documentation and paraphrase the supported claim. Do not infer free access from a missing price. Direct maintainer confirmations and assessments must be attributed, with tentative assessments clearly distinguished from vendor-published terms.
 
 The dataset is an array of records:
 
@@ -18,7 +18,7 @@ The dataset is an array of records:
 | `delivery` | Vendor-hosted, self-hosted or mixed implementation |
 | `preview` | Optional boolean for preview access |
 | `notice` | Optional material caveat |
-| `noTax` | Optional boolean; only explicit included-access evidence qualifies for the honor roll |
+| `noTax` | Optional boolean; explicit included-access evidence or an attributed maintainer confirmation/assessment qualifies for the honor roll |
 
 Affirmative free/all-plan eligibility or documented public access without an account or authentication supports scoped included access, including public documentation/data tools, without promising unlimited calls or every tool. Ordinary product/API quotas alone do not make MCP `limited`.
 
